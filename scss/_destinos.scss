@@ -1,0 +1,140 @@
+            /* ---------------------------------------- */
+            /* DESTINOS */
+
+            /* Estilos "botones"/destinos clase de bootstrap + mis estilos */
+            .btn-light {
+                background-color: transparent;
+                border-color: rgba(255, 254, 255, 0.267);
+                color: rgba(176, 206, 188, 0);
+            }
+
+            .btn-light {
+                &:hover {
+                    background-color: rgba(162, 247, 122, 0.582);
+                    transition: all 1s;
+
+                    transform: scale(125%, 125%);
+                    border-color: rgba(253, 249, 253, 0.281);
+                    border-width: 1px;
+                    border-radius: 0.25rem;
+
+                    padding: 1rem;
+                    margin-bottom: 3rem;
+                    box-shadow: 0 0.5rem 1rem rgb(241, 208, 57);
+                }
+            }
+
+            //Da espacios entre secciones y galería de destinos 
+            .main {
+                &__div {
+                    &--espacio {
+                        padding:0; 
+                    }
+                } 
+                &__modal {
+                    &__ul {
+                        &--estilos {
+                            display: block;
+                            list-style-type: none;
+                            font-family: "Oxygen", sans-serif;
+                            font-size: 1rem;
+                            text-align: center;
+                        }
+                    }
+                }
+    
+
+                // Sombra violeta de las cajas Destinos y Hexazonal 
+                &__botones {
+                    &--sombraViol {
+                        border-radius: 0.25rem;
+                        padding: 1rem;
+                        margin-bottom: 3rem;
+                        box-shadow: 0 0.5rem 1rem rgba(192, 64, 209, 0.671);
+                    }
+                }
+
+                // Sombra naranja de las cajas Destinos y Hexazonal
+                &__botones {
+                    &--sombraNar {
+                        border-radius: 0.25rem;
+                        padding: 1rem;
+                        margin-bottom: 3rem;
+                        box-shadow: 0 0.5rem 1rem rgb(255, 175, 26);
+                    }
+                }
+
+                &__modalDialog {
+                    &--sombra {
+                        border-radius: 1rem;
+
+                        margin-bottom: 2rem;
+                        box-shadow: 0 0.05rem 5rem rgb(161, 247, 122);
+                    }
+                }
+
+            }
+
+            /* Estilos cuerpo del modal clase de BootS */
+            .modal {
+                &-content {
+                    background-color: rgba(255, 214, 127, 0.562);
+                    z-index: 0;
+
+                    background-image: linear-gradient(to top,
+                            rgba(245, 186, 247, 0.788),
+                            rgba(238, 181, 95, 0.301));
+                    border-radius: 15px;
+                }
+
+
+                // Titúlos de modales 
+                &-title {
+                    font: {
+                        family: "Megrim", cursive, Oxygen, sans-serif;
+                        weight: bolder;
+                        size: 2.5rem;
+                    }
+
+                    color: #464d3f;
+                }
+
+
+
+
+                &__btn-estilos {
+                    color:rgba(113, 80, 122, 0.637);
+                    width: 100%;
+                    height: 3rem;
+                    font-size: 18px;
+                    border: 1px solid rgba(248, 245, 245, 0);
+                    border-radius: 12.5px;
+                    background-image: linear-gradient(to top,
+                    rgb(247, 221, 175),
+                    rgb(243, 178, 243));
+                    box-shadow: 10px 10px 18px #e9c760,
+                                -10px -10px 16px #a97ab998;
+                    margin: 1rem auto;
+            
+                &:hover{
+                color:blanchedalmond;
+                }  
+                &:active {
+                    box-shadow: 16px 16px 18px rgb(243, 178, 243) inset,
+                                -16px -16px 18px rgb(247, 221, 175) inset;
+                }
+                }
+            
+
+            @media only screen and (max-width: 1200px) {
+                .main {
+                    &__div {
+                        &--espacio {
+                            
+                            
+                            margin-right: 1rem; 
+                        }
+                    }
+            }
+        }
+            }

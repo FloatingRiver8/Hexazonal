@@ -1,0 +1,47 @@
+    /* Pág INDEX */
+    /* ---------------------------------------- */
+
+    /* Estilos h1 HexaZonal -INDEX */
+    .header {
+        &__H1 {
+            &--estilos {
+                width: 100%;
+                font-size: 10rem;
+                z-index: 2;
+                margin-bottom: 8rem;
+                margin-top: 3rem;
+            }
+        }
+
+    }
+
+
+   .footer{
+       &_a{
+           &--Fb, &--Ig{
+               margin-bottom: 1rem;
+
+           }
+       }
+   } 
+
+
+    /* ---------------------------------------- */
+    /*    MEDIA QUERYS INDEX */
+
+    @media only screen and (max-width: 768px) {
+
+        /* Disminuye tamaño de titulo hexaZonal 
+                y párrafo en break 768px -INDEX */
+        .header {
+            &__H1 {
+                &--estilos {
+                    font-size: 4rem;
+                    color: rgb(195, 53, 238);
+                    margin-bottom: 2rem;
+                }
+
+        }
+    }
+
+}

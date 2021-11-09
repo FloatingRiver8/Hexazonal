@@ -1,0 +1,349 @@
+/* ESTILOS GENERALES */
+/* ---------------------------------------- */
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+    /*10px*/
+    width: 100%;
+}
+
+
+/* Fondos de las páginas */
+.body{
+    &__home, &__contacto, &__quienes, &__hexa, &__destinos, &__contactos{ 
+    
+    &--fondo {
+    
+            background-image: url(../imagenes/shinyOverlayCinco.svg);
+            z-index: 0;
+            
+            background-size:cover;
+        }
+        
+    }
+}
+
+/* ---------------------------------------- */
+/* ANIMACIONES */
+/* Fade "explora" todas las páginas */
+/*               .animate__animated.animate__fadeIn.fadeExplora {
+                    --animate-duration: 2s;
+                }  */
+
+/* Fade "descubre" todas las páginas */
+
+/*                  .animate__animated.animate__fadeIn.fadeDescubre {
+                    --animate-duration: 3s;
+                }
+ */
+/* Fade h1 todas las pág. */
+/*                 .animate__animated.animate__fadeIn.hexaTitle {
+                    --animate-duration: 4s;
+                } 
+ */
+/* Fade cita del Index */
+/*                  .animate__animated.animate__fadeIn.quoteFade {
+                    --animate-duration: 6s;
+                }
+
+ */
+
+
+/* BUCLE --no me está generando el blucle para los segundos, 
+  sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
+
+@for $i from 1 through 4 {
+    .animate__animated.animate__fadeIn__index__titulos--fade-#{$i} {
+        --animate-duration: 2s + $i;
+    }
+}
+
+
+
+
+/* ---------------------------------------- */
+/* NAVBAR */
+
+/*   Animación navbar__logo */
+.navbar {
+    &__link--logo:hover {
+        transition: all 2s;
+        transform: scale(80%, 80%);
+    }
+
+    // Icono botón hamburguesa
+    &-light {
+        .navbar-toggler {
+            &-icon {
+                background-image: url("/imagenes/menuHambWhite.png");
+            }
+        }
+    }
+
+    //Box shadow del botón hamburguesa
+    &-light {
+        .navbar-toggler {
+            &:focus {
+                text-decoration: none;
+                /* outline: 0; */
+                color: rgba(94, 205, 50, 0.685);
+                box-shadow: 0 0 0 0.1rem;
+            }
+        }
+    }
+}
+
+
+/* ---------------------------------------- */
+/* Saca bullets de listas desordenadas (navBar) y pone en línea */
+ul {
+    list-style-type: none;
+    font-family: "Oxygen", sans-serif;
+    text-align: center;
+
+    /* Ubica cada li en un item del contenedor ul con flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: 3;
+    width: 100%;
+
+    li {
+        letter-spacing: 0.2rem;
+        color: #7a7771c7;
+    }
+
+}
+
+/* Cambia color de los  items LI SOLO NAVBAR */
+
+.nav {
+    &__ul {
+            &--color {
+                & :hover {
+                    color: rgb(167, 62, 228);
+
+                }
+
+            }
+
+        }
+    }
+
+
+
+
+/* --------------------------------------------- */
+
+/* Con este width los li envían al item p debajo, wrap */
+/* nav {
+    p {
+        width: 700px;
+    }
+
+} */
+
+/* ---------------------------------------- */
+/* EACH  -- Estilos en SPAN  debajo de NAVBAR 
+de todas las páginas */
+@each $span in (span__uno,
+    span__dos) {
+    ##{$span}--posestilos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        color: #79564696;
+        font-family: "Oxygen", sans-serif;
+        font-weight: bold;
+
+        @if ($span==span__uno) {
+            margin-left: 1rem;
+
+        }
+
+        @else {
+            margin-left: 4rem;
+        }
+
+    }
+
+}
+
+/* ---------------------------------------- */
+/* Estilos títulos H1 en gral. */
+h1 {
+    color: #7a7771;
+    font-family: "Megrim";
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+/* ---------------------------------------- */
+/* Estílos párrafos en gral. */
+p {
+    color: #9583a3;
+    font-family: "MuseoModerno", cursive;
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+/* ---------------------------------------- */
+/* Estílos anchors en gral.*/
+a {
+    text-decoration: none;
+    color: #4746439d;
+}
+
+
+/* ---------------------------------------- */
+/* MAP - con colores de sombra para botones de rrss */
+/* FOOTER anchors de redes sociales y derechos reservados */
+ $sombras:(Fb: rgb(121, 215, 228),
+    Ig: rgb(196, 61, 196),
+); 
+
+
+
+@each $red,
+$color in $sombras {
+    .footer_a--#{$red} {
+        border: none;
+        box-shadow: 0 -0.1rem 2rem $color;
+        border-radius: 1rem;
+        margin: 1rem;
+
+        border-radius: 65px;
+
+
+        @if($red==Fb) {
+            background: linear-gradient(315deg, #79d7e457, #2fe1f841);
+            
+            padding: 0.5rem 0.5rem 0.8rem 0rem;
+        }
+
+        @else {
+            background-color: rgba(196, 61, 196, 0.253);   
+            padding: 0.2rem 0rem 0.5rem  0rem;
+
+        }
+
+    }
+
+
+    
+}
+
+/* ---------------------------------------- */
+/* MEDIA QUERYS GENERALES*/
+@media only screen and (max-width: 768px) {
+   .body {
+        p {
+            color: rgb(226, 176, 69);
+        }
+    
+    }
+
+    .body{
+        &__quienes, &__hexa, &__destinos, &__contacto {
+            &--fondo{
+                
+                background: {
+                    image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
+                    size: inherit, cover;
+                    repeat: no-repeat;
+                    position: center;
+                    }
+
+                    height: 100%;
+                    margin-top: 2rem;
+                    z-index: 10;
+                
+                
+            }
+        }
+    }
+
+
+    .body{
+        &__home{
+            &--fondo{
+                background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
+                background-size: inherit;
+
+        }
+    }
+}
+
+    /* Vuelve naranja los ul del nav */
+    nav {
+        ul {
+            li {
+                letter-spacing: 0.2rem;
+                color: #d8b64f;
+
+                &:hover {
+                    color: rgb(231, 206, 245);
+                }
+            }
+        }
+    }
+
+    /* Esconde los span "explora "descubre" */
+
+    #span__uno--posestilos,
+    #span__dos--posestilos {
+        display: none;
+    }
+
+    /* Reduce el tamaño de los H1 (menos en INDEX) 
+                y  cambia el color en dispositivos small */
+    .header {
+        &__h1--reduceSizeMq {
+            font-size: 48px;
+            margin-left: 0px;
+            color: #b3a593;
+        }
+    }
+
+    button:focus:not(:focus-visible) {
+        outline: 0;
+    }
+
+    .navbar {
+        &-toggler {
+            &:focus {
+                text-decoration: none;
+                /* outline: 0; */
+                color: rgba(205, 169, 50, 0.685);
+                box-shadow: 0 0 0 0.1rem;
+            }
+        }
+
+        &-light {
+            .navbar-toggler {
+                border-width: 2px;
+                border-color: rgb(236, 184, 72);
+                /* background-color:#d8b64f; */
+            }
+        }
+
+        &-toggler {
+            &:hover {
+                background-image: linear-gradient(to top,
+                        rgba(203, 79, 228, 0.678),
+                        rgb(236, 179, 93));
+            }
+        }
+    }
+}
+

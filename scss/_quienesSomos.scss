@@ -1,0 +1,195 @@
+      /* Pág QUIÉNES SOMOS */
+      /* ------------------------------------------ */
+
+      #quienesSomos p {
+
+
+            font-family: "Megrim", sans-serif;
+            color: rgb(73, 57, 85);
+      }
+
+      .main {
+            &__div {
+
+                  &--contUno,
+                  &--contDos {
+                        margin-top: 3rem;
+                        padding-bottom: 6rem;
+                  }
+            }
+
+            &--imagenFondoQuienesTitulo {
+                  background: {
+
+                        image: linear-gradient(rgba(230, 199, 112, 0.671), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTres.jpg");
+
+                  }
+
+                  height: 10rem;
+                  border-radius: 1rem;
+                  border-radius: 12.5px;
+                  box-shadow: 16px 16px 18px #aaaaaa,
+                  -16px -16px 18px #ffffff;
+            }
+
+      }
+
+
+      /* Imagenes de los párrafos */
+      @each $img in (pImgUno, pImgDos, pImgTres, pImgCuatro) {
+            .main__div--#{$img} {
+
+                  background-repeat: no-repeat;
+                  background-position-x: right;
+                  background-position-y: top;
+
+
+                  background-size: inherit;
+                  box-shadow: 7px 7px 14px #f0e6b0a6,
+                        -7px -7px 14px #5c1f7956;
+                  border-radius: 15px;
+
+                  height: 100%;
+
+
+                  @if ($img==pImgUno) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosTres.jpg");
+                        z-index: 200;
+                        margin-top: 8rem;
+                        background-position-x: right;
+                        background-position-y: top;
+                  }
+
+                  @if ($img==pImgDos) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+                        z-index: 200;
+                        margin-top: 7rem;
+                        background-position-x: right;
+                        background-position-y: top;
+                  }
+
+                  @if ($img==pImgTres) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosCuatro.jpg");
+                        z-index: 200;
+                        margin-top: 3rem;
+
+
+                  }
+
+                  @else {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+                        z-index: 200;
+                        margin-top: 7rem;
+                  }
+
+            }
+
+      }
+
+
+      /* Imágenes de los fondos */
+      @each $imgFondo in (uno, dos, tres, cuatro) {
+            .main__img---estilosFondo--#{$imgFondo} {
+
+                  background-size: cover;
+                  box-shadow: 7px 7px 14px #f0e6b0a6,
+                        -7px -7px 14px #5c1f7956;
+                  border-radius: 15px;
+
+                  @if ($imgFondo==uno) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosTres.jpg");
+
+                  }
+
+                  @if ($imgFondo==dos) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosDos.jpg");
+                  }
+
+                  @if ($imgFondo==tres) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosCuatro.jpg");
+                        background-size: 25%;
+                        margin-top: 3rem;
+                        padding-bottom: 7rem;
+                  }
+            }
+      }
+
+
+
+      /* Imágenes de los fondos de iconos */
+      @each $imgFondoIconos in (uno, dos, tres, cuatro) {
+            .main__img---estilosInterna--#{$imgFondoIconos} {
+
+                  background-size: inherit;
+                  box-shadow: 7px 7px 14px #f0e6b0a6,
+                        -7px -7px 14px #5c1f7956;
+                  border-radius: 15px;
+                  margin-top: 3rem;
+                  margin-left: 2rem;
+
+                  @if ($imgFondoIconos==uno) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg");
+
+                  }
+
+                  @if ($imgFondoIconos==dos) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosDos.jpg");
+
+                  }
+
+                  @if ($imgFondoIconos==tres) {
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosCuatro.jpg");
+
+                  }
+
+            }
+      }
+
+
+
+
+      /* -------------------------------- */
+
+
+
+
+      /* ---------------------------------------- */
+      /*    MEDIA QUERYS INDEX */
+
+
+      @media only screen and (max-width: 758px) {
+
+            .main {
+                  &__img {
+
+                        &---estilosInterna {
+
+                              border-radius: 15px;
+                              margin-top: 10rem;
+                              margin-bottom: 2rem;
+                              padding-left: 0rem;
+                              margin-left: 0rem;
+                        }
+
+                  }
+            }
+
+            .main {
+                  &__div {
+                        &--colTres {
+                              p {
+                                    font-family: "Oxygen", sans-serif;
+                                    color: rgb(173, 73, 231);
+                                    padding: 1rem;
+
+                              }
+
+                              border-radius: 15px;
+                              margin-top: 2rem;
+
+                        }
+
+                  }
+            }
+
+      }

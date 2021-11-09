@@ -1,0 +1,530 @@
+@charset "UTF-8";
+/* Styles */
+/* ---------------------------------------- */
+/* Gradiente para cuerpo del form en contactos */
+/* ESTILOS GENERALES */
+/* ---------------------------------------- */
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62, 5%;
+  /*10px*/
+  width: 100%; }
+
+/* Fondos de las páginas */
+.body__home--fondo, .body__contacto--fondo, .body__quienes--fondo, .body__hexa--fondo, .body__destinos--fondo, .body__contactos--fondo {
+  background-image: url(../imagenes/shinyOverlayCinco.svg);
+  z-index: 0;
+  background-size: cover; }
+
+/* ---------------------------------------- */
+/* ANIMACIONES */
+/* Fade "explora" todas las páginas */
+/*               .animate__animated.animate__fadeIn.fadeExplora {
+                    --animate-duration: 2s;
+                }  */
+/* Fade "descubre" todas las páginas */
+/*                  .animate__animated.animate__fadeIn.fadeDescubre {
+                    --animate-duration: 3s;
+                }
+ */
+/* Fade h1 todas las pág. */
+/*                 .animate__animated.animate__fadeIn.hexaTitle {
+                    --animate-duration: 4s;
+                } 
+ */
+/* Fade cita del Index */
+/*                  .animate__animated.animate__fadeIn.quoteFade {
+                    --animate-duration: 6s;
+                }
+
+ */
+/* BUCLE --no me está generando el blucle para los segundos, 
+  sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
+.animate__animated.animate__fadeIn__index__titulos--fade-1 {
+  --animate-duration: 2s + $i; }
+
+.animate__animated.animate__fadeIn__index__titulos--fade-2 {
+  --animate-duration: 2s + $i; }
+
+.animate__animated.animate__fadeIn__index__titulos--fade-3 {
+  --animate-duration: 2s + $i; }
+
+.animate__animated.animate__fadeIn__index__titulos--fade-4 {
+  --animate-duration: 2s + $i; }
+
+/* ---------------------------------------- */
+/* NAVBAR */
+/*   Animación navbar__logo */
+.navbar__link--logo:hover {
+  transition: all 2s;
+  transform: scale(80%, 80%); }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/imagenes/menuHambWhite.png"); }
+
+.navbar-light .navbar-toggler:focus {
+  text-decoration: none;
+  /* outline: 0; */
+  color: rgba(94, 205, 50, 0.685);
+  box-shadow: 0 0 0 0.1rem; }
+
+/* ---------------------------------------- */
+/* Saca bullets de listas desordenadas (navBar) y pone en línea */
+ul {
+  list-style-type: none;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  /* Ubica cada li en un item del contenedor ul con flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  z-index: 3;
+  width: 100%; }
+  ul li {
+    letter-spacing: 0.2rem;
+    color: #7a7771c7; }
+
+/* Cambia color de los  items LI SOLO NAVBAR */
+.nav__ul--color :hover {
+  color: #a73ee4; }
+
+/* --------------------------------------------- */
+/* Con este width los li envían al item p debajo, wrap */
+/* nav {
+    p {
+        width: 700px;
+    }
+
+} */
+/* ---------------------------------------- */
+/* EACH  -- Estilos en SPAN  debajo de NAVBAR 
+de todas las páginas */
+#span__uno--posestilos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  color: #79564696;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  margin-left: 1rem; }
+
+#span__dos--posestilos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  color: #79564696;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  margin-left: 4rem; }
+
+/* ---------------------------------------- */
+/* Estilos títulos H1 en gral. */
+h1 {
+  color: #7a7771;
+  font-family: "Megrim";
+  font-weight: bold;
+  font-size: 5rem; }
+
+/* ---------------------------------------- */
+/* Estílos párrafos en gral. */
+p {
+  color: #9583a3;
+  font-family: "MuseoModerno", cursive;
+  font-size: 1.2rem;
+  word-spacing: 0.1rem;
+  line-height: 2rem;
+  text-align: center; }
+
+/* ---------------------------------------- */
+/* Estílos anchors en gral.*/
+a {
+  text-decoration: none;
+  color: #4746439d; }
+
+/* ---------------------------------------- */
+/* MAP - con colores de sombra para botones de rrss */
+/* FOOTER anchors de redes sociales y derechos reservados */
+.footer_a--Fb {
+  border: none;
+  box-shadow: 0 -0.1rem 2rem #79d7e4;
+  border-radius: 1rem;
+  margin: 1rem;
+  border-radius: 65px;
+  background: linear-gradient(315deg, #79d7e457, #2fe1f841);
+  padding: 0.5rem 0.5rem 0.8rem 0rem; }
+
+.footer_a--Ig {
+  border: none;
+  box-shadow: 0 -0.1rem 2rem #c43dc4;
+  border-radius: 1rem;
+  margin: 1rem;
+  border-radius: 65px;
+  background-color: rgba(196, 61, 196, 0.253);
+  padding: 0.2rem 0rem 0.5rem  0rem; }
+
+/* ---------------------------------------- */
+/* MEDIA QUERYS GENERALES*/
+@media only screen and (max-width: 768px) {
+  .body p {
+    color: #e2b045; }
+  .body__quienes--fondo, .body__hexa--fondo, .body__destinos--fondo, .body__contacto--fondo {
+    background-image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
+    background-size: inherit, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin-top: 2rem;
+    z-index: 10; }
+  .body__home--fondo {
+    background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
+    background-size: inherit; }
+  /* Vuelve naranja los ul del nav */
+  nav ul li {
+    letter-spacing: 0.2rem;
+    color: #d8b64f; }
+    nav ul li:hover {
+      color: #e7cef5; }
+  /* Esconde los span "explora "descubre" */
+  #span__uno--posestilos,
+  #span__dos--posestilos {
+    display: none; }
+  /* Reduce el tamaño de los H1 (menos en INDEX) 
+                y  cambia el color en dispositivos small */
+  .header__h1--reduceSizeMq {
+    font-size: 48px;
+    margin-left: 0px;
+    color: #b3a593; }
+  button:focus:not(:focus-visible) {
+    outline: 0; }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    /* outline: 0; */
+    color: rgba(205, 169, 50, 0.685);
+    box-shadow: 0 0 0 0.1rem; }
+  .navbar-light .navbar-toggler {
+    border-width: 2px;
+    border-color: #ecb848;
+    /* background-color:#d8b64f; */ }
+  .navbar-toggler:hover {
+    background-image: linear-gradient(to top, rgba(203, 79, 228, 0.678), #ecb35d); } }
+
+/* Pág INDEX */
+/* ---------------------------------------- */
+/* Estilos h1 HexaZonal -INDEX */
+.header__H1--estilos {
+  width: 100%;
+  font-size: 10rem;
+  z-index: 2;
+  margin-bottom: 8rem;
+  margin-top: 3rem; }
+
+.footer_a--Fb, .footer_a--Ig {
+  margin-bottom: 1rem; }
+
+/* ---------------------------------------- */
+/*    MEDIA QUERYS INDEX */
+@media only screen and (max-width: 768px) {
+  /* Disminuye tamaño de titulo hexaZonal 
+                y párrafo en break 768px -INDEX */
+  .header__H1--estilos {
+    font-size: 4rem;
+    color: #c335ee;
+    margin-bottom: 2rem; } }
+
+/* Pág QUIÉNES SOMOS */
+/* ------------------------------------------ */
+#quienesSomos p {
+  font-family: "Megrim", sans-serif;
+  color: #493955; }
+
+.main__div--contUno, .main__div--contDos {
+  margin-top: 3rem;
+  padding-bottom: 6rem; }
+
+.main--imagenFondoQuienesTitulo {
+  background-image: linear-gradient(rgba(230, 199, 112, 0.671), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTres.jpg");
+  height: 10rem;
+  border-radius: 1rem;
+  border-radius: 12.5px;
+  box-shadow: 16px 16px 18px #aaaaaa, -16px -16px 18px #ffffff; }
+
+/* Imagenes de los párrafos */
+.main__div--pImgUno {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosTres.jpg");
+  z-index: 200;
+  margin-top: 8rem;
+  background-position-x: right;
+  background-position-y: top;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 7rem; }
+
+.main__div--pImgDos {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 7rem;
+  background-position-x: right;
+  background-position-y: top;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 7rem; }
+
+.main__div--pImgTres {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosCuatro.jpg");
+  z-index: 200;
+  margin-top: 3rem; }
+
+.main__div--pImgCuatro {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 7rem; }
+
+/* Imágenes de los fondos */
+.main__img---estilosFondo--uno {
+  background-size: cover;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosTres.jpg"); }
+
+.main__img---estilosFondo--dos {
+  background-size: cover;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosDos.jpg"); }
+
+.main__img---estilosFondo--tres {
+  background-size: cover;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosCuatro.jpg");
+  background-size: 25%;
+  margin-top: 3rem;
+  padding-bottom: 7rem; }
+
+.main__img---estilosFondo--cuatro {
+  background-size: cover;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px; }
+
+/* Imágenes de los fondos de iconos */
+.main__img---estilosInterna--uno {
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
+
+.main__img---estilosInterna--dos {
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosDos.jpg"); }
+
+.main__img---estilosInterna--tres {
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosCuatro.jpg"); }
+
+.main__img---estilosInterna--cuatro {
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  border-radius: 15px;
+  margin-top: 3rem;
+  margin-left: 2rem; }
+
+/* -------------------------------- */
+/* ---------------------------------------- */
+/*    MEDIA QUERYS INDEX */
+@media only screen and (max-width: 758px) {
+  .main__img---estilosInterna {
+    border-radius: 15px;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    padding-left: 0rem;
+    margin-left: 0rem; }
+  .main__div--colTres {
+    border-radius: 15px;
+    margin-top: 2rem; }
+    .main__div--colTres p {
+      font-family: "Oxygen", sans-serif;
+      color: #ad49e7;
+      padding: 1rem; } }
+
+/*  ------------------------------------------ */
+/*  Sección HEXAZONALES */
+.main__div--espacioH {
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 0rem;
+  text-align: center;
+  justify-content: center;
+  justify-self: center; }
+
+/* ---------------------------------------- */
+/* DESTINOS */
+/* Estilos "botones"/destinos clase de bootstrap + mis estilos */
+.btn-light {
+  background-color: transparent;
+  border-color: rgba(255, 254, 255, 0.267);
+  color: rgba(176, 206, 188, 0); }
+
+.btn-light:hover {
+  background-color: rgba(162, 247, 122, 0.582);
+  transition: all 1s;
+  transform: scale(125%, 125%);
+  border-color: rgba(253, 249, 253, 0.281);
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem #f1d039; }
+
+.main__div--espacio {
+  padding: 0; }
+
+.main__modal__ul--estilos {
+  display: block;
+  list-style-type: none;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1rem;
+  text-align: center; }
+
+.main__botones--sombraViol {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(192, 64, 209, 0.671); }
+
+.main__botones--sombraNar {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem #ffaf1a; }
+
+.main__modalDialog--sombra {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.05rem 5rem #a1f77a; }
+
+/* Estilos cuerpo del modal clase de BootS */
+.modal-content {
+  background-color: rgba(255, 214, 127, 0.562);
+  z-index: 0;
+  background-image: linear-gradient(to top, rgba(245, 186, 247, 0.788), rgba(238, 181, 95, 0.301));
+  border-radius: 15px; }
+
+.modal-title {
+  font-family: "Megrim", cursive, Oxygen, sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #464d3f; }
+
+.modal__btn-estilos {
+  color: rgba(113, 80, 122, 0.637);
+  width: 100%;
+  height: 3rem;
+  font-size: 18px;
+  border: 1px solid rgba(248, 245, 245, 0);
+  border-radius: 12.5px;
+  background-image: linear-gradient(to top, #f7ddaf, #f3b2f3);
+  box-shadow: 10px 10px 18px #e9c760, -10px -10px 16px #a97ab998;
+  margin: 1rem auto; }
+  .modal__btn-estilos:hover {
+    color: blanchedalmond; }
+  .modal__btn-estilos:active {
+    box-shadow: 16px 16px 18px #f3b2f3 inset, -16px -16px 18px #f7ddaf inset; }
+
+@media only screen and (max-width: 1200px) {
+  .modal .main__div--espacio {
+    margin-right: 1rem; } }
+
+/* Pág. CONTACTO */
+/* ---------------------------------------- */
+.fieldset--style {
+  color: rgba(113, 80, 122, 0.637);
+  font-weight: lighter;
+  background-image: linear-gradient(to top, #f5baf7, rgba(238, 181, 95, 0.301));
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border-radius: 3%;
+  border-top: none;
+  border-left: none;
+  border-right: rgba(255, 244, 141, 0.438);
+  border-bottom: rgba(255, 244, 141, 0.438);
+  border-style: outset;
+  border-width: 0.2rem; }
+
+.fieldset__input--style {
+  display: block;
+  margin-top: 1rem;
+  border-radius: 3%; }
+
+.fieldset__btn--style {
+  color: rgba(113, 80, 122, 0.637);
+  width: 100%;
+  height: 3rem;
+  font-size: 18px;
+  border: 1px solid rgba(248, 245, 245, 0);
+  border-radius: 12.5px;
+  background-image: linear-gradient(to top, #f7ddaf, #f3b2f3);
+  box-shadow: 10px 10px 18px #e9c760, -10px -10px 16px #a97ab998;
+  margin: 1rem auto; }
+  .fieldset__btn--style:active {
+    box-shadow: 16px 16px 18px #66e247 inset, -16px -16px 18px #db8efa inset; }
+
+/* Mis estilos para las fuentes del formulario -CONTACTO */
+.section__fieldset--fuentes {
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 0.12rem; }
+
+/* Error 404 */
+.body___404--color {
+  background-color: burlywood; }
+
+.a__img--estilos {
+  margin-top: 15rem;
+  border-radius: 1rem;
+  background-color: #8b99847e;
+  box-shadow: 0 0.05rem 5rem #a1f77a; }
