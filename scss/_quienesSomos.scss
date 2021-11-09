@@ -58,20 +58,26 @@
                         margin-top: 8rem;
                         background-position-x: right;
                         background-position-y: top;
+                        background-position-x: 60%;
+                        background-position-y: center;
                   }
 
                   @if ($img==pImgDos) {
                         background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
                         z-index: 200;
                         margin-top: 7rem;
-                        background-position-x: right;
-                        background-position-y: top;
+                        background-position-x: 60%;
+                        background-position-y: center;
+                        
                   }
 
                   @if ($img==pImgTres) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosCuatro.jpg");
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosSeis.jpg");
                         z-index: 200;
                         margin-top: 3rem;
+                        background-position-x: right;
+                        background-position-y: center;
+                        
 
 
                   }
@@ -91,7 +97,8 @@
       @each $imgFondo in (uno, dos, tres, cuatro) {
             .main__img---estilosFondo--#{$imgFondo} {
 
-                  background-size: cover;
+                  background-size:cover;
+                  background-repeat: no-repeat;
                   box-shadow: 7px 7px 14px #f0e6b0a6,
                         -7px -7px 14px #5c1f7956;
                   border-radius: 15px;
@@ -106,10 +113,13 @@
                   }
 
                   @if ($imgFondo==tres) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosCuatro.jpg");
-                        background-size: 25%;
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosSeis.jpg");
+                        
+                        background-size: 100%;
                         margin-top: 3rem;
                         padding-bottom: 7rem;
+                        background-position-x: right;
+                        background-position-y: center;
                   }
             }
       }
@@ -138,8 +148,9 @@
                   }
 
                   @if ($imgFondoIconos==tres) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosCuatro.jpg");
-
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosSeis.jpg");
+                        background-position-x: 30%;
+                        background-position-y: center;
                   }
 
             }
@@ -148,7 +159,7 @@
 
 
 
-      /* -------------------------------- */
+
 
 
 
