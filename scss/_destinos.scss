@@ -24,13 +24,14 @@
                 }
             }
 
-            //Da espacios entre secciones y galería de destinos 
+
             .main {
                 &__div {
                     &--espacio {
-                        padding:0; 
+                        padding: 0;
                     }
-                } 
+                }
+
                 &__modal {
                     &__ul {
                         &--estilos {
@@ -42,9 +43,9 @@
                         }
                     }
                 }
-    
 
-                // Sombra violeta de las cajas Destinos y Hexazonal 
+
+
                 &__botones {
                     &--sombraViol {
                         border-radius: 0.25rem;
@@ -54,7 +55,7 @@
                     }
                 }
 
-                // Sombra naranja de las cajas Destinos y Hexazonal
+
                 &__botones {
                     &--sombraNar {
                         border-radius: 0.25rem;
@@ -103,38 +104,39 @@
 
 
                 &__btn-estilos {
-                    color:rgba(113, 80, 122, 0.637);
+                    color: rgba(113, 80, 122, 0.637);
                     width: 100%;
                     height: 3rem;
                     font-size: 18px;
                     border: 1px solid rgba(248, 245, 245, 0);
                     border-radius: 12.5px;
                     background-image: linear-gradient(to top,
-                    rgb(247, 221, 175),
-                    rgb(243, 178, 243));
+                            rgb(247, 221, 175),
+                            rgb(243, 178, 243));
                     box-shadow: 10px 10px 18px #e9c760,
-                                -10px -10px 16px #a97ab998;
+                        -10px -10px 16px #a97ab998;
                     margin: 1rem auto;
-            
-                &:hover{
-                color:blanchedalmond;
-                }  
-                &:active {
-                    box-shadow: 16px 16px 18px rgb(243, 178, 243) inset,
-                                -16px -16px 18px rgb(247, 221, 175) inset;
-                }
-                }
-            
 
-            @media only screen and (max-width: 1200px) {
-                .main {
-                    &__div {
-                        &--espacio {
-                            
-                            
-                            margin-right: 1rem; 
+                    &:hover {
+                        color: blanchedalmond;
+                    }
+
+                    &:active {
+                        box-shadow: 16px 16px 18px rgb(243, 178, 243) inset,
+                            -16px -16px 18px rgb(247, 221, 175) inset;
+                    }
+                }
+
+
+                @media only screen and (max-width: 1200px) {
+                    .main {
+                        &__div {
+                            &--espacio {
+
+
+                                margin-right: 1rem;
+                            }
                         }
                     }
-            }
-        }
+                }
             }

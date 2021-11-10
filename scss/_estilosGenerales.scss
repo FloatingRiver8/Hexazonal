@@ -14,46 +14,29 @@ html {
 }
 
 
-/* Fondos de las páginas */
-.body{
-    &__home, &__contacto, &__quienes, &__hexa, &__destinos, &__contactos{ 
-    
-    &--fondo {
-    
+
+.body {
+
+    &__home,
+    &__contacto,
+    &__quienes,
+    &__hexa,
+    &__destinos,
+    &__contactos {
+
+        &--fondo {
+
             background-image: url(../imagenes/shinyOverlayCinco.svg);
             z-index: 0;
-            
-            background-size:cover;
+
+            background-size: cover;
         }
-        
+
     }
 }
 
 /* ---------------------------------------- */
 /* ANIMACIONES */
-/* Fade "explora" todas las páginas */
-/*               .animate__animated.animate__fadeIn.fadeExplora {
-                    --animate-duration: 2s;
-                }  */
-
-/* Fade "descubre" todas las páginas */
-
-/*                  .animate__animated.animate__fadeIn.fadeDescubre {
-                    --animate-duration: 3s;
-                }
- */
-/* Fade h1 todas las pág. */
-/*                 .animate__animated.animate__fadeIn.hexaTitle {
-                    --animate-duration: 4s;
-                } 
- */
-/* Fade cita del Index */
-/*                  .animate__animated.animate__fadeIn.quoteFade {
-                    --animate-duration: 6s;
-                }
-
- */
-
 
 /* BUCLE --no me está generando el blucle para los segundos, 
   sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
@@ -63,8 +46,6 @@ html {
         --animate-duration: 2s + $i;
     }
 }
-
-
 
 
 /* ---------------------------------------- */
@@ -101,7 +82,7 @@ html {
 
 
 /* ---------------------------------------- */
-/* Saca bullets de listas desordenadas (navBar) y pone en línea */
+
 ul {
     list-style-type: none;
     font-family: "Oxygen", sans-serif;
@@ -123,34 +104,19 @@ ul {
 }
 
 /* Cambia color de los  items LI SOLO NAVBAR */
-
 .nav {
     &__ul {
-            &--color {
-                & :hover {
-                    color: rgb(167, 62, 228);
-
-                }
+        &--color {
+            & :hover {
+                color: rgb(167, 62, 228);
 
             }
 
         }
+
     }
+}
 
-
-
-
-/* --------------------------------------------- */
-
-/* Con este width los li envían al item p debajo, wrap */
-/* nav {
-    p {
-        width: 700px;
-    }
-
-} */
-
-/* ---------------------------------------- */
 /* EACH  -- Estilos en SPAN  debajo de NAVBAR 
 de todas las páginas */
 @each $span in (span__uno,
@@ -208,9 +174,9 @@ a {
 /* ---------------------------------------- */
 /* MAP - con colores de sombra para botones de rrss */
 /* FOOTER anchors de redes sociales y derechos reservados */
- $sombras:(Fb: rgb(121, 215, 228),
+$sombras:(Fb: rgb(121, 215, 228),
     Ig: rgb(196, 61, 196),
-); 
+);
 
 
 
@@ -227,64 +193,68 @@ $color in $sombras {
 
         @if($red==Fb) {
             background: linear-gradient(315deg, #79d7e457, #2fe1f841);
-            
+
             padding: 0.5rem 0.5rem 0.8rem 0rem;
         }
 
         @else {
-            background-color: rgba(196, 61, 196, 0.253);   
-            padding: 0.2rem 0rem 0.5rem  0rem;
+            background-color: rgba(196, 61, 196, 0.253);
+            padding: 0.2rem 0rem 0.5rem 0rem;
 
         }
 
     }
 
 
-    
+
 }
 
 /* ---------------------------------------- */
 /* MEDIA QUERYS GENERALES*/
 @media only screen and (max-width: 768px) {
-   .body {
+    .body {
         p {
             color: rgb(226, 176, 69);
         }
-    
+
     }
 
-    .body{
-        &__quienes, &__hexa, &__destinos, &__contacto {
-            &--fondo{
-                
+    .body {
+
+        &__quienes,
+        &__hexa,
+        &__destinos,
+        &__contacto {
+            &--fondo {
+
                 background: {
                     image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
                     size: inherit, cover;
                     repeat: no-repeat;
                     position: center;
-                    }
+                }
 
-                    height: 100%;
-                    margin-top: 2rem;
-                    z-index: 10;
-                
-                
+                height: 100%;
+                margin-top: 2rem;
+                z-index: 10;
+
+
             }
         }
     }
 
 
-    .body{
-        &__home{
-            &--fondo{
+    .body {
+        &__home {
+            &--fondo {
                 background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
                 background-size: inherit;
 
+            }
         }
     }
-}
 
-    /* Vuelve naranja los ul del nav */
+
     nav {
         ul {
             li {
@@ -298,15 +268,14 @@ $color in $sombras {
         }
     }
 
-    /* Esconde los span "explora "descubre" */
+
 
     #span__uno--posestilos,
     #span__dos--posestilos {
         display: none;
     }
 
-    /* Reduce el tamaño de los H1 (menos en INDEX) 
-                y  cambia el color en dispositivos small */
+
     .header {
         &__h1--reduceSizeMq {
             font-size: 48px;
@@ -333,7 +302,7 @@ $color in $sombras {
             .navbar-toggler {
                 border-width: 2px;
                 border-color: rgb(236, 184, 72);
-                /* background-color:#d8b64f; */
+
             }
         }
 
@@ -346,4 +315,3 @@ $color in $sombras {
         }
     }
 }
-

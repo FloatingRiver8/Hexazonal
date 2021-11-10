@@ -1,7 +1,6 @@
     /* Pág INDEX */
     /* ---------------------------------------- */
 
-    /* Estilos h1 HexaZonal -INDEX */
     .header {
         &__H1 {
             &--estilos {
@@ -15,15 +14,16 @@
 
     }
 
+    .footer {
+        &_a {
 
-   .footer{
-       &_a{
-           &--Fb, &--Ig{
-               margin-bottom: 1rem;
+            &--Fb,
+            &--Ig {
+                margin-bottom: 1rem;
 
-           }
-       }
-   } 
+            }
+        }
+    }
 
 
     /* ---------------------------------------- */
@@ -41,7 +41,17 @@
                     margin-bottom: 2rem;
                 }
 
+            }
         }
+
     }
 
-}
+    .main__ {
+        &div {
+            &--logoEstilos {
+                padding: 4rem;
+
+
+            }
+        }
+    }

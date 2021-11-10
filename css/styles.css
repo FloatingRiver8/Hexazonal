@@ -15,7 +15,6 @@ html {
   /*10px*/
   width: 100%; }
 
-/* Fondos de las páginas */
 .body__home--fondo, .body__contacto--fondo, .body__quienes--fondo, .body__hexa--fondo, .body__destinos--fondo, .body__contactos--fondo {
   background-image: url(../imagenes/shinyOverlayCinco.svg);
   z-index: 0;
@@ -23,26 +22,6 @@ html {
 
 /* ---------------------------------------- */
 /* ANIMACIONES */
-/* Fade "explora" todas las páginas */
-/*               .animate__animated.animate__fadeIn.fadeExplora {
-                    --animate-duration: 2s;
-                }  */
-/* Fade "descubre" todas las páginas */
-/*                  .animate__animated.animate__fadeIn.fadeDescubre {
-                    --animate-duration: 3s;
-                }
- */
-/* Fade h1 todas las pág. */
-/*                 .animate__animated.animate__fadeIn.hexaTitle {
-                    --animate-duration: 4s;
-                } 
- */
-/* Fade cita del Index */
-/*                  .animate__animated.animate__fadeIn.quoteFade {
-                    --animate-duration: 6s;
-                }
-
- */
 /* BUCLE --no me está generando el blucle para los segundos, 
   sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
 .animate__animated.animate__fadeIn__index__titulos--fade-1 {
@@ -74,7 +53,6 @@ html {
   box-shadow: 0 0 0 0.1rem; }
 
 /* ---------------------------------------- */
-/* Saca bullets de listas desordenadas (navBar) y pone en línea */
 ul {
   list-style-type: none;
   font-family: "Oxygen", sans-serif;
@@ -94,15 +72,6 @@ ul {
 .nav__ul--color :hover {
   color: #a73ee4; }
 
-/* --------------------------------------------- */
-/* Con este width los li envían al item p debajo, wrap */
-/* nav {
-    p {
-        width: 700px;
-    }
-
-} */
-/* ---------------------------------------- */
 /* EACH  -- Estilos en SPAN  debajo de NAVBAR 
 de todas las páginas */
 #span__uno--posestilos {
@@ -168,7 +137,7 @@ a {
   margin: 1rem;
   border-radius: 65px;
   background-color: rgba(196, 61, 196, 0.253);
-  padding: 0.2rem 0rem 0.5rem  0rem; }
+  padding: 0.2rem 0rem 0.5rem 0rem; }
 
 /* ---------------------------------------- */
 /* MEDIA QUERYS GENERALES*/
@@ -186,18 +155,14 @@ a {
   .body__home--fondo {
     background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
     background-size: inherit; }
-  /* Vuelve naranja los ul del nav */
   nav ul li {
     letter-spacing: 0.2rem;
     color: #d8b64f; }
     nav ul li:hover {
       color: #e7cef5; }
-  /* Esconde los span "explora "descubre" */
   #span__uno--posestilos,
   #span__dos--posestilos {
     display: none; }
-  /* Reduce el tamaño de los H1 (menos en INDEX) 
-                y  cambia el color en dispositivos small */
   .header__h1--reduceSizeMq {
     font-size: 48px;
     margin-left: 0px;
@@ -211,14 +176,12 @@ a {
     box-shadow: 0 0 0 0.1rem; }
   .navbar-light .navbar-toggler {
     border-width: 2px;
-    border-color: #ecb848;
-    /* background-color:#d8b64f; */ }
+    border-color: #ecb848; }
   .navbar-toggler:hover {
     background-image: linear-gradient(to top, rgba(203, 79, 228, 0.678), #ecb35d); } }
 
 /* Pág INDEX */
 /* ---------------------------------------- */
-/* Estilos h1 HexaZonal -INDEX */
 .header__H1--estilos {
   width: 100%;
   font-size: 10rem;
@@ -239,11 +202,16 @@ a {
     color: #c335ee;
     margin-bottom: 2rem; } }
 
+.main__div--logoEstilos {
+  padding: 4rem; }
+
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */
 #quienesSomos p {
-  font-family: "Megrim", sans-serif;
-  color: #493955; }
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.2rem;
+  color: rgba(102, 82, 102, 0.849); }
 
 .main__div--contUno, .main__div--contDos {
   margin-top: 3rem;
@@ -253,94 +221,35 @@ a {
   background-image: linear-gradient(rgba(230, 199, 112, 0.671), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTres.jpg");
   height: 10rem;
   border-radius: 1rem;
-  border-radius: 12.5px;
+  border-radius: 10px;
   box-shadow: 16px 16px 18px #aaaaaa, -16px -16px 18px #ffffff; }
-
-/* Imagenes de los párrafos */
-.main__div--pImgUno {
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  height: 100%;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosTres.jpg");
-  z-index: 200;
-  margin-top: 8rem;
-  background-position-x: right;
-  background-position-y: top;
-  background-position-x: 60%;
-  background-position-y: center;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
-  z-index: 200;
-  margin-top: 7rem; }
-
-.main__div--pImgDos {
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  height: 100%;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
-  z-index: 200;
-  margin-top: 7rem;
-  background-position-x: 60%;
-  background-position-y: center;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
-  z-index: 200;
-  margin-top: 7rem; }
-
-.main__div--pImgTres {
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  height: 100%;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosSeis.jpg");
-  z-index: 200;
-  margin-top: 3rem;
-  background-position-x: right;
-  background-position-y: center; }
-
-.main__div--pImgCuatro {
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  height: 100%;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.815), rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosDos.jpg");
-  z-index: 200;
-  margin-top: 7rem; }
 
 /* Imágenes de los fondos */
 .main__img---estilosFondo--uno {
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosTres.jpg"); }
+  box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
+  border-radius: 10px;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(#e3c0eb, rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
 
 .main__img---estilosFondo--dos {
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosDos.jpg"); }
+  box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
+  border-radius: 10px;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(#d4c0eb, rgba(211, 196, 130, 0.644)), url("../imagenes/quienesSomosDos.jpg");
+  background-position-x: right;
+  background-position-y: bottom; }
 
 .main__img---estilosFondo--tres {
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.164)), url("../imagenes/quienesSomosSeis.jpg");
-  background-size: 100%;
+  box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
+  border-radius: 10px;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(#d4c0eb, rgba(206, 206, 201, 0.534)), url("../imagenes/quienesSomosSeis.jpg");
   margin-top: 3rem;
   padding-bottom: 7rem;
   background-position-x: right;
@@ -349,42 +258,140 @@ a {
 .main__img---estilosFondo--cuatro {
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
-  border-radius: 15px; }
+  box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
+  border-radius: 10px;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(#d4c0eb, rgba(206, 206, 201, 0.473)), url("../imagenes/quienesSomosSiete.jpg");
+  margin-top: 3rem;
+  padding-bottom: 7rem;
+  background-position-x: right;
+  background-position-y: 45%; }
+
+/* Imagenes de los párrafos */
+.main__div--pImgUno {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(#eedf8e, rgba(185, 201, 199, 0.692)), url("../imagenes/quienesSomosTres.jpg");
+  z-index: 200;
+  margin-top: 8rem;
+  background-position-x: center;
+  background-position-y: center;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #df74f7; }
+
+.main__div--pImgDosPrim {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.952), rgba(205, 201, 206, 0.836)), url("../imagenes/quienesSomosSiete.jpg");
+  z-index: 200;
+  margin-top: 7rem;
+  background-position-x: 60%;
+  background-position-y: center;
+  margin-top: 5rem;
+  padding: 2rem; }
+
+.main__div--pImgDosSec {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(rgba(230, 199, 112, 0.952), rgba(205, 201, 206, 0.836)), url("../imagenes/quienesSomosSiete.jpg");
+  z-index: 200;
+  margin-top: 7rem;
+  background-position-x: 60%;
+  background-position-y: center;
+  margin-top: 4rem;
+  padding: 1rem; }
+
+.main__div--pImgTresPrim {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(#e6d470, rgba(206, 206, 201, 0.699)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 3rem;
+  background-position-x: center;
+  background-position-y: center;
+  padding-top: 1rem;
+  margin-top: 5rem;
+  padding: 2rem; }
+
+.main__div--pImgTresSec {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(#e6d470, rgba(206, 206, 201, 0.699)), url("../imagenes/quienesSomosDos.jpg");
+  z-index: 200;
+  margin-top: 3rem;
+  background-position-x: center;
+  background-position-y: center;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  padding: 2rem; }
+
+.main__div--pImgCuatro {
+  background-repeat: no-repeat;
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 10px;
+  padding-top: 1rem;
+  height: 100%;
+  background-image: linear-gradient(#f8e1a1, rgba(206, 206, 201, 0.671)), url("../imagenes/quienesSomosSeis.jpg");
+  z-index: 200;
+  margin-top: 3rem;
+  background-position-x: 20%;
+  background-position-y: 70%;
+  margin-top: 8rem; }
 
 /* Imágenes de los fondos de iconos */
 .main__img---estilosInterna--uno {
   background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  margin-left: 2rem;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
+  background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
 
 .main__img---estilosInterna--dos {
   background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  margin-left: 2rem;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosDos.jpg"); }
+  background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.123)), url("../imagenes/quienesSomosSeis.jpg");
+  background-position-x: 25%;
+  background-position-y: 60%; }
 
 .main__img---estilosInterna--tres {
   background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  margin-left: 2rem;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosSeis.jpg");
-  background-position-x: 30%;
-  background-position-y: center; }
+  background-image: linear-gradient(rgba(230, 199, 112, 0.973), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosSiete.jpg");
+  background-position-x: 60%;
+  background-position-y: 32%; }
 
 .main__img---estilosInterna--cuatro {
   background-size: inherit;
-  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #5c1f7956;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  margin-left: 2rem; }
+  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosDos.jpg");
+  background-position-x: 40%;
+  background-position-y: center; }
 
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
@@ -402,6 +409,26 @@ a {
       font-family: "Oxygen", sans-serif;
       color: #ad49e7;
       padding: 1rem; } }
+
+@media only screen and (max-width: 576px) {
+  .main__img---estilosInterna--uno {
+    background-size: inherit;
+    box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+    border-radius: 15px;
+    background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg");
+    margin-top: 3rem; }
+  .main__img---estilosInterna--dos {
+    background-size: inherit;
+    box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+    border-radius: 15px; }
+  .main__img---estilosInterna--tres {
+    background-size: inherit;
+    box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+    border-radius: 15px; }
+  .main__img---estilosInterna--cuatro {
+    background-size: inherit;
+    box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+    border-radius: 15px; } }
 
 /*  ------------------------------------------ */
 /*  Sección HEXAZONALES */
