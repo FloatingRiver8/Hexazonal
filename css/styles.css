@@ -186,24 +186,35 @@ a {
   width: 100%;
   font-size: 10rem;
   z-index: 2;
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
   margin-top: 3rem; }
+
+.main__div--logoEstilos {
+  padding: 3rem; }
 
 .footer_a--Fb, .footer_a--Ig {
   margin-bottom: 1rem; }
 
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
+@media only screen and (max-width: 992px) {
+  .header__H1--estilos {
+    font-size: 8rem;
+    margin-bottom: 3rem; } }
+
+.main__div--logoEstilos {
+  padding: 2rem; }
+
 @media only screen and (max-width: 768px) {
   /* Disminuye tamaño de titulo hexaZonal 
                 y párrafo en break 768px -INDEX */
   .header__H1--estilos {
     font-size: 4rem;
     color: #c335ee;
-    margin-bottom: 2rem; } }
+    margin-bottom: 5rem; } }
 
 .main__div--logoEstilos {
-  padding: 4rem; }
+  padding: 3rem; }
 
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */

@@ -7,11 +7,22 @@
                 width: 100%;
                 font-size: 10rem;
                 z-index: 2;
-                margin-bottom: 8rem;
+                margin-bottom: 1rem;
                 margin-top: 3rem;
             }
         }
 
+    }
+
+
+    .main__ {
+        &div {
+            &--logoEstilos {
+                padding: 3rem;
+
+
+            }
+        }
     }
 
     .footer {
@@ -29,16 +40,18 @@
     /* ---------------------------------------- */
     /*    MEDIA QUERYS INDEX */
 
-    @media only screen and (max-width: 768px) {
 
-        /* Disminuye tamaño de titulo hexaZonal 
-                y párrafo en break 768px -INDEX */
+
+
+
+    @media only screen and (max-width: 992px) {
+
         .header {
             &__H1 {
                 &--estilos {
-                    font-size: 4rem;
-                    color: rgb(195, 53, 238);
-                    margin-bottom: 2rem;
+                    font-size: 8rem;
+                    
+                    margin-bottom: 3rem;
                 }
 
             }
@@ -49,7 +62,35 @@
     .main__ {
         &div {
             &--logoEstilos {
-                padding: 4rem;
+                padding: 2rem;
+
+
+            }
+        }
+    }
+    
+
+    @media only screen and (max-width: 768px) {
+
+        /* Disminuye tamaño de titulo hexaZonal 
+                y párrafo en break 768px -INDEX */
+        .header {
+            &__H1 {
+                &--estilos {
+                    font-size: 4rem;
+                    color: rgb(195, 53, 238);
+                    margin-bottom: 5rem;
+                }
+
+            }
+        }
+
+    }
+
+    .main__ {
+        &div {
+            &--logoEstilos {
+                padding: 3rem;
 
 
             }
