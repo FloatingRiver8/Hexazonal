@@ -2,17 +2,38 @@
 /*  Sección HEXAZONALES */
 
 .main {
-        &__div {
-            &--espacioH {
-
-                margin: 1rem 1rem 0rem 1rem;
-                padding: 0rem;
-                text-align: center;
-                justify-content: center;
-                justify-self: center;
-            }
+    &__div {
+        &--spacesH {
+            margin: 1rem 1rem 0rem 1rem;
+            padding: 0rem;
+            text-align: center;
+            justify-content: center;
+            justify-self: center;
         }
-    } 
+    }
+}
 
 
 
+.main {
+    &__div {
+        &--hexaStyles {
+            background-color: transparent;
+            border-color: rgba(255, 254, 255, 0.267);
+            color: rgba(176, 206, 188, 0);
+
+            &:hover {
+                background-color: rgba(162, 247, 122, 0.582);
+                transition: all 1s;
+                transform: scale(125%, 125%);
+                border-color: rgba(253, 249, 253, 0.281);
+                border-width: 1px;
+                border-radius: 0.25rem;
+                padding: 1rem;
+                margin-bottom: 3rem;
+                box-shadow: 0 0.5rem 1rem rgb(241, 208, 57);
+            }
+
+        }
+    }
+}

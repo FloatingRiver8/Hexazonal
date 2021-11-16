@@ -3,7 +3,7 @@
 
     .header {
         &__H1 {
-            &--estilos {
+            &--style {
                 width: 100%;
                 font-size: 10rem;
                 z-index: 2;
@@ -11,27 +11,23 @@
                 margin-top: 3rem;
             }
         }
-
     }
 
 
     .main__ {
         &div {
-            &--logoEstilos {
+            &--logoStyle {
                 padding: 3rem;
-
-
             }
         }
     }
 
+
     .footer {
         &_a {
-
             &--Fb,
             &--Ig {
                 margin-bottom: 1rem;
-
             }
         }
     }
@@ -48,27 +44,22 @@
 
         .header {
             &__H1 {
-                &--estilos {
+                &--style {
                     font-size: 8rem;
-                    
                     margin-bottom: 3rem;
                 }
-
             }
         }
-
     }
 
     .main__ {
         &div {
-            &--logoEstilos {
+            &--logoStyle {
                 padding: 2rem;
-
-
             }
         }
     }
-    
+
 
     @media only screen and (max-width: 768px) {
 
@@ -76,12 +67,11 @@
                 y párrafo en break 768px -INDEX */
         .header {
             &__H1 {
-                &--estilos {
+                &--style {
                     font-size: 4rem;
                     color: rgb(195, 53, 238);
                     margin-bottom: 5rem;
                 }
-
             }
         }
 
@@ -89,10 +79,8 @@
 
     .main__ {
         &div {
-            &--logoEstilos {
+            &--logoStyle {
                 padding: 3rem;
-
-
             }
         }
     }

@@ -2,39 +2,38 @@
             /* DESTINOS */
 
             /* Estilos "botones"/destinos clase de bootstrap + mis estilos */
-            .btn-light {
+            .button{
+                &__modal{
+                    &--styles {
                 background-color: transparent;
                 border-color: rgba(255, 254, 255, 0.267);
                 color: rgba(176, 206, 188, 0);
-            }
-
-            .btn-light {
+            
                 &:hover {
                     background-color: rgba(162, 247, 122, 0.582);
                     transition: all 1s;
-
                     transform: scale(125%, 125%);
                     border-color: rgba(253, 249, 253, 0.281);
                     border-width: 1px;
                     border-radius: 0.25rem;
-
                     padding: 1rem;
                     margin-bottom: 3rem;
                     box-shadow: 0 0.5rem 1rem rgb(241, 208, 57);
                 }
-            }
-
-
+            
+        }
+    }
+}
             .main {
                 &__div {
-                    &--espacio {
+                    &--spaces {
                         padding: 0;
                     }
                 }
 
                 &__modal {
                     &__ul {
-                        &--estilos {
+                        &--styles {
                             display: block;
                             list-style-type: none;
                             font-family: "Oxygen", sans-serif;
@@ -46,8 +45,8 @@
 
 
 
-                &__botones {
-                    &--sombraViol {
+                &__buttons {
+                    &--shadowViol {
                         border-radius: 0.25rem;
                         padding: 1rem;
                         margin-bottom: 3rem;
@@ -56,8 +55,8 @@
                 }
 
 
-                &__botones {
-                    &--sombraNar {
+                &__buttons {
+                    &--shadowOrange {
                         border-radius: 0.25rem;
                         padding: 1rem;
                         margin-bottom: 3rem;
@@ -66,9 +65,8 @@
                 }
 
                 &__modalDialog {
-                    &--sombra {
+                    &--shadow {
                         border-radius: 1rem;
-
                         margin-bottom: 2rem;
                         box-shadow: 0 0.05rem 5rem rgb(161, 247, 122);
                     }
@@ -81,7 +79,6 @@
                 &-content {
                     background-color: rgba(255, 214, 127, 0.562);
                     z-index: 0;
-
                     background-image: linear-gradient(to top,
                             rgba(245, 186, 247, 0.788),
                             rgba(238, 181, 95, 0.301));
@@ -96,14 +93,13 @@
                         weight: bolder;
                         size: 2.5rem;
                     }
-
                     color: #464d3f;
                 }
 
 
 
 
-                &__btn-estilos {
+                &__btn-styles {
                     color: rgba(113, 80, 122, 0.637);
                     width: 100%;
                     height: 3rem;
@@ -131,9 +127,7 @@
                 @media only screen and (max-width: 1200px) {
                     .main {
                         &__div {
-                            &--espacio {
-
-
+                            &--spaces {
                                 margin-right: 1rem;
                             }
                         }

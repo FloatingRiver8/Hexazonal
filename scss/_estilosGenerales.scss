@@ -9,7 +9,6 @@
 
 html {
     font-size: 62, 5%;
-    /*10px*/
     width: 100%;
 }
 
@@ -24,22 +23,17 @@ html {
     &__destinos,
     &__contactos {
 
-        &--fondo {
+        &--backGround {
 
             background-image: url(../imagenes/shinyOverlayCinco.svg);
             z-index: 0;
-
             background-size: cover;
         }
-
     }
 }
 
 /* ---------------------------------------- */
 /* ANIMACIONES */
-
-/* BUCLE --no me está generando el blucle para los segundos, 
-  sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
 
 @for $i from 1 through 4 {
     .animate__animated.animate__fadeIn__index__titulos--fade-#{$i} {
@@ -57,28 +51,29 @@ html {
         transition: all 2s;
         transform: scale(80%, 80%);
     }
-
-    // Icono botón hamburguesa
-    &-light {
-        .navbar-toggler {
-            &-icon {
-                background-image: url("/imagenes/menuHambWhite.png");
-            }
-        }
-    }
-
-    //Box shadow del botón hamburguesa
-    &-light {
-        .navbar-toggler {
-            &:focus {
-                text-decoration: none;
-                /* outline: 0; */
-                color: rgba(94, 205, 50, 0.685);
-                box-shadow: 0 0 0 0.1rem;
-            }
-        }
-    }
 }
+
+// Icono botón hamburguesa
+//Box shadow del botón hamburguesa
+.nav {
+    &__toggler--myStyles {
+        &:focus {
+            text-decoration: none;
+            /* outline: 0; */
+            color: rgba(94, 205, 50, 0.685);
+            box-shadow: 0 0 0 0.1rem;
+        }
+    }
+
+    &__icon {
+        &--style {
+            background-image: url("../imagenes/menuHambWhite.png");
+        }
+    }
+
+}
+
+
 
 
 /* ---------------------------------------- */
@@ -109,11 +104,8 @@ ul {
         &--color {
             & :hover {
                 color: rgb(167, 62, 228);
-
             }
-
         }
-
     }
 }
 
@@ -132,15 +124,12 @@ de todas las páginas */
 
         @if ($span==span__uno) {
             margin-left: 1rem;
-
         }
 
         @else {
             margin-left: 4rem;
         }
-
     }
-
 }
 
 /* ---------------------------------------- */
@@ -187,36 +176,29 @@ $color in $sombras {
         box-shadow: 0 -0.1rem 2rem $color;
         border-radius: 1rem;
         margin: 1rem;
-
         border-radius: 65px;
-
 
         @if($red==Fb) {
             background: linear-gradient(315deg, #79d7e457, #2fe1f841);
-
             padding: 0.5rem 0.5rem 0.8rem 0rem;
         }
 
         @else {
             background-color: rgba(196, 61, 196, 0.253);
             padding: 0.2rem 0rem 0.5rem 0rem;
-
         }
 
     }
-
-
-
 }
 
 /* ---------------------------------------- */
 /* MEDIA QUERYS GENERALES*/
+
 @media only screen and (max-width: 768px) {
     .body {
         p {
             color: rgb(226, 176, 69);
         }
-
     }
 
     .body {
@@ -237,8 +219,6 @@ $color in $sombras {
                 height: 100%;
                 margin-top: 2rem;
                 z-index: 10;
-
-
             }
         }
     }
@@ -249,7 +229,6 @@ $color in $sombras {
             &--fondo {
                 background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
                 background-size: inherit;
-
             }
         }
     }
@@ -288,30 +267,33 @@ $color in $sombras {
         outline: 0;
     }
 
-    .navbar {
-        &-toggler {
-            &:focus {
-                text-decoration: none;
-                /* outline: 0; */
-                color: rgba(205, 169, 50, 0.685);
-                box-shadow: 0 0 0 0.1rem;
-            }
-        }
-
-        &-light {
-            .navbar-toggler {
+    .nav {
+        &__toggler {
+            &--myStyle {
                 border-width: 2px;
                 border-color: rgb(236, 184, 72);
 
+                &:focus {
+                    text-decoration: none;
+                    /* outline: 0; */
+                    color: rgba(205, 169, 50, 0.685);
+                    box-shadow: 0 0 0 0.1rem;
+                }
+
+                & :hover {
+                    background-image: linear-gradient(to top,
+                            rgba(203, 79, 228, 0.678),
+                            rgb(236, 179, 93));
+                }
             }
+
         }
 
-        &-toggler {
-            &:hover {
-                background-image: linear-gradient(to top,
-                        rgba(203, 79, 228, 0.678),
-                        rgb(236, 179, 93));
+        &__icon {
+            &--style {
+                background-image: url("../imagenes/menuHambWhite.png");
             }
         }
     }
+
 }

@@ -12,18 +12,15 @@
 
 html {
   font-size: 62, 5%;
-  /*10px*/
   width: 100%; }
 
-.body__home--fondo, .body__contacto--fondo, .body__quienes--fondo, .body__hexa--fondo, .body__destinos--fondo, .body__contactos--fondo {
+.body__home--backGround, .body__contacto--backGround, .body__quienes--backGround, .body__hexa--backGround, .body__destinos--backGround, .body__contactos--backGround {
   background-image: url(../imagenes/shinyOverlayCinco.svg);
   z-index: 0;
   background-size: cover; }
 
 /* ---------------------------------------- */
 /* ANIMACIONES */
-/* BUCLE --no me está generando el blucle para los segundos, 
-  sí para el nombramieto de la clase, la variable i la declaré en doc."variables" */
 .animate__animated.animate__fadeIn__index__titulos--fade-1 {
   --animate-duration: 2s + $i; }
 
@@ -43,14 +40,14 @@ html {
   transition: all 2s;
   transform: scale(80%, 80%); }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("/imagenes/menuHambWhite.png"); }
-
-.navbar-light .navbar-toggler:focus {
+.nav__toggler--myStyles:focus {
   text-decoration: none;
   /* outline: 0; */
   color: rgba(94, 205, 50, 0.685);
   box-shadow: 0 0 0 0.1rem; }
+
+.nav__icon--style {
+  background-image: url("../imagenes/menuHambWhite.png"); }
 
 /* ---------------------------------------- */
 ul {
@@ -169,27 +166,29 @@ a {
     color: #b3a593; }
   button:focus:not(:focus-visible) {
     outline: 0; }
-  .navbar-toggler:focus {
-    text-decoration: none;
-    /* outline: 0; */
-    color: rgba(205, 169, 50, 0.685);
-    box-shadow: 0 0 0 0.1rem; }
-  .navbar-light .navbar-toggler {
+  .nav__toggler--myStyle {
     border-width: 2px;
     border-color: #ecb848; }
-  .navbar-toggler:hover {
-    background-image: linear-gradient(to top, rgba(203, 79, 228, 0.678), #ecb35d); } }
+    .nav__toggler--myStyle:focus {
+      text-decoration: none;
+      /* outline: 0; */
+      color: rgba(205, 169, 50, 0.685);
+      box-shadow: 0 0 0 0.1rem; }
+    .nav__toggler--myStyle :hover {
+      background-image: linear-gradient(to top, rgba(203, 79, 228, 0.678), #ecb35d); }
+  .nav__icon--style {
+    background-image: url("../imagenes/menuHambWhite.png"); } }
 
 /* Pág INDEX */
 /* ---------------------------------------- */
-.header__H1--estilos {
+.header__H1--style {
   width: 100%;
   font-size: 10rem;
   z-index: 2;
   margin-bottom: 1rem;
   margin-top: 3rem; }
 
-.main__div--logoEstilos {
+.main__div--logoStyle {
   padding: 3rem; }
 
 .footer_a--Fb, .footer_a--Ig {
@@ -198,22 +197,22 @@ a {
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
 @media only screen and (max-width: 992px) {
-  .header__H1--estilos {
+  .header__H1--style {
     font-size: 8rem;
     margin-bottom: 3rem; } }
 
-.main__div--logoEstilos {
+.main__div--logoStyle {
   padding: 2rem; }
 
 @media only screen and (max-width: 768px) {
   /* Disminuye tamaño de titulo hexaZonal 
                 y párrafo en break 768px -INDEX */
-  .header__H1--estilos {
+  .header__H1--style {
     font-size: 4rem;
     color: #c335ee;
     margin-bottom: 5rem; } }
 
-.main__div--logoEstilos {
+.main__div--logoStyle {
   padding: 3rem; }
 
 /* Pág QUIÉNES SOMOS */
@@ -224,11 +223,11 @@ a {
   word-spacing: 0.2rem;
   color: rgba(102, 82, 102, 0.849); }
 
-.main__div--contUno, .main__div--contDos {
+.main__div--contOne, .main__div--contTwo {
   margin-top: 3rem;
   padding-bottom: 6rem; }
 
-.main--imagenFondoQuienesTitulo {
+.main--bckgroundImgTitle {
   background-image: linear-gradient(rgba(230, 199, 112, 0.671), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTres.jpg");
   height: 10rem;
   border-radius: 1rem;
@@ -236,7 +235,7 @@ a {
   box-shadow: 16px 16px 18px #aaaaaa, -16px -16px 18px #ffffff; }
 
 /* Imágenes de los fondos */
-.main__img---estilosFondo--uno {
+.main__img---bckgroundImgStyle--one {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
@@ -244,7 +243,7 @@ a {
   padding-bottom: 4rem;
   background-image: linear-gradient(#e3c0eb, rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
 
-.main__img---estilosFondo--dos {
+.main__img---bckgroundImgStyle--two {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
@@ -254,7 +253,7 @@ a {
   background-position-x: right;
   background-position-y: bottom; }
 
-.main__img---estilosFondo--tres {
+.main__img---bckgroundImgStyle--three {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
@@ -266,7 +265,7 @@ a {
   background-position-x: right;
   background-position-y: center; }
 
-.main__img---estilosFondo--cuatro {
+.main__img---bckgroundImgStyle--four {
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 7px 7px 14px #f0e7b8a6, -7px -7px 14px #a62bc5c4;
@@ -279,7 +278,7 @@ a {
   background-position-y: 45%; }
 
 /* Imagenes de los párrafos */
-.main__div--pImgUno {
+.main__div--pImgOne {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -293,7 +292,7 @@ a {
   background-position-y: center;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #df74f7; }
 
-.main__div--pImgDosPrim {
+.main__div--pImgTwoFirst {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -308,7 +307,7 @@ a {
   margin-top: 5rem;
   padding: 2rem; }
 
-.main__div--pImgDosSec {
+.main__div--pImgTwoSec {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -323,7 +322,7 @@ a {
   margin-top: 4rem;
   padding: 1rem; }
 
-.main__div--pImgTresPrim {
+.main__div--pImgThreeFirst {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -339,7 +338,7 @@ a {
   margin-top: 5rem;
   padding: 2rem; }
 
-.main__div--pImgTresSec {
+.main__div--pImgThreeSec {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -355,7 +354,7 @@ a {
   margin-top: 3rem;
   padding: 2rem; }
 
-.main__div--pImgCuatro {
+.main__div--pImgFour {
   background-repeat: no-repeat;
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
@@ -370,14 +369,14 @@ a {
   margin-top: 8rem; }
 
 /* Imágenes de los fondos de iconos */
-.main__img---estilosInterna--uno {
+.main__img---internStyle--one {
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
   background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg"); }
 
-.main__img---estilosInterna--dos {
+.main__img---internStyle--two {
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
@@ -386,7 +385,7 @@ a {
   background-position-x: 25%;
   background-position-y: 60%; }
 
-.main__img---estilosInterna--tres {
+.main__img---internStyle--three {
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
@@ -395,7 +394,7 @@ a {
   background-position-x: 60%;
   background-position-y: 32%; }
 
-.main__img---estilosInterna--cuatro {
+.main__img---internStyle--four {
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
@@ -407,7 +406,7 @@ a {
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
 @media only screen and (max-width: 758px) {
-  .main__img---estilosInterna {
+  .main__img---internStyle {
     border-radius: 15px;
     margin-top: 10rem;
     margin-bottom: 2rem;
@@ -422,76 +421,90 @@ a {
       padding: 1rem; } }
 
 @media only screen and (max-width: 576px) {
-  .main__img---estilosInterna--uno {
+  .main__img---internStyle--one {
     background-size: inherit;
     box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
     border-radius: 15px;
     background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg");
     margin-top: 3rem; }
-  .main__img---estilosInterna--dos {
+  .main__img---internStyle--two {
     background-size: inherit;
     box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
     border-radius: 15px; }
-  .main__img---estilosInterna--tres {
+  .main__img---internStyle--three {
     background-size: inherit;
     box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
     border-radius: 15px; }
-  .main__img---estilosInterna--cuatro {
+  .main__img---internStyle--four {
     background-size: inherit;
     box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
     border-radius: 15px; } }
 
 /*  ------------------------------------------ */
 /*  Sección HEXAZONALES */
-.main__div--espacioH {
+.main__div--spacesH {
   margin: 1rem 1rem 0rem 1rem;
   padding: 0rem;
   text-align: center;
   justify-content: center;
   justify-self: center; }
 
-/* ---------------------------------------- */
-/* DESTINOS */
-/* Estilos "botones"/destinos clase de bootstrap + mis estilos */
-.btn-light {
+.main__div--hexaStyles {
   background-color: transparent;
   border-color: rgba(255, 254, 255, 0.267);
   color: rgba(176, 206, 188, 0); }
+  .main__div--hexaStyles:hover {
+    background-color: rgba(162, 247, 122, 0.582);
+    transition: all 1s;
+    transform: scale(125%, 125%);
+    border-color: rgba(253, 249, 253, 0.281);
+    border-width: 1px;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1rem #f1d039; }
 
-.btn-light:hover {
-  background-color: rgba(162, 247, 122, 0.582);
-  transition: all 1s;
-  transform: scale(125%, 125%);
-  border-color: rgba(253, 249, 253, 0.281);
-  border-width: 1px;
-  border-radius: 0.25rem;
-  padding: 1rem;
-  margin-bottom: 3rem;
-  box-shadow: 0 0.5rem 1rem #f1d039; }
+/* ---------------------------------------- */
+/* DESTINOS */
+/* Estilos "botones"/destinos clase de bootstrap + mis estilos */
+.button__modal--styles {
+  background-color: transparent;
+  border-color: rgba(255, 254, 255, 0.267);
+  color: rgba(176, 206, 188, 0); }
+  .button__modal--styles:hover {
+    background-color: rgba(162, 247, 122, 0.582);
+    transition: all 1s;
+    transform: scale(125%, 125%);
+    border-color: rgba(253, 249, 253, 0.281);
+    border-width: 1px;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1rem #f1d039; }
 
-.main__div--espacio {
+.main__div--spaces {
   padding: 0; }
 
-.main__modal__ul--estilos {
+.main__modal__ul--styles {
   display: block;
   list-style-type: none;
   font-family: "Oxygen", sans-serif;
   font-size: 1rem;
   text-align: center; }
 
-.main__botones--sombraViol {
+.main__buttons--shadowViol {
   border-radius: 0.25rem;
   padding: 1rem;
   margin-bottom: 3rem;
   box-shadow: 0 0.5rem 1rem rgba(192, 64, 209, 0.671); }
 
-.main__botones--sombraNar {
+.main__buttons--shadowOrange {
   border-radius: 0.25rem;
   padding: 1rem;
   margin-bottom: 3rem;
   box-shadow: 0 0.5rem 1rem #ffaf1a; }
 
-.main__modalDialog--sombra {
+.main__modalDialog--shadow {
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 0.05rem 5rem #a1f77a; }
@@ -509,7 +522,7 @@ a {
   font-size: 2.5rem;
   color: #464d3f; }
 
-.modal__btn-estilos {
+.modal__btn-styles {
   color: rgba(113, 80, 122, 0.637);
   width: 100%;
   height: 3rem;
@@ -519,13 +532,13 @@ a {
   background-image: linear-gradient(to top, #f7ddaf, #f3b2f3);
   box-shadow: 10px 10px 18px #e9c760, -10px -10px 16px #a97ab998;
   margin: 1rem auto; }
-  .modal__btn-estilos:hover {
+  .modal__btn-styles:hover {
     color: blanchedalmond; }
-  .modal__btn-estilos:active {
+  .modal__btn-styles:active {
     box-shadow: 16px 16px 18px #f3b2f3 inset, -16px -16px 18px #f7ddaf inset; }
 
 @media only screen and (max-width: 1200px) {
-  .modal .main__div--espacio {
+  .modal .main__div--spaces {
     margin-right: 1rem; } }
 
 /* Pág. CONTACTO */
