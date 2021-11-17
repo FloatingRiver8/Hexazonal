@@ -46,8 +46,8 @@ html {
   color: rgba(94, 205, 50, 0.685);
   box-shadow: 0 0 0 0.1rem; }
 
-.nav__icon--style {
-  background-image: url("../imagenes/menuHambWhite.png"); }
+.nav__ul--color :hover {
+  color: #a73ee4; }
 
 /* ---------------------------------------- */
 ul {
@@ -64,10 +64,6 @@ ul {
   ul li {
     letter-spacing: 0.2rem;
     color: #7a7771c7; }
-
-/* Cambia color de los  items LI SOLO NAVBAR */
-.nav__ul--color :hover {
-  color: #a73ee4; }
 
 /* EACH  -- Estilos en SPAN  debajo de NAVBAR 
 de todas las páginas */
@@ -141,7 +137,7 @@ a {
 @media only screen and (max-width: 768px) {
   .body p {
     color: #e2b045; }
-  .body__quienes--fondo, .body__hexa--fondo, .body__destinos--fondo, .body__contacto--fondo {
+  .body__quienes--backGround, .body__hexa--backGround, .body__destinos--backGround, .body__contacto--backGround {
     background-image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
     background-size: inherit, cover;
     background-repeat: no-repeat;
@@ -149,7 +145,7 @@ a {
     height: 100%;
     margin-top: 2rem;
     z-index: 10; }
-  .body__home--fondo {
+  .body__home--backGround {
     background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
     background-size: inherit; }
   nav ul li {
@@ -164,19 +160,16 @@ a {
     font-size: 48px;
     margin-left: 0px;
     color: #b3a593; }
-  button:focus:not(:focus-visible) {
-    outline: 0; }
   .nav__toggler--myStyle {
     border-width: 2px;
     border-color: #ecb848; }
     .nav__toggler--myStyle:focus {
       text-decoration: none;
-      /* outline: 0; */
       color: rgba(205, 169, 50, 0.685);
       box-shadow: 0 0 0 0.1rem; }
-    .nav__toggler--myStyle :hover {
+    .nav__toggler--myStyle:hover {
       background-image: linear-gradient(to top, rgba(203, 79, 228, 0.678), #ecb35d); }
-  .nav__icon--style {
+  .nav .navbar-toggler-icon :hover {
     background-image: url("../imagenes/menuHambWhite.png"); } }
 
 /* Pág INDEX */
@@ -194,17 +187,30 @@ a {
 .footer_a--Fb, .footer_a--Ig {
   margin-bottom: 1rem; }
 
+footer div ul li {
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #363636; }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent; }
+
+footer div ul li:hover {
+  font-size: 1rem;
+  color: #c335ee; }
+
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
 @media only screen and (max-width: 992px) {
   .header__H1--style {
     font-size: 8rem;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  .main__div--logoStyle {
+    padding: 2rem; } }
 
-.main__div--logoStyle {
-  padding: 2rem; }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) and (max-width: 768px) {
   /* Disminuye tamaño de titulo hexaZonal 
                 y párrafo en break 768px -INDEX */
   .header__H1--style {
@@ -212,8 +218,21 @@ a {
     color: #c335ee;
     margin-bottom: 5rem; } }
 
-.main__div--logoStyle {
-  padding: 3rem; }
+@media only screen and (max-width: 992px) {
+  .main__div--logoStyle {
+    padding: 3rem; }
+  footer div ul li {
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #f3ec90; }
+  .footer__ul--itemsStyle {
+    color: orange; }
+    .footer__ul--itemsStyle:hover {
+      color: palegoldenrod; }
+    .footer__ul--itemsStyle:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(253, 197, 13, 0.25); } }
 
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */

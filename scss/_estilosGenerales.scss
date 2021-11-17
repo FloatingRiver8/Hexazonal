@@ -65,15 +65,16 @@ html {
         }
     }
 
-    &__icon {
-        &--style {
-            background-image: url("../imagenes/menuHambWhite.png");
+
+
+    &__ul {
+        &--color {
+            & :hover {
+                color: rgb(167, 62, 228);
+            }
         }
     }
-
 }
-
-
 
 
 /* ---------------------------------------- */
@@ -98,16 +99,7 @@ ul {
 
 }
 
-/* Cambia color de los  items LI SOLO NAVBAR */
-.nav {
-    &__ul {
-        &--color {
-            & :hover {
-                color: rgb(167, 62, 228);
-            }
-        }
-    }
-}
+
 
 /* EACH  -- Estilos en SPAN  debajo de NAVBAR 
 de todas las páginas */
@@ -207,7 +199,7 @@ $color in $sombras {
         &__hexa,
         &__destinos,
         &__contacto {
-            &--fondo {
+            &--backGround {
 
                 background: {
                     image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
@@ -226,7 +218,7 @@ $color in $sombras {
 
     .body {
         &__home {
-            &--fondo {
+            &--backGround {
                 background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
                 background-size: inherit;
             }
@@ -263,9 +255,7 @@ $color in $sombras {
         }
     }
 
-    button:focus:not(:focus-visible) {
-        outline: 0;
-    }
+
 
     .nav {
         &__toggler {
@@ -275,25 +265,32 @@ $color in $sombras {
 
                 &:focus {
                     text-decoration: none;
-                    /* outline: 0; */
+
                     color: rgba(205, 169, 50, 0.685);
                     box-shadow: 0 0 0 0.1rem;
                 }
 
-                & :hover {
+                &:hover {
                     background-image: linear-gradient(to top,
                             rgba(203, 79, 228, 0.678),
                             rgb(236, 179, 93));
                 }
+
             }
 
         }
 
-        &__icon {
-            &--style {
-                background-image: url("../imagenes/menuHambWhite.png");
+        .navbar {
+            &-toggler {
+                &-icon {
+                    & :hover {
+                        background-image: url("../imagenes/menuHambWhite.png");
+                    }
+                }
             }
         }
+
     }
+
 
 }

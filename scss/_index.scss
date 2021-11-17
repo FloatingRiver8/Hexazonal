@@ -25,6 +25,7 @@
 
     .footer {
         &_a {
+
             &--Fb,
             &--Ig {
                 margin-bottom: 1rem;
@@ -32,6 +33,25 @@
         }
     }
 
+
+    footer div ul li {
+        margin-top: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #363636;
+
+    }
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+    footer div ul li:hover {
+        font-size: 1rem;
+        color: rgb(195, 53, 238);
+
+    }
 
     /* ---------------------------------------- */
     /*    MEDIA QUERYS INDEX */
@@ -50,37 +70,73 @@
                 }
             }
         }
-    }
-
-    .main__ {
-        &div {
-            &--logoStyle {
-                padding: 2rem;
-            }
-        }
-    }
 
 
-    @media only screen and (max-width: 768px) {
-
-        /* Disminuye tamaño de titulo hexaZonal 
-                y párrafo en break 768px -INDEX */
-        .header {
-            &__H1 {
-                &--style {
-                    font-size: 4rem;
-                    color: rgb(195, 53, 238);
-                    margin-bottom: 5rem;
+        .main__ {
+            &div {
+                &--logoStyle {
+                    padding: 2rem;
                 }
             }
         }
 
-    }
 
-    .main__ {
-        &div {
-            &--logoStyle {
-                padding: 3rem;
+        @media only screen and (max-width: 768px) {
+
+            /* Disminuye tamaño de titulo hexaZonal 
+                y párrafo en break 768px -INDEX */
+            .header {
+                &__H1 {
+                    &--style {
+                        font-size: 4rem;
+                        color: rgb(195, 53, 238);
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+
+        }
+
+        .main__ {
+            &div {
+                &--logoStyle {
+                    padding: 3rem;
+                }
+            }
+        }
+
+        footer {
+            & div {
+                & ul {
+                    & li {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        color: #f3ec90;
+
+                    }
+                }
+            }
+        }
+
+
+
+        .footer {
+            &__ul {
+                &--itemsStyle {
+
+                    color: orange;
+
+                    &:hover {
+                        color: palegoldenrod;
+
+                    }
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 0 .25rem rgba(253, 197, 13, 0.25);
+                    }
+                }
             }
         }
     }
