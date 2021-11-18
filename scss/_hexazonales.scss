@@ -1,6 +1,31 @@
 /*  ------------------------------------------ */
 /*  Sección HEXAZONALES */
 
+.div {
+    &__carousel {
+        &--style {
+            box-shadow: 0 0.5rem 1rem rgba(183, 57, 241, 0.445);
+            height: 6.2rem;
+            background-image: linear-gradient(to top,
+                    rgb(247, 221, 175),
+                    rgb(243, 178, 243));
+                    font-family: "Oxygen", sans-serif;
+                    font-weight: bolder;
+                letter-spacing: 0.2rem;
+
+        }
+
+        &--myCaption {
+            margin-top: 4rem;
+        }
+    }
+
+}
+
+
+
+
+
 .main {
     &__div {
         &--spacesH {
@@ -35,5 +60,26 @@
             }
 
         }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+
+
+    .div {
+        &__carousel {
+            &--myCaption {
+                position: absolute;
+                height: 6.5rem;
+                padding-left: 4.5rem;
+                padding-top: 3rem;
+                padding-bottom: 0.5rem;
+                color: #fff;
+                text-align: center;
+            }
+
+        }
+
     }
 }

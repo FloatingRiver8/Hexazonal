@@ -47,18 +47,64 @@
         text-align: -webkit-match-parent;
     }
 
+
+
+    .footer {
+        &__ul {
+            &--itemsStyle {
+                font-family: "Oxygen", sans-serif;
+
+                color: #7a7771c7;
+                letter-spacing: 0.2rem;
+
+                &:hover {
+
+                    color: rgb(78, 74, 66);
+
+                }
+
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+
     footer div ul li:hover {
         font-size: 1rem;
         color: rgb(195, 53, 238);
 
     }
 
+    #index {
+        &__footer {
+            &--style {
+                height:10rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+                padding-top: 2rem;
+                background-image: linear-gradient(to top,
+                        rgba(247, 221, 175, 0.212),
+                        rgba(243, 178, 243, 0.144));
+                box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623);
+            }
+        }
+    }
+
+
+    .div {
+        &__footer {
+            &--copyright {
+                padding-top: 0.5rem;
+            }
+        }
+    }
+
+
     /* ---------------------------------------- */
     /*    MEDIA QUERYS INDEX */
-
-
-
-
 
     @media only screen and (max-width: 992px) {
 
@@ -80,22 +126,23 @@
             }
         }
 
+    }
 
-        @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
 
-            /* Disminuye tamaño de titulo hexaZonal 
+        /* Disminuye tamaño de titulo hexaZonal 
                 y párrafo en break 768px -INDEX */
-            .header {
-                &__H1 {
-                    &--style {
-                        font-size: 4rem;
-                        color: rgb(195, 53, 238);
-                        margin-bottom: 5rem;
-                    }
+        .header {
+            &__H1 {
+                &--style {
+                    font-size: 4rem;
+                    color: rgb(195, 53, 238);
+                    margin-bottom: 5rem;
                 }
             }
-
         }
+
+
 
         .main__ {
             &div {
@@ -105,21 +152,6 @@
             }
         }
 
-        footer {
-            & div {
-                & ul {
-                    & li {
-                        margin-top: 5px;
-                        font-size: 14px;
-                        cursor: pointer;
-                        color: #f3ec90;
-
-                    }
-                }
-            }
-        }
-
-
 
         .footer {
             &__ul {
@@ -128,15 +160,52 @@
                     color: orange;
 
                     &:hover {
-                        color: palegoldenrod;
+                        color: rgb(195, 53, 238);
 
                     }
 
                     &:focus {
                         outline: 0;
-                        box-shadow: 0 0 0 .25rem rgba(253, 197, 13, 0.25);
+                        box-shadow: none;
                     }
                 }
             }
         }
+
+
+
+
+
+        footer {
+            & div {
+                & ul {
+                    & li {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        color: #e1c1f7;
+
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+        #index {
+            &__footer {
+                &--style {
+
+                    padding: 2rem;
+                    background-image: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
     }
+
+    @media only screen and (max-width: 576px) {}

@@ -47,64 +47,116 @@ font-family: 'Syne Mono', monospace;-->
 <body class=" body__hexa--backGround body--backgImgPosicion">
   <!-- HEXAZONALES -->
 
+
+
+
+
   <!-- NavBar con Bootstrap, colapsa a menú hamburguesa -->
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-0 col-md-0">
+      </div>
+
+      <div class="col-sm-0 col-md-12 ">
+        <div class="div__carousel--style">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="../imagenes/oferta.png" class="d-block w-1" alt="...">
+                <div class="carousel-caption  d-md-block div__carousel--myCaption">
+
+                  <h4>Ofertas en un pago</h4>
+                </div>
+              </div>
+              <div class="carousel-item " data-bs-interval="4000">
+                <img src="../imagenes/credito.png" class="d-block w-1" alt="...">
+                <div class="carousel-caption  d-md-block div__carousel--myCaption">
+                  <h4>Hasta 12 cuotas sin interés</h4>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../imagenes/mejorOpcion.png" class="d-block w-1" alt="...">
+                <div class="carousel-caption d-md-block div__carousel--myCaption">
+
+                  <h4>Somos tu mejor elección</h4>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-0 col-md-0 d-flex justify-content-center">
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12">
+
+      <!-- Menú hamburguesa light -->
+      <nav class="navbar navbar-expand-sm  navbar-light nav--myStyles main__buttons--shadowOrange">
+
+        <!-- Logo como parte del navbar -->
+        <a class="navbar-brand navbar__link--logo" href="../index.html">
+          <img src="../imagenes/hexaLogoNav.png" alt=navbar__link--logo style="width:80px;">
+        </a>
+
+        <button class="navbar-toggler nav__toggler--myStyle" type="button" data-toggle="collapse"
+          data-target="#collapsibleNavbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-        <!-- Menú hamburguesa light -->
-        <nav class="navbar navbar-expand-sm  navbar-light nav--myStyles main__buttons--shadowOrange">
+        <!-- Navbar colapsable y mi clase  ul__item--color para dar color al :hover-->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar1">
 
-          <!-- Logo como parte del navbar -->
-          <a class="navbar-brand navbar__link--logo" href="../index.html">
-            <img src="../imagenes/hexaLogoNav.png" alt=navbar__link--logo style="width:80px;">
-          </a>
+          <ul class="navbar-nav">
 
-          <button class="navbar-toggler nav__toggler--myStyle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <li class="nav-item">
+              <a class="nav-link text-reset " href="../index.html">Home</a>
+            </li>
 
+            <li class="nav-item ul__item--color">
+              <a class="nav-link text-reset" href="./quienesSomos.html">Quiénes somos?</a>
+            </li>
 
-          <!-- Navbar colapsable y mi clase  ul__item--color para dar color al :hover-->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <li class="nav-item ul__item--color">
+              <a class="nav-link text-reset" href="./hexazonales.html">Hexazonales</a>
+            </li>
 
-            <ul class="navbar-nav">
+            <li class="nav-item ul__item--color">
+              <a class="nav-link text-reset" href="./destinos.html">Destinos</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-reset " href="../index.html">Home</a>
-              </li>
-              <li class="nav-item ul__item--color">
-                <a class="nav-link text-reset" href="./quienesSomos.html">Quiénes somos?</a>
-              </li>
+            <li class="nav-item ul__item--color">
+              <a class="nav-link text-reset" href="./contacto.html">Contacto</a>
+            </li>
 
-              <li class="nav-item ul__item--color">
-                <a class="nav-link text-reset" href="./hexazonales.html">Hexazonales</a>
-              </li>
+          </ul>
 
-              <li class="nav-item ul__item--color">
-                <a class="nav-link text-reset" href="./destinos.html">Destinos</a>
-              </li>
-
-              <li class="nav-item ul__item--color">
-                <a class="nav-link text-reset" href="./contacto.html">Contacto</a>
-              </li>
-
-            </ul>
-
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <span id="span__uno--posestilos" class=" animate__animated animate__fadeIn fadeExplora">explora</span>
-    <span id="span__dos--posestilos" class=" animate__animated animate__fadeIn fadeDescubre">descubre</span>
+        </div>
+      </nav>
 
 
 
-    <!--HEADER HEXAZONALES-->
+      <span id="span__uno--posestilos" class=" animate__animated animate__fadeIn fadeExplora">explora</span>
+      <span id="span__dos--posestilos" class=" animate__animated animate__fadeIn fadeDescubre">descubre</span>
 
-    <div class="row">
+
+
+      <!--HEADER HEXAZONALES-->
+
       <div class="col-xl-6 d-flex justify-content-center">
         <header>
           <h1 class=" wow animate__animated animate__fadeIn header__h1--reduceSizeMq ">
@@ -115,6 +167,7 @@ font-family: 'Syne Mono', monospace;-->
 
       <div class="col-xl-6">
       </div>
+
     </div>
   </div>
 
@@ -162,9 +215,8 @@ font-family: 'Syne Mono', monospace;-->
           </p>
         </div>
       </div>
-  </div>
   </main>
-
+</div>
 
 
   <!--FOOTER-->
@@ -184,7 +236,8 @@ font-family: 'Syne Mono', monospace;-->
         </a>
       </div>
 
-      <button class="navbar-toggler nav__toggler--myStyle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler nav__toggler--myStyle" type="button" data-toggle="collapse"
+        data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
