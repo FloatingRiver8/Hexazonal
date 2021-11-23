@@ -5,7 +5,7 @@
             font-size: 1.2rem;
             letter-spacing: 0.2rem;
             word-spacing: 0.2rem;
-            color: rgba(228, 118, 228, 0.849);
+            color: rgb(211, 124, 223);
       }
 
       .navbar__Qsomos--Style{
@@ -48,7 +48,7 @@ box-shadow:  40px 40px 80px #aca893,
 
                   }
 
-                  &--contTwo {
+                  &--contTwoOne {
                         z-index: 2;
 
 
@@ -63,6 +63,32 @@ box-shadow:  40px 40px 80px #aca893,
                         border-radius: 4px;
                         padding-top: 2rem;
                         border-radius: 24px;
+
+
+
+                        border-radius: 24px;
+                        box-shadow:  40px 40px 80px #aca893,
+                                     -10px -3px 80px #aca893;
+                  }
+
+
+                  &--contTwoSec {
+                        z-index: 2;
+
+
+                        margin-top: 2rem;
+                        height: 60vh;
+                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
+                        background-color: #000;
+                        background-position: center;
+                        background-position-y: 30%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 4px;
+                        padding-top: 2rem;
+                        border-radius: 24px;
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
 
 
 
@@ -226,7 +252,12 @@ margin-top: 3rem;
       }
 }
 
+.main__div--contFiveFont{
+font-size: 10rem;
+font-family:"Megrim";
+color: rgb(217, 106, 245);
 
+}
       .barrera {
 
             height: 85vh;
@@ -302,13 +333,19 @@ margin-top: 3rem;
 
 
                   @if ($imgFondoIconos==one) {
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg");
+                        background-image:  url("../imagenes/quienesSomosSViol.png");
+                        background-repeat: no-repeat;
+                        
+                        background-position-x: center;
+                        box-shadow: none;
+                        opacity: 0.2;
+                        margin-top: 8rem;
 
 
                   }
 
                   @if ($imgFondoIconos==two) {
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.123)), url("../imagenes/quienesSomosSeis.jpg");
+                        background-image: radial-gradient(rgba(133, 132, 131, 0), rgba(206, 206, 201, 0.123)), url("../imagenes/quienesSomosSeis.jpg");
                         background-position-x: 25%;
                         background-position-y: 60%;
                         margin-bottom: 3rem;
@@ -316,14 +353,17 @@ margin-top: 3rem;
                   }
 
                   @if ($imgFondoIconos==three) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.973), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosSiete.jpg");
-                        background-position-x: 60%;
-                        background-position-y: 32%;
+                        background-image:  url("../imagenes/quienesSomosIconoDos.png");
+                        background-repeat: no-repeat;
+                        z-index: -2000;
+                        background-position-x: center;
+                        box-shadow: none;
+                        opacity: 0.2;
                   }
 
 
                   @if ($imgFondoIconos==four) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(114, 114, 31, 0.63)), url("../imagenes/quienesSomosDos.jpg");
+                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(114, 114, 31, 0)), url("../imagenes/quienesSomosDos.jpg");
                         background-position-x: 40%;
                         background-position-y: center;
                   }
