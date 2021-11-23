@@ -476,17 +476,33 @@ footer div ul li:hover {
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  background-image: radial-gradient(rgba(133, 132, 131, 0), rgba(206, 206, 201, 0.123)), url("../imagenes/quienesSomosSeis.jpg");
-  background-position-x: 25%;
-  background-position-y: 60%;
-  margin-bottom: 3rem; }
+  background-image: url("../imagenes/quienesSomosIconoDos.png");
+  background-repeat: no-repeat;
+  z-index: -2000;
+  background-position-x: center;
+  box-shadow: none;
+  opacity: 0.2; }
 
 .main__img---internStyle--three {
   background-size: inherit;
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  background-image: url("../imagenes/quienesSomosIconoDos.png");
+  background-image: url("../imagenes/quienesSomosIconoTres.png");
+  background-repeat: no-repeat;
+  z-index: -2000;
+  background-position-x: center;
+  box-shadow: none;
+  opacity: 0.2;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
+.main__img---internStyle--threeSec {
+  background-size: inherit;
+  box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
+  border-radius: 15px;
+  margin-top: 3rem;
+  background-image: url("../imagenes/quienesSomosIconoTres.png");
   background-repeat: no-repeat;
   z-index: -2000;
   background-position-x: center;
@@ -498,9 +514,13 @@ footer div ul li:hover {
   box-shadow: 7px 7px 14px #f0e6b0a6, -7px -7px 14px #a62bc5ab;
   border-radius: 15px;
   margin-top: 3rem;
-  background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(114, 114, 31, 0)), url("../imagenes/quienesSomosDos.jpg");
-  background-position-x: 40%;
-  background-position-y: center; }
+  background-image: url("../imagenes/quienesSomosIconoCinco.png");
+  background-repeat: no-repeat;
+  z-index: -2000;
+  background-position-x: center;
+  box-shadow: none;
+  opacity: 0.2;
+  margin-top: 5rem; }
 
 .div__pQsomos--styles {
   z-index: 100;

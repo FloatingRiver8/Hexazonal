@@ -321,7 +321,7 @@ color: rgb(217, 106, 245);
 
 
       /* Imágenes de los fondos de iconos */
-      @each $imgFondoIconos in (one, two, three, four) {
+      @each $imgFondoIconos in (one, two, three, threeSec, four) {
             .main__img---internStyle--#{$imgFondoIconos} {
 
                   background-size: inherit;
@@ -345,31 +345,58 @@ color: rgb(217, 106, 245);
                   }
 
                   @if ($imgFondoIconos==two) {
-                        background-image: radial-gradient(rgba(133, 132, 131, 0), rgba(206, 206, 201, 0.123)), url("../imagenes/quienesSomosSeis.jpg");
-                        background-position-x: 25%;
-                        background-position-y: 60%;
-                        margin-bottom: 3rem;
 
-                  }
 
-                  @if ($imgFondoIconos==three) {
                         background-image:  url("../imagenes/quienesSomosIconoDos.png");
                         background-repeat: no-repeat;
                         z-index: -2000;
                         background-position-x: center;
                         box-shadow: none;
                         opacity: 0.2;
+
+                  }
+
+                  @if ($imgFondoIconos==three) {
+
+
+                        background-image:  url("../imagenes/quienesSomosIconoTres.png");
+                        background-repeat: no-repeat;
+                        z-index: -2000;
+                        background-position-x: center;
+                        box-shadow: none;
+                        opacity: 0.2;
+
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);
+
+                  }
+
+
+
+                  @if ($imgFondoIconos==threeSec) {
+
+                        background-image:  url("../imagenes/quienesSomosIconoTres.png");
+                        background-repeat: no-repeat;
+                        z-index: -2000;
+                        background-position-x: center;
+                        box-shadow: none;
+                        opacity: 0.2;
+
                   }
 
 
                   @if ($imgFondoIconos==four) {
-                        background-image: linear-gradient(rgba(230, 199, 112, 0.719), rgba(114, 114, 31, 0)), url("../imagenes/quienesSomosDos.jpg");
-                        background-position-x: 40%;
-                        background-position-y: center;
-                  }
+                        background-image:  url("../imagenes/quienesSomosIconoCinco.png");
+                        background-repeat: no-repeat;
+                        z-index: -2000;
+                        background-position-x: center;
+                        box-shadow: none;
+                        opacity: 0.2;
+                       margin-top: 5rem;
 
             }
       }
+}
 
 
 
