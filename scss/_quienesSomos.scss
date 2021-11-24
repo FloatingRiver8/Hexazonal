@@ -6,16 +6,18 @@
             letter-spacing: 0.2rem;
             word-spacing: 0.2rem;
             color: rgb(211, 124, 223);
+            font-weight: bold;
       }
 
-      .navbar__Qsomos--Style{
-      background-image: radial-gradient(rgb(243, 236, 215), rgba(252, 248, 232, 0.822)), url("(../imagenes/shinyOverlayCinco.svg");
-}
+      .navbar__Qsomos--Style {
+            background-image: radial-gradient(rgb(243, 236, 215), rgba(252, 248, 232, 0.822)), url("(../imagenes/shinyOverlayCinco.svg");
+      }
+
       .nav--sticky {
             position: sticky;
             top: 0;
             z-index: 3;
-           
+
       }
 
       .wrapper {
@@ -24,290 +26,181 @@
       }
 
 
-      .main {
-            &__div {
-                  &--contOne {
-                        z-index: -98;
+
+      @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
+            .main__div--cont#{$contStyle} {
+                  height: 500px;
+
+                  background: {
+                        position: center;
+                        position-y: 30%;
+                        size: cover;
+                        repeat: no-repeat;
+                        z-index: 2;
+                  }
+
+
+                  border-radius: 24px;
+                  box-shadow: 40px 40px 80px #aca893,
+                  -10px -3px 80px #aca893;
+                  height: 60vh;
+
+
+                  @if ($contStyle==One) {
                         padding-bottom: 1rem;
-margin-top: 3rem;
-
-
-
-                        height: 500px;
+                        margin-top: 3rem;
                         background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosTres.jpg");
-                        background-color: #000;
-                        background-position: center;
-                        background-position-y: 30%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-
-                      border-radius: 24px;
-box-shadow:  40px 40px 80px #aca893,
-             -10px -3px 80px #aca893;
-
 
                   }
 
-                  &--contTwoOne {
-                        z-index: 2;
-
-
+                  @if ($contStyle==TwoFirst) {
                         margin-top: 2rem;
-                        height: 60vh;
                         background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
-                        background-color: #000;
-                        background-position: center;
-                        background-position-y: 30%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        border-radius: 4px;
                         padding-top: 2rem;
-                        border-radius: 24px;
-
-
-
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
                   }
 
 
-                  &--contTwoSec {
-                        z-index: 2;
-
-
+                  @if ($contStyle==TwoSec) {
                         margin-top: 2rem;
-                        height: 60vh;
                         background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
-                        background-color: #000;
-                        background-position: center;
-                        background-position-y: 30%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        border-radius: 4px;
                         padding-top: 2rem;
-                        border-radius: 24px;
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
-
-
-
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
                   }
 
-
-                  &--contThree {
-                        z-index: -98;
-
-margin-top: 3rem;
-
-                        
-                        height: 60vh;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
-                        background-color: #000;
-                        background-position: center;
-                        background-position-y: 70%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        
-
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
-
-                  }
-
-                  &--contFourOne {
-                        z-index: 2;
-
-
-                        margin-top: 2rem;
-                        height: 80vh;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
-                        background-color: #000;
-                        background-position-x: left;
-                        background-position-y: 50%;
-                        background-size: 220%;
-                        background-repeat: no-repeat;
-
-                        
-
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
-
-                  }
-
-                  &--contFourTwo {
-                        z-index: 2;
-
-
-                        margin-top: 2rem;
-                        height: 80vh;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
-                        background-color: #000;
-                        background-position-x: right;
-                        background-position-y: 50%;
-                        background-size: 185%;
-                        background-repeat: no-repeat;
-
-                        
-
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
-
-                  }
-
-
-
-                  &--contFive {
-                        z-index: 2;
+                  @if ($contStyle==Three) {
                         margin-top: 3rem;
 
-                        
-                        height: 80vh;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
-                        background-color: #000;
-                        background-position: center;
-                        background-position-y: 60%;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        
-                        border-radius: 24px;
-                        box-shadow:  40px 40px 80px #aca893,
-                                     -10px -3px 80px #aca893;
-
+                        background: {
+                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
+                              position-y: 70%;
+                        }
                   }
 
+                  @if ($contStyle==FourOne) {
+                        margin-top: 2rem;
 
-
-                  &--bckgroundImgTitle {
                         background: {
-                              image: linear-gradient(rgba(230, 199, 112, 0.671), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTres.jpg");
+                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+                              position-x: left;
+                              position-y: 50%;
+                              size: 220%;
                         }
 
-                        height: 10rem;
-                        border-radius: 1rem;
-                        border-radius: 10px;
-                        box-shadow: 16px 16px 18px #aaaaaa,
-                        -16px -16px 18px #ffffff;
+
                   }
 
+                  @if ($contStyle==FourTwo) {
+                        margin-top: 2rem;
 
+                        background: {
+                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+                              position-x: right;
+                              position-y: 50%;
+                              size: 185%;
 
-
-                  &--pOne {
-                        position: sticky;
-                        position: -webkit-sticky;
-
-                        top: 8rem;
-                        width: 100%;
-                        z-index: 1;
-                        height: 2rem;
-                        padding-top: 5rem;
+                        }
                   }
 
-                  &--pTwo {
-                        position: sticky;
-                        z-index: -100;
-                        height: 2rem;
-                        top: 10rem;
+                  @if ($contStyle==Five) {
+                        margin-top: 3rem;
+                        height: 80vh;
+
+                        background: {
+                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
+                              position-y: 60%;
+                        }
                   }
-
-
-                  &--pThree {
-                        position: sticky;
-                        position: -webkit-sticky;
-                        z-index: 1;
-                        height: 15vh;
-                        top: 10rem;
-                        
-
 
             }
 
+      }
 
 
-            &--pFour {
+
+      @each $pStyle in (One, Two, Three, Four, Five) {
+            .main__div--p#{$pStyle} {
+
                   position: sticky;
                   position: -webkit-sticky;
-                  z-index: 1;
-                  height: 10vh;
                   top: 10rem;
+                  z-index: 1;
+                  margin-top: 5rem;
+
+                  @if ($pStyle==One) {
+                        height: 2rem;
+                        margin-top: 5rem;
+
+                  }
+
+                  @if ($pStyle==Two) {
+                        height: 2rem;
+                  }
+
+                  @if ($pStyle==Three) {
+                        height: 15vh;
+                  }
+
+                  @if ($pStyle==Four) {
+                        height: 10vh;
+
+                  }
+
+                  @if ($pStyle==Five) {
+                        height: 15vh;
+                  }
 
             }
-
-                  &--pFive {
-                        position: sticky;
-                        position: -webkit-sticky;
-                        z-index: 1;
-                        height: 15vh;
-                        top: 10rem;
-      }
-      
-
-      }
-}
-
-.main__div--contFiveFont{
-font-size: 10rem;
-font-family:"Megrim";
-color: rgb(217, 106, 245);
-
-}
-      .barrera {
-
-            height: 85vh;
-
-            z-index: -520;
-            width: 100%;
-            position: absolute;
-      }
-
-      .div__cont--scrollStopTwo{
-
-            height: 70vh;
-           
-            z-index: -520;
-            width: 100%;
-            position: absolute;
-            margin-top: 3rem;
       }
 
 
-      .div__cont--scrollStopThree{
 
-            height: 120vh;
 
-            z-index: -520;
-            width: 100%;
-            position: absolute;
-            margin-top: 3rem;
+      .main__div--contFiveFont {
+
+            margin-top: 5rem;
+            font-size: 10rem;
+            font-family: "Megrim";
+            color: rgb(255, 233, 184);
+
       }
 
-      .div__cont--scrollStopFour{
 
-            height: 120vh;
 
-            z-index: -520;
-            width: 100%;
-            position: absolute;
-            margin-top: 3rem;
+
+
+
+
+
+      @each $stopN in (One, Two, Three, Four, Five) {
+            .div__cont--scrollStop#{$stopN} {
+
+                  position: absolute;
+                  margin-top: 3rem;
+                  z-index: -1;
+
+                  @if ($stopN==One) {
+                        height: 80vh;
+
+                  }
+
+                  @if ($stopN==Two) {
+                        height: 70vh;
+                        margin-top: 3rem;
+                  }
+
+                  @if ($stopN==Three) {
+                        height: 100vh;
+                        margin-top: 3rem;
+                  }
+
+                  @if ($stopN==Four) {
+                        height: 100vh;
+                        margin-top: 3rem;
+                  }
+
+            }
       }
-
-      .div__cont--scrollStopFive{
-
-            height: 100vh;
-
-            z-index: -520;
-            width: 100%;
-            position: absolute;
-            margin-top: 3rem;
-      }
-
 
 
 
@@ -321,51 +214,38 @@ color: rgb(217, 106, 245);
 
 
       /* Imágenes de los fondos de iconos */
-      @each $imgFondoIconos in (one, two, three, threeSec, four) {
-            .main__img---internStyle--#{$imgFondoIconos} {
+      @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
 
-                  background-size: inherit;
-                  box-shadow: 7px 7px 14px #f0e6b0a6,
-                        -7px -7px 14px #a62bc5ab;
-                  border-radius: 15px;
-                  margin-top: 3rem;
+            .main__div--iconStyle#{$imgIcons} {
+                  margin-top: 6rem;
+                  opacity: 0.2;
+
+                  background: {
+                        size: inherit;
+                        repeat: no-repeat;
+                        position-x: center;
+                  }
 
 
 
-                  @if ($imgFondoIconos==one) {
-                        background-image:  url("../imagenes/quienesSomosSViol.png");
-                        background-repeat: no-repeat;
-                        
-                        background-position-x: center;
-                        box-shadow: none;
-                        opacity: 0.2;
+                  @if ($imgIcons==One) {
+                        background: {
+                              image: url("../imagenes/quienesSomosSViol.png");
+                        }
+                 
                         margin-top: 8rem;
+                  }
 
+
+                  @if ($imgIcons==Two) {
+                        background-image: url("../imagenes/quienesSomosIconoDos.png");
 
                   }
 
-                  @if ($imgFondoIconos==two) {
 
 
-                        background-image:  url("../imagenes/quienesSomosIconoDos.png");
-                        background-repeat: no-repeat;
-                        z-index: -2000;
-                        background-position-x: center;
-                        box-shadow: none;
-                        opacity: 0.2;
-
-                  }
-
-                  @if ($imgFondoIconos==three) {
-
-
-                        background-image:  url("../imagenes/quienesSomosIconoTres.png");
-                        background-repeat: no-repeat;
-                        z-index: -2000;
-                        background-position-x: center;
-                        box-shadow: none;
-                        opacity: 0.2;
-
+                  @if ($imgIcons==ThreeFirst) {
+                        background-image: url("../imagenes/quienesSomosIconoTres.png");
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
 
@@ -373,37 +253,23 @@ color: rgb(217, 106, 245);
 
 
 
-                  @if ($imgFondoIconos==threeSec) {
-
-                        background-image:  url("../imagenes/quienesSomosIconoTres.png");
-                        background-repeat: no-repeat;
-                        z-index: -2000;
-                        background-position-x: center;
-                        box-shadow: none;
-                        opacity: 0.2;
+                  @if ($imgIcons==ThreeSec) {
+                        background-image: url("../imagenes/quienesSomosIconoTres.png");
 
                   }
 
 
-                  @if ($imgFondoIconos==four) {
-                        background-image:  url("../imagenes/quienesSomosIconoCinco.png");
-                        background-repeat: no-repeat;
-                        z-index: -2000;
-                        background-position-x: center;
-                        box-shadow: none;
-                        opacity: 0.2;
-                       margin-top: 5rem;
+                  @if ($imgIcons==Four) {
+                        background-image: url("../imagenes/quienesSomosIconoCinco.png");
 
+                  }
             }
       }
-}
-
 
 
 
       .div__pQsomos--styles {
             z-index: 100;
-
             position: relative;
             color: antiquewhite;
       }
@@ -412,67 +278,79 @@ color: rgb(217, 106, 245);
       /*    MEDIA QUERYS INDEX */
 
 
-      @media only screen and (max-width: 758px) {
 
-            .main {
-                  &__img {
+      @media only screen and (max-width: 992px) {
 
-                        &---internStyle {
+      @each $stopN in (One, Two, Three, Four, Five) {
+            .div__cont--scrollStop#{$stopN} {
 
-                              border-radius: 15px;
-                              margin-top: 10rem;
-                              margin-bottom: 2rem;
-                              padding-left: 0rem;
-                              margin-left: 0rem;
-                        }
+                  position: absolute;
+                  margin-top: 1rem;
+                  z-index: -1;
+
+                  @if ($stopN==One) {
+                        height: 72vh;
 
                   }
+
+                  @if ($stopN==Two) {
+                        height: 80vh;
+                        margin-top: 3rem;
+                  }
+
+                  @if ($stopN==Three) {
+                        height: 80vh;
+                        margin-top: 3rem;
+                  }
+
+                  @if ($stopN==Four) {
+                        height: 100vh;
+                        margin-top: 3rem;
+                  }
+
+            }
+      }
+}
+
+
+
+@each $pStyle in (One, Two, Three, Four, Five) {
+      .main__div--p#{$pStyle} {
+
+            position: sticky;
+            position: -webkit-sticky;
+            top: 10rem;
+            z-index: 1;
+            margin-top: 2.5rem;
+
+            @if ($pStyle==One) {
+                  height: 2rem;
+                  margin-top: 2rem;
+
             }
 
-            .main {
-                  &__div {
-                        &--colTres {
-                              p {
-                                    font-family: "Oxygen", sans-serif;
-                                    color: rgb(173, 73, 231);
-                                    padding: 1rem;
+            @if ($pStyle==Two) {
+                  height: 2rem;
+            }
 
-                              }
+            @if ($pStyle==Three) {
+                  height: 15vh;
+            }
 
-                              border-radius: 15px;
-                              margin-top: 2rem;
+            @if ($pStyle==Four) {
+                  height: 10vh;
 
-                        }
+            }
 
-                  }
+            @if ($pStyle==Five) {
+                  height: 15vh;
             }
 
       }
-
-
-      @media only screen and (max-width: 576px) {
-
-
-            @each $imgBackIcons in (one, two, three, four) {
-                  .main__img---internStyle--#{$imgBackIcons} {
-
-                        background-size: inherit;
-                        box-shadow: 7px 7px 14px #f0e6b0a6,
-                              -7px -7px 14px #a62bc5ab;
-                        border-radius: 15px;
+}
 
 
 
-                        @if ($imgBackIcons==one) {
-                              background-image: radial-gradient(rgba(230, 199, 112, 0.986), rgba(206, 206, 201, 0.63)), url("../imagenes/quienesSomosTres.jpg");
-                              margin-top: 3rem;
+      @media only screen and (max-width: 758px) {}
 
-
-                        }
-                  }
-            }
-
-
-
-   
-      }
+      @media only screen and (max-width: 576px) {}
