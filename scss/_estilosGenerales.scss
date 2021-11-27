@@ -176,7 +176,7 @@ $color in $sombras {
         border: none;
         box-shadow: 0 -0.1rem 2rem $color;
         border-radius: 1rem;
-        
+
         border-radius: 65px;
 
         @if($red==Fb) {
@@ -250,46 +250,46 @@ $color in $sombras {
         &__toggler {
             &--myStyle {
                 border-width: 2px;
-                border-color: rgb(236, 184, 72);  
+                border-color: rgb(236, 184, 72);
                 box-shadow: 0 0 0 0.1rem rgba(205, 169, 50, 0.685);
-                
+
 
                 &:focus {
                     text-decoration: none;
 
                     color: rgba(205, 169, 50, 0.685);
                     box-shadow: 0 0 0 0.2rem;
-                    
+
                 }
 
                 &:hover {
                     background-image: linear-gradient(to top,
                             rgba(203, 79, 228, 0.678),
                             rgb(236, 179, 93));
-                            
-                    }
-                }
 
+                }
             }
 
         }
-    
 
-        .navbar {
-            &-toggler {
-                &-icon {
-                    & :hover {
-                        background-image: url("../imagenes/menuHambWhite.png");
-                    }
+    }
+
+
+    .navbar {
+        &-toggler {
+            &-icon {
+                & :hover {
+                    background-image: url("../imagenes/menuHambWhite.png");
                 }
             }
         }
+    }
 
-    } 
+}
 
 
 
-    @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .body {
 
         &__quienes,

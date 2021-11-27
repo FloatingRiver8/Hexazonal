@@ -197,7 +197,7 @@ a {
 /* ---------------------------------------- */
 .header__H1--style {
   width: 100%;
-  font-size: 10rem;
+  font-size: 12rem;
   z-index: 2;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -305,43 +305,44 @@ footer div ul li:hover {
 
 .div__cont--scrollStopOneFirst {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
-  height: 100vh; }
+  height: 83vh;
+  margin-top: 3rem; }
 
 .div__cont--scrollStopOneSec {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
-  height: 100vh; }
+  height: 50vh; }
 
 .div__cont--scrollStopTwo {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
-  height: 90vh;
-  margin-top: 3rem; }
+  height: 75vh;
+  margin-top: 10rem; }
 
 .div__cont--scrollStopThree {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
-  height: 100vh;
-  margin-top: 3rem; }
+  height: 86vh;
+  margin-top: 10rem; }
 
 .div__cont--scrollStopFour {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
-  height: 100vh;
-  margin-top: 3rem; }
+  height: 85vh;
+  margin-top: 10rem; }
 
 .div__cont--scrollStopFive {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: -1;
   height: 100vh;
-  margin-top: 3rem;
+  margin-top: 10rem;
   z-index: 16;
   width: 100%; }
 
@@ -354,7 +355,6 @@ footer div ul li:hover {
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
   margin-top: 3rem;
   background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosTres.jpg"); }
 
@@ -368,7 +368,6 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  margin-top: 4rem;
   background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg"); }
 
 .main__div--contTwoSec {
@@ -380,7 +379,6 @@ footer div ul li:hover {
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
   margin-top: 4rem;
   background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
   padding-top: 2rem;
@@ -408,8 +406,7 @@ footer div ul li:hover {
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 70vh;
-  margin-top: 4rem; }
+  height: 70vh; }
 
 .main__div--contFourOne {
   background-position: center;
@@ -540,7 +537,7 @@ footer div ul li:hover {
   background-image: url("../imagenes/quienesSomosIconoCinco.png"); }
 
 /* ---------------------------------------- */
-/*    MEDIA QUERYS INDEX */
+/*    MEDIA QUERYS Qsomos */
 /* Breacking point Tablet */
 @media only screen and (max-width: 992px) {
   .main__div--contFiveFont {
@@ -552,66 +549,89 @@ footer div ul li:hover {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #38352e, 0 0 30px #3b3a36, 0 0 40px #86818a, 0 0 55px #7a777e, 0 0 75px #303030; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 120vh;
+    height: 100vh;
     z-index: 2;
-    margin-top: 1rem; }
+    margin-top: 0.5rem;
+    padding-top: 1rem; }
   .div__cont--scrollStopOneSec {
     position: absolute;
     height: 120vh;
-    z-index: 3; }
+    z-index: 1; }
   .div__cont--scrollStopTwo {
     position: absolute;
     height: 140vh;
-    margin-top: 6rem;
     z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
     height: 100h;
-    margin-top: 14rem;
     z-index: 9; }
   .div__cont--scrollStopFour {
     position: absolute;
     height: 90vh;
-    margin-top: 10rem;
+    margin-top: 8rem;
     z-index: 13; }
   .div__cont--scrollStopFive {
     position: absolute;
     height: 120vh;
     margin-top: 3rem;
     z-index: 16; }
+  .main__div--iconStyleOne {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleTwo {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleThreeFirst {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleThreeSec {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleFour {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
   .main__div--contOne {
     height: 500px;
+    margin-top: 7rem;
     padding-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     z-index: 1; }
   .main__div--contTwoFirst {
     height: 500px;
-    margin-top: 1rem;
+    margin-top: 7rem;
     padding-top: 1rem;
     z-index: 2; }
   .main__div--contTwoSec {
     height: 500px;
+    margin-top: 7rem;
     display: none; }
   .main__div--contThree {
     height: 500px;
-    margin-top: 3rem;
+    margin-top: 7rem;
     background-position-y: 70%;
     z-index: 8; }
   .main__div--contThreeSec {
-    height: 500px; }
+    height: 500px;
+    margin-top: 7rem; }
   .main__div--contFourOne {
     height: 500px;
-    margin-top: 2rem;
+    margin-top: 7rem;
     background-position-x: left;
     background-position-y: 50%;
     background-size: 220%;
     z-index: 12; }
   .main__div--contFourTwo {
     height: 500px;
+    margin-top: 7rem;
     display: none; }
   .main__div--contFive {
     height: 500px;
-    margin-top: 3rem;
+    margin-top: 7rem;
     height: 80vh;
     background-position-y: 60%;
     z-index: 13; }
@@ -619,28 +639,28 @@ footer div ul li:hover {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
-    height: 2rem;
-    margin-top: 14rem; }
+    margin-top: 3rem; }
   .main__div--pTwo {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
-    height: 15vh; }
+    margin-top: 5rem; }
   .main__div--pThree {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
-    height: 2rem; }
+    margin-top: 0rem;
+    padding-top: 0rem; }
   .main__div--pFour {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
-    height: 2rem; }
+    margin-top: 5rem; }
   .main__div--pFive {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
-    height: 15vh;
+    margin-top: 5rem;
     padding-top: 2rem;
     z-index: 16; } }
 
@@ -648,56 +668,61 @@ footer div ul li:hover {
   .quienesSomos p {
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
-    font-size: 2rem;
-    line-height: 1.5rem; }
+    font-size: 2.3rem;
+    line-height: 1.8rem; }
   .main__div--contFiveFont {
     font-size: 7rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 115vh;
-    z-index: 2;
-    margin-top: 1rem; }
+    height: 80vh;
+    z-index: 2; }
   .div__cont--scrollStopOneSec {
     position: absolute;
-    height: 110vh;
+    height: 100vh;
     z-index: 3; }
   .div__cont--scrollStopTwo {
     position: absolute;
-    height: 120vh;
-    margin-top: 6rem;
+    height: 100vh;
     z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 88vh;
-    margin-top: 14rem;
+    height: 83vh;
     z-index: 9; }
   .div__cont--scrollStopFour {
     position: absolute;
     height: 80vh;
-    margin-top: 10rem;
     z-index: 13; }
   .div__cont--scrollStopFive {
     position: absolute;
-    height: 132vh;
-    margin-top: 1rem;
+    height: 125vh;
     z-index: 16;
     width: 100%; }
+  .main__div--iconStyleOne {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleTwo {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleThreeFirst {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleThreeSec {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
+  .main__div--iconStyleFour {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    display: none; }
   .main__div--pOne {
-    margin-top: 0.5rem;
-    height: 1rem;
-    margin-top: 10rem; }
-  .main__div--pTwo {
-    margin-top: 0.5rem;
-    height: 1rem; }
+    margin-top: 1rem; }
   .main__div--pThree {
-    margin-top: 0.5rem;
-    height: 2rem; }
-  .main__div--pFour {
-    margin-top: 0.5rem;
-    height: 1rem; }
+    margin-top: 0rem;
+    font-size: 1rem; }
   .main__div--pFive {
-    margin-top: 0.5rem;
-    height: 15vh;
     padding-top: 2rem;
     z-index: 16; } }
 
@@ -713,6 +738,30 @@ footer div ul li:hover {
     line-height: 1.5rem; }
   .main__div--contFiveFont {
     font-size: 4rem; }
+  .main__div--contOne {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contTwoFirst {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contTwoSec {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contThree {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contThreeSec {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contFourOne {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contFourTwo {
+    height: 500px;
+    margin-top: 7rem; }
+  .main__div--contFive {
+    height: 500px;
+    margin-top: 7rem; }
   .main__div--pOne {
     margin-top: 0.5rem;
     height: 1rem;
