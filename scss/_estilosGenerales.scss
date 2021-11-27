@@ -71,6 +71,7 @@ html {
         &--color {
             & :hover {
                 color: rgb(167, 62, 228);
+                text-shadow: -6px -1px 6px rgb(225, 172, 238);
             }
         }
     }
@@ -113,6 +114,12 @@ de todas las páginas */
         color: #79564696;
         font-family: "Oxygen", sans-serif;
         font-weight: bold;
+        color: transparent;
+        background: #997a41;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 
         @if ($span==span__uno) {
             margin-left: 1rem;
@@ -131,6 +138,7 @@ h1 {
     font-family: "Megrim";
     font-weight: bold;
     font-size: 5rem;
+    text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
 /* ---------------------------------------- */
@@ -148,7 +156,8 @@ p {
 /* Estílos anchors en gral.*/
 a {
     text-decoration: none;
-    color: #4746439d;
+    color: #2e2e2c;
+    text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
 
@@ -210,7 +219,7 @@ $color in $sombras {
         ul {
             li {
                 letter-spacing: 0.2rem;
-                color: #d8b64f;
+                color: #4b4a458e;
 
                 &:hover {
                     color: rgb(231, 206, 245);
@@ -299,6 +308,21 @@ $color in $sombras {
                 height: 100%;
                 margin-top: 2rem;
                 z-index: 10;
+            }
+        }
+    }
+
+
+
+    nav {
+        ul {
+            li {
+                letter-spacing: 0.2rem;
+                color: #eba52d;
+
+                &:hover {
+                    color: rgb(231, 206, 245);
+                }
             }
         }
     }

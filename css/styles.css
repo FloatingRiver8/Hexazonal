@@ -47,7 +47,8 @@ html {
   box-shadow: 0 0 0 0.1rem; }
 
 .nav__ul--color :hover {
-  color: #a73ee4; }
+  color: #a73ee4;
+  text-shadow: -6px -1px 6px #e1acee; }
 
 /* ---------------------------------------- */
 ul {
@@ -75,6 +76,12 @@ de todas las páginas */
   color: #79564696;
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
+  color: transparent;
+  background: #997a41;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
   margin-left: 1rem; }
 
 #span__dos--posestilos {
@@ -85,6 +92,12 @@ de todas las páginas */
   color: #79564696;
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
+  color: transparent;
+  background: #997a41;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
   margin-left: 4rem; }
 
 /* ---------------------------------------- */
@@ -93,7 +106,8 @@ h1 {
   color: #7a7771;
   font-family: "Megrim";
   font-weight: bold;
-  font-size: 5rem; }
+  font-size: 5rem;
+  text-shadow: -6px -1px 6px #deb576; }
 
 /* ---------------------------------------- */
 /* Estílos párrafos en gral. */
@@ -109,7 +123,8 @@ p {
 /* Estílos anchors en gral.*/
 a {
   text-decoration: none;
-  color: #4746439d; }
+  color: #2e2e2c;
+  text-shadow: -6px -1px 6px #deb576; }
 
 /* ---------------------------------------- */
 /* MAP - con colores de sombra para botones de rrss */
@@ -140,7 +155,7 @@ a {
     background-size: inherit; }
   nav ul li {
     letter-spacing: 0.2rem;
-    color: #d8b64f; }
+    color: #4b4a458e; }
     nav ul li:hover {
       color: #e7cef5; }
   #span__uno--posestilos,
@@ -171,7 +186,12 @@ a {
     background-position: center;
     height: 100%;
     margin-top: 2rem;
-    z-index: 10; } }
+    z-index: 10; }
+  nav ul li {
+    letter-spacing: 0.2rem;
+    color: #eba52d; }
+    nav ul li:hover {
+      color: #e7cef5; } }
 
 /* Pág INDEX */
 /* ---------------------------------------- */
@@ -180,7 +200,8 @@ a {
   font-size: 10rem;
   z-index: 2;
   margin-bottom: 1rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  text-shadow: -6px -1px 6px #deb576; }
 
 .main__div--logoStyle {
   padding: 3rem; }
@@ -260,197 +281,45 @@ footer div ul li:hover {
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */
 .quienesSomos p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   word-spacing: 0.2rem;
-  color: #d37cdf;
-  font-weight: bold; }
+  color: #2e1a33;
+  font-family: "Megrim";
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #353434;
+  text-shadow: 0 0 5px #fae9b9, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfdfdf, 0 0 30px #f2e4ae, 0 0 40px #f0c976, 0 0 55px #facd7a, 0 0 75px #b143ff; }
 
-.navbar__Qsomos--Style {
-  background-image: radial-gradient(#f3ecd7, rgba(252, 248, 232, 0.822)), url("(../imagenes/shinyOverlayCinco.svg"); }
+.main__div--contFiveFont {
+  font-size: 10rem;
+  font-family: "Megrim";
+  color: #a339c4;
+  text-shadow: -6px -1px 6px #e1acee;
+  z-index: 15; }
 
 .nav--sticky {
   position: sticky;
   top: 0;
-  z-index: 3; }
+  z-index: 18; }
 
-.wrapper {
-  height: 2rem; }
-
-.main__div--contOne {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  padding-bottom: 1rem;
-  margin-top: 3rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosTres.jpg"); }
-
-.main__div--contTwoFirst {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 2rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
-  padding-top: 2rem; }
-
-.main__div--contTwoSec {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 2rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
-  padding-top: 2rem;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); }
-
-.main__div--contThree {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 3rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
-  background-position-y: 70%; }
-
-.main__div--contThreeSec {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh; }
-
-.main__div--contFourOne {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 2rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
-  background-position-x: left;
-  background-position-y: 50%;
-  background-size: 220%; }
-
-.main__div--contFourTwo {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 2rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
-  background-position-x: right;
-  background-position-y: 50%;
-  background-size: 185%; }
-
-.main__div--contFive {
-  height: 500px;
-  background-position: center;
-  background-position-y: 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-z-index: 2;
-  border-radius: 24px;
-  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
-  height: 60vh;
-  margin-top: 3rem;
-  height: 80vh;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
-  background-position-y: 60%; }
-
-.main__div--pOne {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 5rem;
-  height: 2rem;
-  margin-top: 5rem; }
-
-.main__div--pTwo {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 5rem;
-  height: 2rem; }
-
-.main__div--pThree {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 5rem;
-  height: 15vh; }
-
-.main__div--pFour {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 5rem;
-  height: 10vh; }
-
-.main__div--pFive {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 5rem;
-  height: 15vh; }
-
-.main__div--contFiveFont {
-  margin-top: 5rem;
-  font-size: 10rem;
-  font-family: "Megrim";
-  color: #ffe9b8; }
-
-.div__cont--scrollStopOne {
+.div__cont--scrollStopOneFirst {
   position: absolute;
   margin-top: 3rem;
   z-index: -1;
-  height: 80vh; }
+  height: 100vh; }
+
+.div__cont--scrollStopOneSec {
+  position: absolute;
+  margin-top: 3rem;
+  z-index: -1;
+  height: 100vh; }
 
 .div__cont--scrollStopTwo {
   position: absolute;
   margin-top: 3rem;
   z-index: -1;
-  height: 70vh;
+  height: 90vh;
   margin-top: 3rem; }
 
 .div__cont--scrollStopThree {
@@ -470,7 +339,161 @@ footer div ul li:hover {
 .div__cont--scrollStopFive {
   position: absolute;
   margin-top: 3rem;
-  z-index: -1; }
+  z-index: -1;
+  height: 100vh;
+  margin-top: 3rem;
+  z-index: 16;
+  width: 100%; }
+
+.main__div--contOne {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  margin-top: 3rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosTres.jpg"); }
+
+.main__div--contTwoFirst {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg"); }
+
+.main__div--contTwoSec {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
+  padding-top: 2rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
+.main__div--contThree {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
+  background-position-y: 70%; }
+
+.main__div--contThreeSec {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem; }
+
+.main__div--contFourOne {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+  background-position-x: left;
+  background-position-y: 50%;
+  background-size: 220%; }
+
+.main__div--contFourTwo {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+  background-position-x: right;
+  background-position-y: 50%;
+  background-size: 185%; }
+
+.main__div--contFive {
+  background-position: center;
+  background-position-y: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 24px;
+  box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
+  height: 70vh;
+  margin-top: 4rem;
+  height: 80vh;
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
+  background-position-y: 60%; }
+
+.main__div--pOne {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10rem;
+  z-index: 1;
+  height: 2rem;
+  margin-top: 2.5rem; }
+
+.main__div--pTwo {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10rem;
+  z-index: 1;
+  height: 2rem;
+  margin-top: 2rem; }
+
+.main__div--pThree {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10rem;
+  z-index: 1;
+  height: 15vh;
+  margin-top: 2rem; }
+
+.main__div--pFour {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10rem;
+  z-index: 1;
+  height: 10vh;
+  margin-top: 2rem; }
+
+.main__div--pFive {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10rem;
+  z-index: 1;
+  height: 15vh;
+  margin-top: 1rem; }
 
 /* Imágenes de los fondos de iconos */
 .main__div--iconStyleOne {
@@ -516,82 +539,198 @@ footer div ul li:hover {
   background-position-x: center;
   background-image: url("../imagenes/quienesSomosIconoCinco.png"); }
 
-.div__pQsomos--styles {
-  z-index: 100;
-  position: relative;
-  color: antiquewhite; }
-
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
+/* Breacking point Tablet */
 @media only screen and (max-width: 992px) {
-  .div__cont--scrollStopOne {
+  .main__div--contFiveFont {
+    font-size: 8rem; }
+  .quienesSomos p {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    line-height: 1.7rem;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #38352e, 0 0 30px #3b3a36, 0 0 40px #86818a, 0 0 55px #7a777e, 0 0 75px #303030; }
+  .div__cont--scrollStopOneFirst {
     position: absolute;
-    margin-top: 1rem;
-    z-index: -1;
-    height: 72vh; }
+    height: 120vh;
+    z-index: 2;
+    margin-top: 1rem; }
+  .div__cont--scrollStopOneSec {
+    position: absolute;
+    height: 120vh;
+    z-index: 3; }
   .div__cont--scrollStopTwo {
     position: absolute;
-    margin-top: 1rem;
-    z-index: -1;
-    height: 80vh;
-    margin-top: 3rem; }
+    height: 140vh;
+    margin-top: 6rem;
+    z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
-    margin-top: 1rem;
-    z-index: -1;
-    height: 80vh;
-    margin-top: 3rem; }
+    height: 100h;
+    margin-top: 14rem;
+    z-index: 9; }
   .div__cont--scrollStopFour {
     position: absolute;
-    margin-top: 1rem;
-    z-index: -1;
-    height: 100vh;
-    margin-top: 3rem; }
+    height: 90vh;
+    margin-top: 10rem;
+    z-index: 13; }
   .div__cont--scrollStopFive {
     position: absolute;
+    height: 120vh;
+    margin-top: 3rem;
+    z-index: 16; }
+  .main__div--contOne {
+    height: 500px;
+    padding-bottom: 1rem;
     margin-top: 1rem;
-    z-index: -1; } }
+    z-index: 1; }
+  .main__div--contTwoFirst {
+    height: 500px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    z-index: 2; }
+  .main__div--contTwoSec {
+    height: 500px;
+    display: none; }
+  .main__div--contThree {
+    height: 500px;
+    margin-top: 3rem;
+    background-position-y: 70%;
+    z-index: 8; }
+  .main__div--contThreeSec {
+    height: 500px; }
+  .main__div--contFourOne {
+    height: 500px;
+    margin-top: 2rem;
+    background-position-x: left;
+    background-position-y: 50%;
+    background-size: 220%;
+    z-index: 12; }
+  .main__div--contFourTwo {
+    height: 500px;
+    display: none; }
+  .main__div--contFive {
+    height: 500px;
+    margin-top: 3rem;
+    height: 80vh;
+    background-position-y: 60%;
+    z-index: 13; }
+  .main__div--pOne {
+    top: 10rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+    height: 2rem;
+    margin-top: 14rem; }
+  .main__div--pTwo {
+    top: 10rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+    height: 15vh; }
+  .main__div--pThree {
+    top: 10rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+    height: 2rem; }
+  .main__div--pFour {
+    top: 10rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+    height: 2rem; }
+  .main__div--pFive {
+    top: 10rem;
+    z-index: 1;
+    margin-top: 0.5rem;
+    height: 15vh;
+    padding-top: 2rem;
+    z-index: 16; } }
 
-.main__div--pOne {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 2.5rem;
-  height: 2rem;
-  margin-top: 2rem; }
+@media only screen and (max-width: 768px) {
+  .quienesSomos p {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    font-size: 2rem;
+    line-height: 1.5rem; }
+  .main__div--contFiveFont {
+    font-size: 7rem; }
+  .div__cont--scrollStopOneFirst {
+    position: absolute;
+    height: 115vh;
+    z-index: 2;
+    margin-top: 1rem; }
+  .div__cont--scrollStopOneSec {
+    position: absolute;
+    height: 110vh;
+    z-index: 3; }
+  .div__cont--scrollStopTwo {
+    position: absolute;
+    height: 120vh;
+    margin-top: 6rem;
+    z-index: 6; }
+  .div__cont--scrollStopThree {
+    position: absolute;
+    height: 88vh;
+    margin-top: 14rem;
+    z-index: 9; }
+  .div__cont--scrollStopFour {
+    position: absolute;
+    height: 80vh;
+    margin-top: 10rem;
+    z-index: 13; }
+  .div__cont--scrollStopFive {
+    position: absolute;
+    height: 132vh;
+    margin-top: 1rem;
+    z-index: 16;
+    width: 100%; }
+  .main__div--pOne {
+    margin-top: 0.5rem;
+    height: 1rem;
+    margin-top: 10rem; }
+  .main__div--pTwo {
+    margin-top: 0.5rem;
+    height: 1rem; }
+  .main__div--pThree {
+    margin-top: 0.5rem;
+    height: 2rem; }
+  .main__div--pFour {
+    margin-top: 0.5rem;
+    height: 1rem; }
+  .main__div--pFive {
+    margin-top: 0.5rem;
+    height: 15vh;
+    padding-top: 2rem;
+    z-index: 16; } }
 
-.main__div--pTwo {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 2.5rem;
-  height: 2rem; }
-
-.main__div--pThree {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 2.5rem;
-  height: 15vh; }
-
-.main__div--pFour {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 2.5rem;
-  height: 10vh; }
-
-.main__div--pFive {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10rem;
-  z-index: 1;
-  margin-top: 2.5rem;
-  height: 15vh; }
+@media only screen and (max-width: 576px) {
+  .nav--sticky {
+    position: static;
+    top: 0;
+    z-index: 18; }
+  .quienesSomos p {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+  .main__div--contFiveFont {
+    font-size: 4rem; }
+  .main__div--pOne {
+    margin-top: 0.5rem;
+    height: 1rem;
+    margin-top: 10rem; }
+  .main__div--pTwo {
+    margin-top: 0.5rem;
+    height: 15vh; }
+  .main__div--pThree {
+    margin-top: 0.5rem;
+    height: 2rem; }
+  .main__div--pFour {
+    margin-top: 0.5rem;
+    height: 1rem; }
+  .main__div--pFive {
+    margin-top: 0.5rem;
+    height: 15vh;
+    padding-top: 2rem;
+    z-index: 16; } }
 
 /*  ------------------------------------------ */
 /*  Sección HEXAZONALES */
