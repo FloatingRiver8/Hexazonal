@@ -15,9 +15,19 @@
       }
 
 
-
       .main {
             &__div {
+                  &--hOneinvertText{
+                        position:absolute;
+                        padding-top: 1rem;
+                        -webkit-transform:scaleX(3) scaleY(10) ;
+                        transform: scaleX(3) scaleY(10);
+                        z-index: -999;  
+                        opacity: 0.3; 
+                        color:antiquewhite;
+                        padding-left: 12rem;
+
+                  }
                   &--contFiveFont {
 
 
@@ -50,13 +60,13 @@
                   z-index: -1;
 
                   @if ($stopN==OneFirst) {
-                        height: 83vh;
+                        height: 120vh;
                         margin-top: 3rem;
                   }
 
 
                   @if ($stopN==OneSec) {
-                        height: 50vh;
+                        height: 83vh;
                   }
 
                   @if ($stopN==Two) {
@@ -169,11 +179,15 @@
                   position: -webkit-sticky;
                   top: 10rem;
                   z-index: 1;
+                  
 
 
                   @if ($pStyle==One) {
+                        display:flex;
                         height: 2rem;
-                        margin-top: 2.5rem;
+                        margin-top: 20rem;
+                        justify-content: center;
+                        align-items: center;
 
 
                   }
@@ -215,20 +229,18 @@
                         size: inherit;
                         repeat: no-repeat;
                         position-x: center;
+                        position-y: center;
                   }
 
                   @if ($imgIcons==One) {
                         background: {
                               image: url("../imagenes/quienesSomosSViol.png");
                         }
-
-                        margin-top: 8rem;
                   }
 
 
                   @if ($imgIcons==Two) {
                         background-image: url("../imagenes/quienesSomosIconoDos.png");
-
                   }
 
 
@@ -237,20 +249,17 @@
                         background-image: url("../imagenes/quienesSomosIconoTres.png");
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
-
                   }
 
 
 
                   @if ($imgIcons==ThreeSec) {
                         background-image: url("../imagenes/quienesSomosIconoTres.png");
-
                   }
 
 
                   @if ($imgIcons==Four) {
                         background-image: url("../imagenes/quienesSomosIconoCinco.png");
-
                   }
             }
       }
@@ -296,7 +305,7 @@
                         }
 
                         @if ($stopN==Two) {
-                              height: 140vh;
+                              height: 100vh;
 
                               z-index: 6;
                         }
@@ -369,6 +378,7 @@
                                     position-y: 50%;
                                     size: 220%;
                               }
+
                               z-index: 12;
                         }
 
@@ -396,6 +406,7 @@
                         margin-top: 0.5rem;
 
                         @if ($pStyle==One) {
+                              display:block;
                               margin-top: 3rem;
                         }
 
@@ -564,12 +575,12 @@
 
                         @if ($stopN==Three) {
                               height: 90vh;
-                              
+
                         }
 
                         @if ($stopN==Four) {
                               height: 90vh;
-                              
+
                         }
                   }
             }

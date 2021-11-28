@@ -291,6 +291,16 @@ footer div ul li:hover {
   color: #353434;
   text-shadow: 0 0 5px #fae9b9, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfdfdf, 0 0 30px #f2e4ae, 0 0 40px #f0c976, 0 0 55px #facd7a, 0 0 75px #b143ff; }
 
+.main__div--hOneinvertText {
+  position: absolute;
+  padding-top: 1rem;
+  -webkit-transform: scaleX(3) scaleY(10);
+  transform: scaleX(3) scaleY(10);
+  z-index: -999;
+  opacity: 0.3;
+  color: antiquewhite;
+  padding-left: 12rem; }
+
 .main__div--contFiveFont {
   font-size: 10rem;
   font-family: "Megrim";
@@ -307,14 +317,14 @@ footer div ul li:hover {
   position: absolute;
   margin-top: 10rem;
   z-index: -1;
-  height: 83vh;
+  height: 120vh;
   margin-top: 3rem; }
 
 .div__cont--scrollStopOneSec {
   position: absolute;
   margin-top: 10rem;
   z-index: -1;
-  height: 50vh; }
+  height: 83vh; }
 
 .div__cont--scrollStopTwo {
   position: absolute;
@@ -453,8 +463,11 @@ footer div ul li:hover {
   position: -webkit-sticky;
   top: 10rem;
   z-index: 1;
+  display: flex;
   height: 2rem;
-  margin-top: 2.5rem; }
+  margin-top: 20rem;
+  justify-content: center;
+  align-items: center; }
 
 .main__div--pTwo {
   position: sticky;
@@ -495,8 +508,8 @@ footer div ul li:hover {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-image: url("../imagenes/quienesSomosSViol.png");
-  margin-top: 8rem; }
+  background-position-y: center;
+  background-image: url("../imagenes/quienesSomosSViol.png"); }
 
 .main__div--iconStyleTwo {
   margin-top: 6rem;
@@ -504,6 +517,7 @@ footer div ul li:hover {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: center;
   background-image: url("../imagenes/quienesSomosIconoDos.png"); }
 
 .main__div--iconStyleThreeFirst {
@@ -512,6 +526,7 @@ footer div ul li:hover {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: center;
   background-image: url("../imagenes/quienesSomosIconoTres.png");
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
@@ -522,6 +537,7 @@ footer div ul li:hover {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: center;
   background-image: url("../imagenes/quienesSomosIconoTres.png"); }
 
 .main__div--iconStyleFour {
@@ -530,6 +546,7 @@ footer div ul li:hover {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: center;
   background-image: url("../imagenes/quienesSomosIconoCinco.png"); }
 
 /* ---------------------------------------- */
@@ -555,7 +572,7 @@ footer div ul li:hover {
     z-index: 1; }
   .div__cont--scrollStopTwo {
     position: absolute;
-    height: 140vh;
+    height: 100vh;
     z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
@@ -635,6 +652,7 @@ footer div ul li:hover {
     top: 10rem;
     z-index: 1;
     margin-top: 0.5rem;
+    display: block;
     margin-top: 3rem; }
   .main__div--pTwo {
     top: 10rem;
