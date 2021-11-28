@@ -57,31 +57,25 @@
 
                   @if ($stopN==OneSec) {
                         height: 50vh;
-
                   }
 
                   @if ($stopN==Two) {
                         height: 75vh;
-                        margin-top: 10rem;
                   }
 
                   @if ($stopN==Three) {
                         height: 86vh;
-                        margin-top: 10rem;
                   }
 
                   @if ($stopN==Four) {
                         height: 85vh;
-                        margin-top: 10rem;
                   }
 
                   @if ($stopN==Five) {
                         height: 100vh;
-                        margin-top: 10rem;
                         z-index: 16;
                         width: 100%;
                   }
-
             }
       }
 
@@ -90,13 +84,11 @@
       @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
             .main__div--cont#{$contStyle} {
 
-
                   background: {
                         position: center;
                         position-y: 30%;
                         size: cover;
                         repeat: no-repeat;
-
                   }
 
                   z-index: 2;
@@ -125,6 +117,7 @@
 
                   @if ($contStyle==Three) {
                         margin-top: 4rem;
+
                         background: {
                               image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
                               position-y: 70%;
@@ -133,6 +126,7 @@
 
                   @if ($contStyle==FourOne) {
                         margin-top: 4rem;
+
                         background: {
                               image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
                               position-x: left;
@@ -143,6 +137,7 @@
 
                   @if ($contStyle==FourTwo) {
                         margin-top: 4rem;
+
                         background: {
                               image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
                               position-x: right;
@@ -334,17 +329,17 @@
                   .main__div--iconStyle#{$imgIcons} {
                         margin-top: 0rem;
                         padding-top: 0rem;
-                        display:none;
+                        display: none;
+                  }
             }
-      }
-      
+
 
 
             @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
                   .main__div--cont#{$contStyle} {
                         height: 500px;
                         margin-top: 7rem;
-                        
+
 
 
                         @if ($contStyle==One) {
@@ -354,7 +349,6 @@
                         }
 
                         @if ($contStyle==TwoFirst) {
-                              
                               padding-top: 1rem;
                               z-index: 2;
                         }
@@ -365,20 +359,16 @@
                         }
 
                         @if ($contStyle==Three) {
-                              
                               background-position-y: 70%;
                               z-index: 8;
                         }
 
                         @if ($contStyle==FourOne) {
-                              
-
                               background: {
                                     position-x: left;
                                     position-y: 50%;
                                     size: 220%;
                               }
-
                               z-index: 12;
                         }
 
@@ -388,7 +378,6 @@
 
 
                         @if ($contStyle==Five) {
-                              
                               height: 80vh;
                               background-position-y: 60%;
                               z-index: 13;
@@ -407,23 +396,19 @@
                         margin-top: 0.5rem;
 
                         @if ($pStyle==One) {
-                              
                               margin-top: 3rem;
                         }
 
                         @if ($pStyle==Two) {
-                              
                               margin-top: 5rem;
                         }
 
                         @if ($pStyle==Three) {
-                              
                               margin-top: 0rem;
                               padding-top: 0rem;
                         }
 
                         @if ($pStyle==Four) {
-                              
                               margin-top: 5rem;
                         }
 
@@ -448,16 +433,12 @@
 
       @media only screen and (max-width: 768px) {
             .quienesSomos p {
-
                   letter-spacing: 0.1rem;
                   word-spacing: 0.2rem;
                   font-size: 2.3rem;
                   line-height: 1.8rem;
-
-
-
-
             }
+
 
             .main {
                   &__div {
@@ -471,7 +452,6 @@
 
             @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
                   .div__cont--scrollStop#{$stopN} {
-
                         position: absolute;
 
 
@@ -487,7 +467,7 @@
                         }
 
                         @if ($stopN==Two) {
-                              height: 100vh;
+                              height: 80vh;
                               z-index: 6;
                         }
 
@@ -517,13 +497,13 @@
                   .main__div--iconStyle#{$imgIcons} {
                         margin-top: 0rem;
                         padding-top: 0rem;
-                        display:none;
+                        display: none;
+                  }
             }
-      }
 
             @each $pStyle in (One, Two, Three, Four, Five) {
                   .main__div--p#{$pStyle} {
-                        
+
 
                         @if ($pStyle==One) {
                               margin-top: 1rem;
@@ -532,11 +512,11 @@
 
                         @if ($pStyle==Three) {
                               margin-top: 0rem;
-                              font-size: 1rem;
+
 
                         }
 
-                        @if ($pStyle==Five) {                             
+                        @if ($pStyle==Five) {
                               padding-top: 2rem;
                               z-index: 16;
                         }
@@ -559,7 +539,7 @@
 
                   letter-spacing: 0.1rem;
                   word-spacing: 0.2rem;
-                  font-size: 1.2rem;
+                  font-size: 1.5rem;
                   line-height: 1.5rem;
             }
 
@@ -567,15 +547,47 @@
                   &__div {
                         &--contFiveFont {
                               font-size: 4rem;
+                              margin-top: 3rem;
                         }
+                  }
+            }
+
+
+            @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
+                  .div__cont--scrollStop#{$stopN} {
+                        position: absolute;
+
+                        @if ($stopN==OneFirst) {
+                              height: 95vh;
+                              z-index: 2;
+                        }
+
+                        @if ($stopN==Three) {
+                              height: 90vh;
+                              
+                        }
+
+                        @if ($stopN==Four) {
+                              height: 90vh;
+                              
+                        }
+                  }
+            }
+
+            @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
+
+                  .main__div--iconStyle#{$imgIcons} {
+                        margin-top: 0rem;
+                        padding-top: 0rem;
+                        display: none;
                   }
             }
 
             @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
                   .main__div--cont#{$contStyle} {
                         height: 500px;
-                        margin-top: 7rem;
-                        
+                        margin-top: 6rem;
+
                   }
             }
 
@@ -587,34 +599,16 @@
 
                         @if ($pStyle==One) {
                               height: 1rem;
-                              margin-top: 10rem;
+                              margin-top: 7rem;
 
-                        }
-
-                        @if ($pStyle==Two) {
-                              height: 15vh;
-
-                        }
-
-                        @if ($pStyle==Three) {
-                              height: 2rem;
-
-                        }
-
-                        @if ($pStyle==Four) {
-                              height: 1rem;
-
-
-                        }
-
-                        @if ($pStyle==Five) {
-                              height: 15vh;
-                              padding-top: 2rem;
-                              z-index: 16;
                         }
 
                   }
 
+                  @if ($pStyle==Five) {
+                        margin-top: 2rem;
+                        z-index: 16;
+                  }
             }
 
       }
