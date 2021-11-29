@@ -24,7 +24,6 @@ html {
     &__contactos {
 
         &--backGround {
-
             background-image: url(../imagenes/shinyOverlayCinco.svg);
             z-index: 0;
             background-size: cover;
@@ -132,7 +131,6 @@ de todas las páginas */
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
-        color: #79564696;
         font-family: "Oxygen", sans-serif;
         font-weight: bold;
         color: transparent;
@@ -177,66 +175,39 @@ p {
 /* Estílos anchors en gral.*/
 a {
     text-decoration: none;
-    color: #2e2e2c;
+    color: #7a7771;
     text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
 
-/* ---------------------------------------- */
-/* MAP - con colores de sombra para botones de rrss */
-/* FOOTER anchors de redes sociales y derechos reservados */
+.footer {
+    &__div {
+        &--rrss {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 10px;
 
 
-.footer__div--payment{
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   width:10rem;
-    padding-left:2rem;
-   
-
-
+        }
+    }
 }
 
 
-
-
-.footer__div--rrss {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
-
-
-}
-
-
-$sombras:(Fb: rgb(121, 215, 228),
-    Ig: rgb(196, 61, 196),
-);
-
-
-
-@each $red,
-$color in $sombras {
+@each $red in (Fb,Ig){
     .footer_a--#{$red} {
 
         border-radius: 15px;
-        background: linear-gradient(145deg, #38929e, #ddffff);
+        background: linear-gradient(145deg, #1c4f55, #ddffff);
         box-shadow: 5px 5px 5px #143c42,
             -5px -5px 5px #eeffff;
-        opacity:0.5;
+        opacity: 0.5;
 
 
-        @if($red==Fb) {}
-
-        @else {
-            
-            background: linear-gradient(145deg, rgba(196, 61, 196, 0.253), rgba(225, 155, 243, 0.952));
+        @if($red==Ig) {
+            background: linear-gradient(145deg, rgb(104, 32, 104), rgba(238, 209, 245, 0.995));
             box-shadow: 5px 5px 5px #7a5491,
                 -5px -5px 5px #eeffff;
         }
@@ -460,7 +431,7 @@ $color in $sombras {
 
 @media only screen and (max-width: 576px) {
     .body {
-
+        &__home,
         &__quienes,
         &__hexa,
         &__destinos,
@@ -468,7 +439,9 @@ $color in $sombras {
             &--backGround {
 
                 background: {
-                    image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
+                    image: linear-gradient(to top,
+                    rgba(136, 129, 87, 0.858),
+                    rgb(85, 74, 97));
                     size: inherit, cover;
                     repeat: no-repeat;
                     position: center;
@@ -480,6 +453,20 @@ $color in $sombras {
             }
         }
     }
+
+
+    p {
+        color: #e9d9c8;
+        font-family: "MuseoModerno", cursive;
+        font-size: 1.2rem;
+        word-spacing: 0.1rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    
+
+
+
 
 
 
@@ -495,10 +482,6 @@ $color in $sombras {
             }
         }
     }
-
-
-
-
 
 
 

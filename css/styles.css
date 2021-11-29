@@ -97,7 +97,6 @@ de todas las páginas */
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  color: #79564696;
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
   color: transparent;
@@ -113,7 +112,6 @@ de todas las páginas */
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  color: #79564696;
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
   color: transparent;
@@ -147,19 +145,8 @@ p {
 /* Estílos anchors en gral.*/
 a {
   text-decoration: none;
-  color: #2e2e2c;
+  color: #7a7771;
   text-shadow: -6px -1px 6px #deb576; }
-
-/* ---------------------------------------- */
-/* MAP - con colores de sombra para botones de rrss */
-/* FOOTER anchors de redes sociales y derechos reservados */
-.footer__div--payment {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 10rem;
-  padding-left: 2rem; }
 
 .footer__div--rrss {
   display: flex;
@@ -170,16 +157,16 @@ a {
 
 .footer_a--Fb {
   border-radius: 15px;
-  background: linear-gradient(145deg, #38929e, #ddffff);
+  background: linear-gradient(145deg, #1c4f55, #ddffff);
   box-shadow: 5px 5px 5px #143c42, -5px -5px 5px #eeffff;
   opacity: 0.5; }
 
 .footer_a--Ig {
   border-radius: 15px;
-  background: linear-gradient(145deg, #38929e, #ddffff);
+  background: linear-gradient(145deg, #1c4f55, #ddffff);
   box-shadow: 5px 5px 5px #143c42, -5px -5px 5px #eeffff;
   opacity: 0.5;
-  background: linear-gradient(145deg, rgba(196, 61, 196, 0.253), rgba(225, 155, 243, 0.952));
+  background: linear-gradient(145deg, #682068, rgba(238, 209, 245, 0.995));
   box-shadow: 5px 5px 5px #7a5491, -5px -5px 5px #eeffff; }
 
 /* ---------------------------------------- */
@@ -293,14 +280,21 @@ a {
     background-image: url("../imagenes/menuHambWhite.png"); } }
 
 @media only screen and (max-width: 576px) {
-  .body__quienes--backGround, .body__hexa--backGround, .body__destinos--backGround, .body__contacto--backGround {
-    background-image: url("../imagenes/LogoHexaSimple.png"), url("../imagenes/shinyOverlayOscuroCuatro.svg");
+  .body__home--backGround, .body__quienes--backGround, .body__hexa--backGround, .body__destinos--backGround, .body__contacto--backGround {
+    background-image: linear-gradient(to top, rgba(136, 129, 87, 0.858), #554a61);
     background-size: inherit, cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
     margin-top: 2rem;
     z-index: 10; }
+  p {
+    color: #e9d9c8;
+    font-family: "MuseoModerno", cursive;
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center; }
   nav ul li {
     letter-spacing: 0.2rem;
     color: #eba52d; }
@@ -311,14 +305,14 @@ a {
 /* ---------------------------------------- */
 .header__H1--style {
   width: 100%;
-  font-size: 12rem;
+  font-size: 9rem;
   z-index: 2;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
   text-shadow: -6px -1px 6px #deb576; }
 
 .main__div--logoStyle {
-  padding: 3rem; }
+  padding: 0rem; }
 
 .footer_a--Fb, .footer_a--Ig {
   margin-bottom: 1rem; }
@@ -362,17 +356,15 @@ footer div ul li:hover {
 @media only screen and (max-width: 992px) {
   .header__H1--style {
     font-size: 8rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
   .main__div--logoStyle {
-    padding: 2rem; } }
+    padding: 0rem; } }
 
 @media only screen and (max-width: 768px) {
   /* Disminuye tamaño de titulo hexaZonal 
                 y párrafo en break 768px -INDEX */
   .header__H1--style {
-    font-size: 4rem;
-    color: #c335ee;
-    margin-bottom: 5rem; }
+    font-size: 6rem; }
   .main__div--logoStyle {
     padding: 3rem; }
   .footer__ul--itemsStyle {
@@ -392,6 +384,10 @@ footer div ul li:hover {
     background-image: none;
     box-shadow: none; } }
 
+@media only screen and (max-width: 576px) {
+  .header__H1--style {
+    font-size: 4rem; } }
+
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */
 .quienesSomos p {
@@ -406,7 +402,7 @@ footer div ul li:hover {
   text-shadow: 0 0 5px #fae9b9, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfdfdf, 0 0 30px #f2e4ae, 0 0 40px #f0c976, 0 0 55px #facd7a, 0 0 75px #b143ff; }
 
 .main__div--contFiveFont {
-  font-size: 10rem;
+  font-size: 16rem;
   font-family: "Megrim";
   color: #a339c4;
   text-shadow: -6px -1px 6px #e1acee;
@@ -452,7 +448,7 @@ footer div ul li:hover {
   position: absolute;
   margin-top: 10rem;
   z-index: -1;
-  height: 100vh;
+  height: 81vh;
   z-index: 16;
   width: 100%; }
 
@@ -530,10 +526,10 @@ footer div ul li:hover {
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  background-image: url("../imagenes/quienesSomosCuatroMinComp50.jpg");
+  background-image: url("../imagenes/quienesSomosCuatro.jpg");
   background-position-x: left;
   background-position-y: 50%;
-  background-size: 220%; }
+  background-height: 200%; }
 
 .main__div--contFourTwo {
   background-position: center;
@@ -545,10 +541,9 @@ footer div ul li:hover {
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  background-image: url("../imagenes/quienesSomosCuatroMinComp50.jpg");
+  background-image: url("../imagenes/quienesSomosCuatro.jpg");
   background-position-x: right;
-  background-position-y: 50%;
-  background-size: 185%; }
+  background-position-y: 50%; }
 
 .main__div--contFive {
   background-position: center;
@@ -571,9 +566,11 @@ footer div ul li:hover {
   z-index: 1;
   display: flex;
   height: 2rem;
-  margin-top: 20rem;
+  margin-top: 15rem;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  top: 16rem;
+  padding-top: 1rem; }
 
 .main__div--pTwo {
   position: sticky;
@@ -581,15 +578,15 @@ footer div ul li:hover {
   top: 10rem;
   z-index: 1;
   height: 2rem;
-  margin-top: 2rem; }
+  top: 7rem; }
 
 .main__div--pThree {
   position: sticky;
   position: -webkit-sticky;
   top: 10rem;
   z-index: 1;
-  height: 15vh;
-  margin-top: 2rem; }
+  height: 2rem;
+  top: 7rem; }
 
 .main__div--pFour {
   position: sticky;
@@ -597,7 +594,7 @@ footer div ul li:hover {
   top: 10rem;
   z-index: 1;
   height: 10vh;
-  margin-top: 2rem; }
+  top: 7rem; }
 
 .main__div--pFive {
   position: sticky;
@@ -658,6 +655,8 @@ footer div ul li:hover {
 /* ---------------------------------------- */
 /*    MEDIA QUERYS Qsomos */
 @media only screen and (max-width: 992px) {
+  .header__h1Qs--reduceSize {
+    font-size: 6rem; }
   .quienesSomos p {
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -665,7 +664,7 @@ footer div ul li:hover {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #38352e, 0 0 30px #3b3a36, 0 0 40px #86818a, 0 0 55px #7a777e, 0 0 75px #303030; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 100vh;
+    height: 110vh;
     z-index: 2;
     margin-top: 0.5rem;
     padding-top: 1rem; }
@@ -675,15 +674,15 @@ footer div ul li:hover {
     z-index: 1; }
   .div__cont--scrollStopTwo {
     position: absolute;
-    height: 100vh;
+    height: 150vh;
     z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 100h;
+    height: 130vh;
     z-index: 9; }
   .div__cont--scrollStopFour {
     position: absolute;
-    height: 90vh;
+    height: 160vh;
     margin-top: 8rem;
     z-index: 13; }
   .div__cont--scrollStopFive {
@@ -739,7 +738,7 @@ footer div ul li:hover {
     margin-top: 7rem;
     background-position-x: left;
     background-position-y: 50%;
-    background-size: 220%;
+    background-size: 280%;
     z-index: 12; }
   .main__div--contFourTwo {
     height: 500px;
@@ -784,6 +783,8 @@ footer div ul li:hover {
     font-size: 8rem; } }
 
 @media only screen and (max-width: 768px) {
+  .header__h1Qs--reduceSize {
+    font-size: 4rem; }
   .quienesSomos p {
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
@@ -791,7 +792,7 @@ footer div ul li:hover {
     line-height: 1.8rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 80vh;
+    height: 120vh;
     z-index: 2; }
   .div__cont--scrollStopOneSec {
     position: absolute;
@@ -799,27 +800,30 @@ footer div ul li:hover {
     z-index: 3; }
   .div__cont--scrollStopTwo {
     position: absolute;
-    height: 80vh;
+    height: 100vh;
     z-index: 6; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 83vh;
+    height: 110vh;
     z-index: 9; }
   .div__cont--scrollStopFour {
     position: absolute;
-    height: 80vh;
+    height: 130vh;
     z-index: 13; }
   .div__cont--scrollStopFive {
     position: absolute;
-    height: 125vh;
+    height: 120vh;
     z-index: 16;
     width: 100%; }
   .main__div--pOne {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    top: 7rem; }
   .main__div--pThree {
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    padding-top: 0rem;
+    top: 8rem; }
   .main__div--pFive {
-    padding-top: 2rem;
+    top: 15rem;
     z-index: 16; } }
 
 .main__div--contFiveFont {
@@ -830,65 +834,75 @@ footer div ul li:hover {
     position: static;
     top: 0;
     z-index: 18; }
+  .header__h1Qs--reduceSize {
+    font-size: 3rem; }
   .quienesSomos p {
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.5rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 95vh;
-    z-index: 2; }
+    height: 100vh;
+    z-index: 2;
+    top: 14rem; }
   .div__cont--scrollStopOneSec {
     position: absolute; }
   .div__cont--scrollStopTwo {
     position: absolute; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 90vh; }
+    height: 100vh;
+    top: 84rem; }
   .div__cont--scrollStopFour {
     position: absolute;
-    height: 90vh; }
+    height: 110vh; }
   .div__cont--scrollStopFive {
-    position: absolute; }
+    position: absolute;
+    height: 25vh; }
   .main__div--contOne {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem;
+    padding-top: 0rem;
+    margin-top: 3rem; }
   .main__div--contTwoFirst {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contTwoSec {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contThree {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contThreeSec {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contFourOne {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contFourTwo {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--contFive {
     height: 500px;
-    margin-top: 6rem; }
+    padding-top: 9rem; }
   .main__div--pOne {
-    margin-top: 0.5rem;
-    height: 1rem;
-    margin-top: 7rem; }
+    margin-top: 0rem;
+    padding-top: 2rem;
+    height: 10; }
   .main__div--pTwo {
-    margin-top: 0.5rem; }
+    margin-top: 0rem;
+    padding-top: 2rem; }
   .main__div--pThree {
-    margin-top: 0.5rem; }
+    margin-top: 0rem;
+    padding-top: 2rem; }
   .main__div--pFour {
-    margin-top: 0.5rem; }
+    margin-top: 0rem;
+    padding-top: 2rem; }
   .main__div--pFive {
-    margin-top: 0.5rem; }
-  margin-top: 2rem;
-  z-index: 16;
+    margin-top: 0rem;
+    padding-top: 2rem;
+    z-index: 16; }
   .main__div--contFiveFont {
     font-size: 4rem;
     margin-top: 3rem; } }
