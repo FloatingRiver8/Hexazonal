@@ -466,7 +466,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 3rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosTres.jpg"); }
+  background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosUnoMin.jpg"); }
 
 .main__div--contTwoFirst {
   background-position: center;
@@ -478,7 +478,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg"); }
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg"); }
 
 .main__div--contTwoSec {
   background-position: center;
@@ -490,7 +490,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDos.jpg");
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg");
   padding-top: 2rem;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
@@ -505,7 +505,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSiete.jpg");
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTresMin.jpg");
   background-position-y: 70%; }
 
 .main__div--contThreeSec {
@@ -528,7 +528,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
   background-position-x: left;
   background-position-y: 50%;
   background-size: 220%; }
@@ -543,7 +543,7 @@ footer div ul li:hover {
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatro.jpg");
+  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
   background-position-x: right;
   background-position-y: 50%;
   background-size: 185%; }
