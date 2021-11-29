@@ -461,36 +461,37 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 3rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosUnoMin.jpg"); }
+  background-image: url("../imagenes/quienesSomosUnoMin.jpg"); }
 
 .main__div--contTwoFirst {
   background-position: center;
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg"); }
+  background-image: url("../imagenes/quienesSomosDosMin.jpg"); }
 
 .main__div--contTwoSec {
   background-position: center;
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg");
+  background-image: url("../imagenes/quienesSomosDosMin.jpg");
   padding-top: 2rem;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
@@ -500,12 +501,12 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTresMin.jpg");
+  background-image: url("../imagenes/quienesSomosTresMin.jpg");
   background-position-y: 70%; }
 
 .main__div--contThreeSec {
@@ -513,6 +514,7 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
@@ -523,12 +525,12 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
+  background-image: url("../imagenes/quienesSomosCuatroMin.jpg");
   background-position-x: left;
   background-position-y: 50%;
   background-size: 220%; }
@@ -538,12 +540,12 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
+  background-image: url("../imagenes/quienesSomosCuatroMin.jpg");
   background-position-x: right;
   background-position-y: 50%;
   background-size: 185%; }
@@ -553,13 +555,13 @@ footer div ul li:hover {
   background-position-y: 30%;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 4rem;
   z-index: 2;
   border-radius: 24px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
-  margin-top: 4rem;
   height: 80vh;
-  background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
+  background-image: url("../imagenes/quienesSomosSeis.jpg");
   background-position-y: 60%; }
 
 .main__div--pOne {
@@ -655,10 +657,7 @@ footer div ul li:hover {
 
 /* ---------------------------------------- */
 /*    MEDIA QUERYS Qsomos */
-/* Breacking point Tablet */
 @media only screen and (max-width: 992px) {
-  .main__div--contFiveFont {
-    font-size: 8rem; }
   .quienesSomos p {
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -780,7 +779,9 @@ footer div ul li:hover {
     margin-top: 0.5rem;
     margin-top: 5rem;
     padding-top: 2rem;
-    z-index: 16; } }
+    z-index: 16; }
+  .main__div--contFiveFont {
+    font-size: 8rem; } }
 
 @media only screen and (max-width: 768px) {
   .quienesSomos p {
@@ -788,13 +789,6 @@ footer div ul li:hover {
     word-spacing: 0.2rem;
     font-size: 2.3rem;
     line-height: 1.8rem; }
-  .main__div--backTextQs {
-    padding-top: 0.2rem;
-    -webkit-transform: scaleX(1) scaleY(7);
-    transform: scaleX(1.3) scaleY(7);
-    padding-left: 4.2rem; }
-  .main__div--contFiveFont {
-    font-size: 7rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
     height: 80vh;
@@ -820,26 +814,6 @@ footer div ul li:hover {
     height: 125vh;
     z-index: 16;
     width: 100%; }
-  .main__div--iconStyleOne {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleTwo {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeFirst {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeSec {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleFour {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
   .main__div--pOne {
     margin-top: 1rem; }
   .main__div--pThree {
@@ -847,6 +821,9 @@ footer div ul li:hover {
   .main__div--pFive {
     padding-top: 2rem;
     z-index: 16; } }
+
+.main__div--contFiveFont {
+  font-size: 7rem; }
 
 @media only screen and (max-width: 576px) {
   .nav--sticky {
@@ -858,11 +835,6 @@ footer div ul li:hover {
     word-spacing: 0.2rem;
     font-size: 1.5rem;
     line-height: 1.5rem; }
-  .main__div--backText {
-    display: none; }
-  .main__div--contFiveFont {
-    font-size: 4rem;
-    margin-top: 3rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
     height: 95vh;
@@ -879,26 +851,6 @@ footer div ul li:hover {
     height: 90vh; }
   .div__cont--scrollStopFive {
     position: absolute; }
-  .main__div--iconStyleOne {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleTwo {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeFirst {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeSec {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleFour {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
   .main__div--contOne {
     height: 500px;
     margin-top: 6rem; }
@@ -936,7 +888,10 @@ footer div ul li:hover {
   .main__div--pFive {
     margin-top: 0.5rem; }
   margin-top: 2rem;
-  z-index: 16; }
+  z-index: 16;
+  .main__div--contFiveFont {
+    font-size: 4rem;
+    margin-top: 3rem; } }
 
 /*  ------------------------------------------ */
 /*  Sección HEXAZONALES */

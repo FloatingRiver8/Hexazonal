@@ -90,7 +90,7 @@
                         size: cover;
                         repeat: no-repeat;
                   }
-
+                  margin-top: 4rem;
                   z-index: 2;
                   border-radius: 24px;
                   box-shadow: 40px 40px 80px #aca893,
@@ -99,36 +99,30 @@
 
                   @if ($contStyle==One) {
                         margin-top: 3rem;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.644), rgba(206, 206, 201, 0.596)), url("../imagenes/quienesSomosUnoMin.jpg");
+                        background-image: url("../imagenes/quienesSomosUnoMin.jpg");
                   }
 
                   @if ($contStyle==TwoFirst) {
-                        margin-top: 4rem;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg");
+                        background-image:  url("../imagenes/quienesSomosDosMin.jpg");
                   }
 
                   @if ($contStyle==TwoSec) {
-                        margin-top: 4rem;
-                        background-image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosDosMin.jpg");
+                        background-image:  url("../imagenes/quienesSomosDosMin.jpg");
                         padding-top: 2rem;
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
                   }
 
                   @if ($contStyle==Three) {
-                        margin-top: 4rem;
-
                         background: {
-                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosTresMin.jpg");
+                              image: url("../imagenes/quienesSomosTresMin.jpg");
                               position-y: 70%;
                         }
                   }
 
                   @if ($contStyle==FourOne) {
-                        margin-top: 4rem;
-
                         background: {
-                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
+                              image:  url("../imagenes/quienesSomosCuatroMin.jpg");
                               position-x: left;
                               position-y: 50%;
                               size: 220%;
@@ -136,10 +130,8 @@
                   }
 
                   @if ($contStyle==FourTwo) {
-                        margin-top: 4rem;
-
                         background: {
-                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosCuatroMin.jpg");
+                              image:  url("../imagenes/quienesSomosCuatroMin.jpg");
                               position-x: right;
                               position-y: 50%;
                               size: 185%;
@@ -147,11 +139,9 @@
                   }
 
                   @if ($contStyle==Five) {
-                        margin-top: 4rem;
                         height: 80vh;
-
                         background: {
-                              image: radial-gradient(rgba(230, 199, 112, 0.432), rgba(206, 206, 201, 0.603)), url("../imagenes/quienesSomosSeis.jpg");
+                              image:  url("../imagenes/quienesSomosSeis.jpg");
                               position-y: 60%;
                         }
                   }
@@ -170,16 +160,12 @@
                   top: 10rem;
                   z-index: 1;
 
-
-
                   @if ($pStyle==One) {
                         display: flex;
                         height: 2rem;
                         margin-top: 20rem;
                         justify-content: center;
                         align-items: center;
-
-
                   }
 
                   @if ($pStyle==Two) {
@@ -195,7 +181,6 @@
                   @if ($pStyle==Four) {
                         height: 10vh;
                         margin-top: 2rem;
-
                   }
 
                   @if ($pStyle==Five) {
@@ -228,12 +213,9 @@
                         }
                   }
 
-
                   @if ($imgIcons==Two) {
                         background-image: url("../imagenes/quienesSomosIconoDos.png");
                   }
-
-
 
                   @if ($imgIcons==ThreeFirst) {
                         background-image: url("../imagenes/quienesSomosIconoTres.png");
@@ -241,12 +223,9 @@
                         transform: scaleX(-1);
                   }
 
-
-
                   @if ($imgIcons==ThreeSec) {
                         background-image: url("../imagenes/quienesSomosIconoTres.png");
                   }
-
 
                   @if ($imgIcons==Four) {
                         background-image: url("../imagenes/quienesSomosIconoCinco.png");
@@ -257,23 +236,7 @@
       /* ---------------------------------------- */
       /*    MEDIA QUERYS Qsomos */
 
-
-
-
-
-
-
-      /* Breacking point Tablet */
       @media only screen and (max-width: 992px) {
-
-            .main {
-                  &__div {
-                        &--contFiveFont {
-                              font-size: 8rem;
-
-                        }
-                  }
-            }
 
             .quienesSomos p {
                   font-size: 2.5rem;
@@ -286,7 +249,6 @@
             @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
                   .div__cont--scrollStop#{$stopN} {
                         position: absolute;
-
 
                         @if ($stopN==OneFirst) {
                               height: 100vh;
@@ -317,7 +279,6 @@
                               z-index: 13;
                         }
 
-
                         @if ($stopN==Five) {
                               height: 120vh;
                               margin-top: 3rem;
@@ -326,7 +287,6 @@
 
                   }
             }
-
 
 
             @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
@@ -338,14 +298,10 @@
                   }
             }
 
-
-
             @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
                   .main__div--cont#{$contStyle} {
                         height: 500px;
                         margin-top: 7rem;
-
-
 
                         @if ($contStyle==One) {
                               padding-bottom: 1rem;
@@ -382,7 +338,6 @@
                               display: none;
                         }
 
-
                         @if ($contStyle==Five) {
                               height: 80vh;
                               background-position-y: 60%;
@@ -392,7 +347,6 @@
                   }
 
             }
-
 
 
             @each $pStyle in (One, Two, Three, Four, Five) {
@@ -429,6 +383,15 @@
 
             }
 
+            .main {
+                  &__div {
+                        &--contFiveFont {
+                              font-size: 8rem;
+
+                        }
+                  }
+            }
+
       }
 
 
@@ -444,31 +407,9 @@
             }
 
 
-            .main {
-                  &__div {
-                        &--backTextQs {
-                              padding-top: 0.2rem;
-                              -webkit-transform: scaleX(1) scaleY(7);
-                              transform: scaleX(1.3) scaleY(7);
-                              padding-left: 4.2rem;
-                        }
-                  }
-            }
-
-            .main {
-                  &__div {
-                        &--contFiveFont {
-                              font-size: 7rem;
-                        }
-                  }
-            }
-
-
-
             @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
                   .div__cont--scrollStop#{$stopN} {
                         position: absolute;
-
 
                         @if ($stopN==OneFirst) {
                               height: 80vh;
@@ -496,7 +437,6 @@
                               z-index: 13;
                         }
 
-
                         @if ($stopN==Five) {
                               height: 125vh;
                               z-index: 16;
@@ -507,28 +447,17 @@
                   }
             }
 
-            @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
 
-                  .main__div--iconStyle#{$imgIcons} {
-                        margin-top: 0rem;
-                        padding-top: 0rem;
-                        display: none;
-                  }
-            }
 
             @each $pStyle in (One, Two, Three, Four, Five) {
                   .main__div--p#{$pStyle} {
-
 
                         @if ($pStyle==One) {
                               margin-top: 1rem;
                         }
 
-
                         @if ($pStyle==Three) {
                               margin-top: 0rem;
-
-
                         }
 
                         @if ($pStyle==Five) {
@@ -536,6 +465,14 @@
                               z-index: 16;
                         }
 
+                  }
+            }
+      }
+
+      .main {
+            &__div {
+                  &--contFiveFont {
+                        font-size: 7rem;
                   }
             }
       }
@@ -556,24 +493,6 @@
                   word-spacing: 0.2rem;
                   font-size: 1.5rem;
                   line-height: 1.5rem;
-            }
-
-            .main {
-                  &__div {
-                        &--backText {
-                              display: none;
-                        }
-                  }
-            }
-
-
-            .main {
-                  &__div {
-                        &--contFiveFont {
-                              font-size: 4rem;
-                              margin-top: 3rem;
-                        }
-                  }
             }
 
 
@@ -598,14 +517,7 @@
                   }
             }
 
-            @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
 
-                  .main__div--iconStyle#{$imgIcons} {
-                        margin-top: 0rem;
-                        padding-top: 0rem;
-                        display: none;
-                  }
-            }
 
             @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
                   .main__div--cont#{$contStyle} {
@@ -633,5 +545,15 @@
                         z-index: 16;
                   }
             }
+
+            .main {
+                  &__div {
+                        &--contFiveFont {
+                              font-size: 4rem;
+                              margin-top: 3rem;
+                        }
+                  }
+            }
+
 
       }
