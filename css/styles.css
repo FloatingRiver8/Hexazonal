@@ -22,7 +22,7 @@ html {
 .main__div--backTextQs {
   position: absolute;
   padding-top: 1rem;
-  -webkit-transform: scaleX(3) scaleY(10);
+  -webkit-transform: scaleX(2.5) scaleY(10);
   transform: scaleX(2.3) scaleY(10);
   z-index: -999;
   opacity: 0.3;
@@ -32,14 +32,14 @@ html {
 .main__div--backTextCont {
   position: absolute;
   padding-top: 1rem;
-  -webkit-transform: scaleX(3) scaleY(10);
+  -webkit-transform: scaleX(2.5) scaleY(10);
   transform: scaleX(2.3) scaleY(10);
   z-index: -999;
   opacity: 0.3;
   color: antiquewhite;
   padding-left: 19rem;
-  padding-top: 0.5rem;
-  -webkit-transform: scaleX(2.5) scaleY(7);
+  margin-top: 1rem;
+  -webkit-transform: scaleX(2.5) scaleY(10);
   transform: scaleX(2.5) scaleY(7);
   padding-left: 12rem; }
 
@@ -547,8 +547,7 @@ footer div ul li:hover {
   height: 70vh;
   background-image: url("../imagenes/quienesSomosCuatro.jpg");
   background-position-x: left;
-  background-position-y: 50%;
-  background-height: 200%; }
+  background-position-y: 50%; }
 
 .main__div--contFourTwo {
   background-position: center;
@@ -873,11 +872,11 @@ footer div ul li:hover {
     position: absolute; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 110vh;
+    height: 100vh;
     top: 84rem; }
   .div__cont--scrollStopFour {
     position: absolute;
-    height: 110vh; }
+    height: 100vh; }
   .div__cont--scrollStopFive {
     position: absolute;
     height: 25vh; }

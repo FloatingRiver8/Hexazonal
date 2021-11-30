@@ -124,10 +124,11 @@
                               image: url("../imagenes/quienesSomosCuatro.jpg");
                               position-x: left;
                               position-y: 50%;
-
-                              height: 200%;
+                              
                         }
+                        
                   }
+                  
 
                   @if ($contStyle==FourTwo) {
                         background: {
@@ -557,12 +558,12 @@
                         }
 
                         @if ($stopN==Three) {
-                              height: 110vh;
+                              height: 100vh;
                               top: 84rem;
                         }
 
                         @if ($stopN==Four) {
-                              height: 110vh;
+                              height: 100vh;
 
                         }
 
