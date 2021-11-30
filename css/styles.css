@@ -432,6 +432,7 @@ footer div ul li:hover {
   top: 0;
   z-index: 18; }
 
+/* Estos contenedores permiten mover los párrafos hasta ocultarlos */
 .div__cont--scrollStopOneFirst {
   position: absolute;
   margin-top: 10rem;
@@ -478,7 +479,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   margin-top: 3rem;
@@ -491,7 +492,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   background-image: url("../imagenes/quienesSomosDosMin.jpg"); }
@@ -503,7 +504,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   background-image: url("../imagenes/quienesSomosDosMin.jpg");
@@ -518,7 +519,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   background-image: url("../imagenes/quienesSomosTresMin.jpg");
@@ -531,7 +532,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh; }
 
@@ -542,7 +543,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   background-image: url("../imagenes/quienesSomosCuatro.jpg");
@@ -556,7 +557,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   background-image: url("../imagenes/quienesSomosCuatro.jpg");
@@ -570,7 +571,7 @@ footer div ul li:hover {
   background-repeat: no-repeat;
   margin-top: 4rem;
   z-index: 2;
-  border-radius: 24px;
+  border-radius: 15px;
   box-shadow: 40px 40px 80px #aca893, -10px -3px 80px #aca893;
   height: 70vh;
   height: 80vh;
@@ -676,16 +677,16 @@ footer div ul li:hover {
   .header__h1Qs--reduceSize {
     font-size: 6rem; }
   .quienesSomos p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #FFFFFF;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #38352e, 0 0 30px #3b3a36, 0 0 40px #86818a, 0 0 55px #7a777e, 0 0 75px #303030; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
     height: 110vh;
     z-index: 2;
-    margin-top: 0.5rem;
-    padding-top: 1rem; }
+    margin-top: 0rem;
+    padding-top: 0rem; }
   .div__cont--scrollStopOneSec {
     position: absolute;
     height: 120vh;
@@ -708,62 +709,34 @@ footer div ul li:hover {
     height: 120vh;
     margin-top: 3rem;
     z-index: 16; }
-  .main__div--iconStyleOne {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleTwo {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeFirst {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleThreeSec {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
-  .main__div--iconStyleFour {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    display: none; }
   .main__div--contOne {
-    height: 500px;
     margin-top: 7rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
     z-index: 1; }
   .main__div--contTwoFirst {
-    height: 500px;
     margin-top: 7rem;
     padding-top: 1rem;
     z-index: 2; }
   .main__div--contTwoSec {
-    height: 500px;
     margin-top: 7rem;
     display: none; }
   .main__div--contThree {
-    height: 500px;
     margin-top: 7rem;
     background-position-y: 70%;
     z-index: 8; }
   .main__div--contThreeSec {
-    height: 500px;
     margin-top: 7rem; }
   .main__div--contFourOne {
-    height: 500px;
     margin-top: 7rem;
     background-position-x: left;
     background-position-y: 50%;
     background-size: 280%;
     z-index: 12; }
   .main__div--contFourTwo {
-    height: 500px;
     margin-top: 7rem;
     display: none; }
   .main__div--contFive {
-    height: 500px;
     margin-top: 7rem;
     height: 80vh;
     background-position-y: 60%;
@@ -806,7 +779,7 @@ footer div ul li:hover {
   .quienesSomos p {
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     line-height: 1.8rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
@@ -851,27 +824,27 @@ footer div ul li:hover {
   .nav--sticky {
     position: static;
     top: 0; }
-  .navbar {
-    z-index: 2000; }
   .header__h1Qs--reduceSize {
     font-size: 3rem;
     text-shadow: -2px -1px 2px #deb576; }
   .quienesSomos p {
     letter-spacing: 0.1rem;
     word-spacing: 0.2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.5rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
     height: 110vh;
-    z-index: 2; }
+    z-index: 2;
+    padding-top: 1rem; }
   .div__cont--scrollStopOneSec {
     position: absolute; }
   .div__cont--scrollStopTwo {
     position: absolute; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 100vh; }
+    height: 110vh;
+    margin-top: 7rem; }
   .div__cont--scrollStopFour {
     position: absolute;
     height: 110vh; }

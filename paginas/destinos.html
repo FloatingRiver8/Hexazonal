@@ -148,10 +148,6 @@
                 <span id="span__uno--posestilos" class=" animate__animated animate__fadeIn fadeExplora">explora</span>
                 <span id="span__dos--posestilos" class=" animate__animated animate__fadeIn fadeDescubre">descubre</span>
 
-
-
-
-
                 <div class="col-xl-6 d-flex justify-content-center">
                     <header>
                         <h1 class=" wow animate__animated animate__fadeIn header__h1Des--reduceSize">
@@ -182,21 +178,16 @@
                 <div class="col-sm-2 col-xl-2">
                 </div>
 
-
                 <!-- MAIN -->
-                <!-- Container y row -->
-                <div class="container  ">
+                <div class="container">
                     <main>
-                        <div class="row ">
+                        <div class="row">
                             <div class="col-sm-6  col-xl-3 main__div--spaces d-flex justify-content-center">
-
-
 
                                 <!-- Modales con youtube quedan en play a menos que se les ponga stop antes de cerrar.
                             Embedding YouTube videos
                             Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. 
                             See this helpful Stack Overflow post for more information. https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal -->
-
 
                                 <!-- Modal 1 Destino Bosque -->
                                 <button type="button"
@@ -205,7 +196,6 @@
                                     <img src="../imagenes/destinoBosque.png" alt="Bosque" />
                                     <p>Bosque</p>
                                 </button>
-
 
                                 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
                                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1"
@@ -221,7 +211,6 @@
                                                     aria-label="Close"></button>
                                             </div>
 
-
                                             <!-- Video -->
                                             <div class="modal-body container ">
                                                 <div class="row">
@@ -231,7 +220,6 @@
                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                         allowfullscreen>
                                                     </iframe>
-
 
                                                     <div>
                                                         <ul class="main__modal__ul--styles">
@@ -244,7 +232,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
 
                                             <!-- Botón Close Modal -->
                                             <div class="modal-footer main__buttons--shadowViol">
@@ -377,7 +364,6 @@
                                 </div>
                             </div>
 
-
                             <!-- Modal 4  Destino Viaje en el tiempo -->
                             <div class="col-sm-6 col-xl-3 main__div--spaces d-flex justify-content-center">
                                 <button type="button" class="btn  button__modal--styles  main__buttons--shadowViol"
@@ -437,50 +423,80 @@
                     </main>
                 </div>
 
+
                 <!--FOOTER-->
+                <footer id="index__footer--style">
 
-                <footer id="indexFooter">
+                    <div class="container">
+                        <div class="row">
 
-                    <nav class="navbar navbar-expand-sm  navbar-light nav--myStyles">
-                        <div class="navbar-brand ">
-                            <a class="footer_a--Fb" id="aFb" href="https://facebook.com">
-                                <img c src="../imagenes/fbIcon.png" alt="Facebook" />
-                            </a>
-                            ​
-                            <a class="footer_a--Ig" id="aIg" href="https://instagram.com">
-                                <img src="../imagenes/igIcon.png" alt="Instagram" />
+                            <div class="col-sm-12 col-sm-4 col-md-4">
+                                <ul>
+                                    <a class="btn footer__ul--itemsStyle" data-bs-toggle="collapse"
+                                        href="#collapseExample1" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <h6 class="text-start">Ya pediste?</h6>
+                                    </a>
+                                    <div class="collapse" id="collapseExample1">
+                                        <li>Seguimiento de envíos</li>
+                                        <li>Devoluciones</li>
+                                        <li>Reclamos</li>
+                                        <li>Manual de instrucciones</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-sm-2 col-md-4">
+                                <ul>
+                                    <a class="btn footer__ul--itemsStyle" data-bs-toggle="collapse"
+                                        href="#collapseExample2" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <h6 class="text-start">Atención al cliente</h6>
+                                    </a>
+                                    <div class="collapse" id="collapseExample2">
+                                        <li>FAQ</li>
+                                        <li>Mayoristas</li>
+                                        <li>Capacitaciones</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-sm-4 col-md-4">
+                                <ul>
+                                    <a class="btn footer__ul--itemsStyle" data-bs-toggle="collapse"
+                                        href="#collapseExample3" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <h6 class="text-start">Enterate más</h6>
+                                    </a>
+                                    <div class="collapse" id="collapseExample3">
+                                        <li>Sobre nosotros</li>
+                                        <li>Responsabilidad social</li>
+                                        <li>Términos y condiciones</li>
+                                        <li>Privacidad y Cookies</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer__div--rrss">
+                        <div>
+                            <a href="https://facebook.com">
+                                <img class="footer_a--Fb" src="https://img.icons8.com/ios/50/000000/facebook.png" alt="Facebook" />
                             </a>
                         </div>
-
-                        <button class="navbar-toggler nav__toggler--myStyle" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-
-                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul class="navbar-nav nav__ul--color">
-
-                                <li class="nav-item ">
-                                    <a class="nav-link text-reset " href="../index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-reset" href="./quienesSomos.html">Quiénes
-                                        somos?</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-reset" href="./hexazonales.html">Hexazonales</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-reset" href="./destinos.html">Destinos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-reset" href="./contacto.html">Contacto</a>
-                                </li>
-                            </ul>
+                        ​<div>
+                            <a href="https://instagram.com">
+                                <img class="footer_a--Ig" src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram" />
+                            </a>
                         </div>
-                    </nav>
+                    </div>
+
+                    <div class="d-flex justify-content-center div__footer--copyright">
+                        <p>© 2021 Hexazonal - Todos los derechos reservados</p>
+                    </div>
+
                 </footer>
+
+
+
 
                 <!-- Scripts Bootstrap -->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
