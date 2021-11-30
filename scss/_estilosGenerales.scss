@@ -455,7 +455,7 @@ a {
     }
 
     .header{
-        &__h1Cont, &__h1Hz, &__h1Des{
+        &__h1Cont, &__h1Hz {
             &--reduceSize {
                 color: #7a7771;
                 font-family: "Megrim";
@@ -463,8 +463,14 @@ a {
                 font-size: 3rem;
                 text-shadow: -3px -1px 3px rgb(222, 181, 118);
             }
-            
         }
+            &__h1Des{
+                &--reduceSize{
+                    font-size: 4.5rem;
+                    text-shadow: -3px -1px 3px rgb(222, 181, 118);
+                }
+            } 
+        
     }
 
     p {

@@ -516,8 +516,11 @@
             .nav--sticky {
                   position: static;
                   top: 0;
-                  z-index: 18;
 
+            }
+            .navbar{
+                  z-index: 2000;
+                  
 
             }
 
@@ -545,14 +548,16 @@
                         position: absolute;
 
                         @if ($stopN==OneFirst) {
-                              height: 100vh;
+                              
+                              height: 110vh;
                               z-index: 2;
                               top: 14rem;
+                              
 
                         }
 
                         @if ($stopN==Three) {
-                              height: 100vh;
+                              height: 110vh;
                               top: 84rem;
                         }
 
@@ -591,13 +596,11 @@
 
                         @if ($pStyle==One) {
                               height: 10;
-
                         }
 
 
 
                         @if ($pStyle==Five) {
-
                               z-index: 16;
                         }
                   }

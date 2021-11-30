@@ -288,11 +288,14 @@ a {
     height: 100%;
     margin-top: 2rem;
     z-index: 10; }
-  .header__h1Cont--reduceSize, .header__h1Hz--reduceSize, .header__h1Des--reduceSize {
+  .header__h1Cont--reduceSize, .header__h1Hz--reduceSize {
     color: #7a7771;
     font-family: "Megrim";
     font-weight: bold;
     font-size: 3rem;
+    text-shadow: -3px -1px 3px #deb576; }
+  .header__h1Des--reduceSize {
+    font-size: 4.5rem;
     text-shadow: -3px -1px 3px #deb576; }
   p {
     color: #e9d9c8;
@@ -316,6 +319,15 @@ a {
   margin-bottom: 0rem;
   margin-top: 0rem;
   text-shadow: -6px -1px 6px #deb576; }
+
+.header__H2--style {
+  color: rgba(163, 68, 207, 0.781);
+  font-family: "MuseoModerno";
+  font-size: 2rem;
+  z-index: 2;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+  text-shadow: -9px -1px 9px #e7a94d; }
 
 .main__div--logoStyle {
   padding: 0rem; }
@@ -839,8 +851,9 @@ footer div ul li:hover {
 @media only screen and (max-width: 576px) {
   .nav--sticky {
     position: static;
-    top: 0;
-    z-index: 18; }
+    top: 0; }
+  .navbar {
+    z-index: 2000; }
   .header__h1Qs--reduceSize {
     font-size: 3rem;
     text-shadow: -2px -1px 2px #deb576; }
@@ -851,7 +864,7 @@ footer div ul li:hover {
     line-height: 1.5rem; }
   .div__cont--scrollStopOneFirst {
     position: absolute;
-    height: 100vh;
+    height: 110vh;
     z-index: 2;
     top: 14rem; }
   .div__cont--scrollStopOneSec {
@@ -860,7 +873,7 @@ footer div ul li:hover {
     position: absolute; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 100vh;
+    height: 110vh;
     top: 84rem; }
   .div__cont--scrollStopFour {
     position: absolute;

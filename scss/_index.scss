@@ -12,7 +12,20 @@
                 text-shadow: -6px -1px 6px rgb(222, 181, 118);
             }
         }
+        &__H2{
+            &--style{
+                color: rgba(163, 68, 207, 0.781);
+                font-family: "MuseoModerno";
+                font-size: 2rem;
+                z-index: 2;
+                margin-bottom: 0rem;
+                margin-top: 0rem;
+                text-shadow: -9px -1px 9px rgb(231, 169, 77);
+        } 
+
+
     }
+}
 
 
     .main__ {
