@@ -530,6 +530,7 @@
                         &--reduceSize {
                               font-size: 3rem;
                               text-shadow: -2px -1px 2px rgb(222, 181, 118);
+                              
                         }
                   }
             }
@@ -552,18 +553,18 @@
                               
                               height: 110vh;
                               z-index: 2;
-                              top: 14rem;
+                              
                               
 
                         }
 
                         @if ($stopN==Three) {
                               height: 100vh;
-                              top: 84rem;
+                              
                         }
 
                         @if ($stopN==Four) {
-                              height: 100vh;
+                              height: 110vh;
 
                         }
 

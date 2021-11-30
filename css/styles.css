@@ -864,19 +864,17 @@ footer div ul li:hover {
   .div__cont--scrollStopOneFirst {
     position: absolute;
     height: 110vh;
-    z-index: 2;
-    top: 14rem; }
+    z-index: 2; }
   .div__cont--scrollStopOneSec {
     position: absolute; }
   .div__cont--scrollStopTwo {
     position: absolute; }
   .div__cont--scrollStopThree {
     position: absolute;
-    height: 100vh;
-    top: 84rem; }
+    height: 100vh; }
   .div__cont--scrollStopFour {
     position: absolute;
-    height: 100vh; }
+    height: 110vh; }
   .div__cont--scrollStopFive {
     position: absolute;
     height: 25vh; }
