@@ -31,22 +31,32 @@ html {
     }
 }
 
+.div__p--backPosition {
+    position: relative;
+
+}
+
+
 @each $section in (Qs, Cont) {
     .main__div--backText#{$section} {
         position: absolute;
-        padding-top: 1rem;
-        -webkit-transform: scaleX(2.5) scaleY(10);
-        transform: scaleX(2.3) scaleY(10);
+        font-size: 4rem;
+        margin-top: 10rem;
+        letter-spacing: 1rem;
+        -webkit-transform: scaleX(2.7) scaleY(10);
+        transform: scaleX(3) scaleY(7);
         z-index: -999;
         opacity: 0.3;
         color: antiquewhite;
         padding-left: 19rem;
+        text-shadow: -6px -1px 6px rgb(222, 181, 118);
 
         @if ($section==Cont) {
-            margin-top: 1rem;
+            margin-top: 10rem;
             -webkit-transform: scaleX(2.5) scaleY(10);
             transform: scaleX(2.5) scaleY(7);
             padding-left: 12rem;
+
         }
 
     }
@@ -65,23 +75,25 @@ html {
 /* ---------------------------------------- */
 /* NAVBAR */
 
-/*   Animación navbar__logo */
 .navbar {
     &__link--logo:hover {
         transition: all 2s;
         transform: scale(80%, 80%);
     }
+
+    &--myStyles {
+        background-color: rgba(250, 235, 215, 0.817);
+    }
 }
 
-// Icono botón hamburguesa
-//Box shadow del botón hamburguesa
 .nav {
-    &__toggler--myStyles {
+    &__toggler--myStyle {
         &:focus {
             text-decoration: none;
             /* outline: 0; */
             color: rgba(94, 205, 50, 0.685);
             box-shadow: 0 0 0 0.1rem;
+
         }
     }
 
@@ -105,7 +117,6 @@ ul {
     font-family: "Oxygen", sans-serif;
     text-align: center;
 
-    /* Ubica cada li en un item del contenedor ul con flexbox */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,9 +132,6 @@ ul {
 }
 
 
-
-/* EACH  -- Estilos en SPAN  debajo de NAVBAR 
-de todas las páginas */
 @each $span in (span__uno,
     span__dos) {
     ##{$span}--posestilos {
@@ -162,13 +170,15 @@ h1 {
 
 /* ---------------------------------------- */
 /* Estílos párrafos en gral. */
-p {
+.p--style {
     color: #9583a3;
     font-family: "MuseoModerno", cursive;
     font-size: 1.2rem;
     word-spacing: 0.1rem;
     line-height: 2rem;
     text-align: center;
+               
+    text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
 /* ---------------------------------------- */
@@ -177,6 +187,74 @@ a {
     text-decoration: none;
     color: #7a7771;
     text-shadow: -6px -1px 6px rgb(222, 181, 118);
+}
+
+
+
+
+
+.footer {
+    &--style {
+        height: 100%;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        padding-top: 1rem;
+        background-color: antiquewhite;
+        box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623);
+        border-radius: 5px;
+    }
+}
+
+
+.footer {
+    &_a {
+
+        &--Fb,
+        &--Ig {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+
+footer div ul li {
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #797474;
+
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+
+.footer {
+    &__ul {
+        &--itemsStyle {
+            font-family: "Oxygen", sans-serif;
+            color: #7a7771c7;
+            letter-spacing: 0.2rem;
+
+            &:hover {
+                color: rgb(169, 79, 205);
+            }
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+footer div ul li:hover {
+    color: rgb(194, 98, 223);
+
 }
 
 
@@ -196,7 +274,7 @@ a {
 }
 
 
-@each $red in (Fb,Ig){
+@each $red in (Fb, Ig) {
     .footer_a--#{$red} {
 
         border-radius: 15px;
@@ -214,6 +292,16 @@ a {
 
     }
 }
+
+
+.div {
+    &__footer {
+        &--copyright {
+            padding-top: 0.5rem;
+        }
+    }
+}
+
 
 /* ---------------------------------------- */
 /* MEDIA QUERYS GENERALES*/
@@ -299,60 +387,19 @@ a {
                 transform: scaleX(1.5) scaleY(7);
                 padding-left: 8rem;
 
-
-
             }
-
-        }
-
-
-    }
-}
-
-@media only screen and (max-width: 992px) {
-
-    @each $section in (Qs, Cont) {
-        .main__div--backText#{$section} {
-            @if ($section==Cont) {
-                -webkit-transform: scaleX(1) scaleY(7);
-                transform: scaleX(1.3) scaleY(7);
-                padding-left: 2.5rem;
-                margin-left: 0rem;
-            }
-
         }
     }
 }
+
+
 
 
 @media only screen and (max-width: 768px) {
 
-    @each $section in (Qs, Cont) {
-        .main__div--backText#{$section} {
-            padding-top: 0.2rem;
-            -webkit-transform: scaleX(1) scaleY(7);
-            transform: scaleX(1.3) scaleY(7);
-            padding-left: 4.2rem;
-
-        }
-    }
-
-
     .body {
         p {
             color: rgb(226, 176, 69);
-        }
-    }
-
-
-
-
-    .body {
-        &__home {
-            &--backGround {
-                background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
-                background-size: inherit;
-            }
         }
     }
 
@@ -431,6 +478,7 @@ a {
 
 @media only screen and (max-width: 576px) {
     .body {
+
         &__home,
         &__quienes,
         &__hexa,
@@ -440,8 +488,8 @@ a {
 
                 background: {
                     image: linear-gradient(to top,
-                    rgba(136, 129, 87, 0.858),
-                    rgb(85, 74, 97));
+                            rgba(136, 129, 87, 0.858),
+                            rgb(85, 74, 97));
                     size: inherit, cover;
                     repeat: no-repeat;
                     position: center;
@@ -454,8 +502,17 @@ a {
         }
     }
 
-    .header{
-        &__h1Cont, &__h1Hz {
+
+    .navbar {
+        &--myStyles {
+            background-color: transparent;
+        }
+    }
+
+    .header {
+
+        &__h1Cont,
+        &__h1Hz {
             &--reduceSize {
                 color: #7a7771;
                 font-family: "Megrim";
@@ -464,16 +521,17 @@ a {
                 text-shadow: -3px -1px 3px rgb(222, 181, 118);
             }
         }
-            &__h1Des{
-                &--reduceSize{
-                    font-size: 4.5rem;
-                    text-shadow: -3px -1px 3px rgb(222, 181, 118);
-                }
-            } 
-        
+
+        &__h1Des {
+            &--reduceSize {
+                font-size: 4.5rem;
+                text-shadow: -3px -1px 3px rgb(222, 181, 118);
+            }
+        }
+
     }
 
-    p {
+    .p--style {
         color: #e9d9c8;
         font-family: "MuseoModerno", cursive;
         font-size: 1.2rem;
@@ -481,10 +539,6 @@ a {
         line-height: 2rem;
         text-align: center;
     }
-    
-
-
-
 
 
 
@@ -500,5 +554,17 @@ a {
             }
         }
     }
+
+    .footer {
+        &--style {
+            height: 100%;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            background-color: transparent;
+            box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623);
+        }
+    }
+
 
 }

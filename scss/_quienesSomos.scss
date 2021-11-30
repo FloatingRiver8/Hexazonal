@@ -1,17 +1,16 @@
       /* Pág QUIÉNES SOMOS */
       /* ------------------------------------------ */
 
-      .quienesSomos p {
-            font-size: 1.5rem;
-            letter-spacing: 0.2rem;
+      .quienesSomos__p {
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
             word-spacing: 0.2rem;
-            color: #2e1a33;
-            font-family: "Megrim";
-            font-weight: bolder;
-            font-size: 1.5rem;
-            color: #353434;
-
-            text-shadow: 0 0 5px rgb(250, 233, 185), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfdfdf, 0 0 30px #f2e4ae, 0 0 40px #f0c976, 0 0 55px #facd7a, 0 0 75px #b143ff;
+            font-family: "MuseoModerno";
+            font-weight: 2rem;
+            color: #3c2b639e;
+            
+           
+            text-shadow: -6px -1px 6px rgb(222, 181, 118);
       }
 
 
@@ -21,7 +20,7 @@
                   &--contFiveFont {
                         font-size: 16rem;
                         font-family: "Megrim";
-                        color: rgb(163, 57, 196);
+                        color:blanchedalmond;
                         text-shadow: -6px -1px 6px rgb(225, 172, 238);
                         z-index: 15;
                   }
@@ -35,17 +34,20 @@
 
       }
 
+
+
+
 /* Estos contenedores permiten mover los párrafos hasta ocultarlos */
       @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
             .div__cont--scrollStop#{$stopN} {
 
                   position: absolute;
-                  margin-top: 10rem;
+                  margin-top: 8rem;
                   z-index: -1;
 
                   @if ($stopN==OneFirst) {
                         height: 120vh;
-                        margin-top: 3rem;
+                        margin-top: 0.5rem;
                   }
 
                   @if ($stopN==OneSec) {
@@ -53,7 +55,7 @@
                   }
 
                   @if ($stopN==Two) {
-                        height: 75vh;
+                        height: 80vh;
                   }
 
                   @if ($stopN==Three) {
@@ -191,48 +193,6 @@
             }
       }
 
-
-
-
-      /* Imágenes de los fondos de iconos */
-      @each $imgIcons in (One, Two, ThreeFirst, ThreeSec, Four) {
-
-            .main__div--iconStyle#{$imgIcons} {
-                  margin-top: 6rem;
-                  opacity: 0.2;
-
-                  background: {
-                        size: inherit;
-                        repeat: no-repeat;
-                        position-x: center;
-                        position-y: center;
-                  }
-
-                  @if ($imgIcons==One) {
-                        background: {
-                              image: url("../imagenes/quienesSomosSViol.png");
-                        }
-                  }
-
-                  @if ($imgIcons==Two) {
-                        background-image: url("../imagenes/quienesSomosIconoDos.png");
-                  }
-
-                  @if ($imgIcons==ThreeFirst) {
-                        background-image: url("../imagenes/quienesSomosIconoTres.png");
-                        -webkit-transform: scaleX(-1);
-                        transform: scaleX(-1);
-                  }
-
-                  @if ($imgIcons==ThreeSec) {
-                        background-image: url("../imagenes/quienesSomosIconoTres.png");
-                  }
-
-                  @if ($imgIcons==Four) {
-                        background-image: url("../imagenes/quienesSomosIconoCinco.png");
-                  }
-            }
-      }
 
       /* ---------------------------------------- */
       /*    MEDIA QUERYS Qsomos */
@@ -411,8 +371,6 @@
                         }
                   }
             }
-
-
 
             .quienesSomos p {
                   letter-spacing: 0.1rem;

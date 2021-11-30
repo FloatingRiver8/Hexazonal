@@ -37,85 +37,6 @@
     }
 
 
-    .footer {
-        &_a {
-
-            &--Fb,
-            &--Ig {
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-
-    footer div ul li {
-        margin-top: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        color: #363636;
-
-    }
-
-    li {
-        display: list-item;
-        text-align: -webkit-match-parent;
-    }
-
-
-
-    .footer {
-        &__ul {
-            &--itemsStyle {
-                font-family: "Oxygen", sans-serif;
-
-                color: #7a7771c7;
-                letter-spacing: 0.2rem;
-
-                &:hover {
-
-                    color: rgb(78, 74, 66);
-
-                }
-
-                &:focus {
-                    outline: 0;
-                    box-shadow: none;
-                }
-            }
-        }
-    }
-
-
-    footer div ul li:hover {
-
-        color: rgb(195, 53, 238);
-
-    }
-
-    #index {
-        &__footer {
-            &--style {
-                height: 100%;
-                margin-bottom: 1rem;
-                margin-top: 3rem;
-                padding-top: 2rem;
-                background-image: linear-gradient(to top,
-                        rgba(247, 221, 175, 0.212),
-                        rgba(243, 178, 243, 0.144));
-                box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623);
-            }
-        }
-    }
-
-
-    .div {
-        &__footer {
-            &--copyright {
-                padding-top: 0.5rem;
-            }
-        }
-    }
-
 
     /* ---------------------------------------- */
     /*    MEDIA QUERYS INDEX */
@@ -155,8 +76,6 @@
             }
         }
 
-
-
         .main__ {
             &div {
                 &--logoStyle {
@@ -186,9 +105,6 @@
         }
 
 
-
-
-
         footer {
             & div {
                 & ul {
@@ -202,10 +118,6 @@
                 }
             }
         }
-
-
-
-
 
 
         #index {
@@ -230,5 +142,19 @@
                     text-shadow: -3px -1px 3px rgb(222, 181, 118);
                 }
             }
+
+
+            &__H2{
+                &--style{
+                    color: rgba(202, 156, 223, 0.781);
+                    font-family: "MuseoModerno";
+                    font-size: 1.7rem;
+                    z-index: 2;
+                    margin-bottom: 0rem;
+                    margin-top: 0rem;
+                    padding-left: 3rem;
+                    text-shadow: -9px -1px 9px rgb(231, 169, 77);
+            } 
         }
     }
+}

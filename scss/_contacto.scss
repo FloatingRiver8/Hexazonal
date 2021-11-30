@@ -12,6 +12,7 @@
                         display: inline-block;
                         margin-bottom: 1rem;
                         padding: 2rem;
+
                         border: {
                             radius: 3%;
                             top: none;
@@ -23,7 +24,6 @@
                         }
                     }
 
-                    // Estilos generales inputs -CONTACTO 
                     &__input {
                         &--style {
                             display: block;
@@ -32,10 +32,6 @@
                         }
                     }
 
-                    // Botones -CONTACTO 
-
-                    // Estilos (clase de BootS) del form y de modales -CONTACTOS-DESTINOS
-                    //Gradiente de los botones de form (no dropdown) y hover -CONTACTO -
                     &__btn--style {
                         color: rgba(113, 80, 122, 0.637);
                         width: 100%;
@@ -59,6 +55,21 @@
                 }
 
 
+                .main {
+                    &__div {
+                        &--contactStyle {
+                            background-color: rgba(250, 235, 215, 0.776);
+                            height: 50%;
+                            font-family: "Oxygen";
+                            border-radius: 5px;
+                            padding-top: 1rem;
+                            margin-top: 2rem;
+                            font-size: 1rem;
+                            color: #3c2b639e;
+                            text-shadow: -6px -1px 6px rgb(222, 181, 118);
+                        }
+                    }
+                }
 
 
 
@@ -74,5 +85,19 @@
 
 
                 @media only screen and (max-width: 576px) {
+
+                    .main {
+                        &__div {
+                            &--contactStyle {
+                                background-color: rgba(223, 172, 233, 0.776);
+                                height: 50%;
+                                border-radius: 5px;
+                                padding-top: 1rem;
+                                margin-top: 5rem;
+
+                            }
+                        }
+                    }
+
 
                 }

@@ -19,26 +19,35 @@ html {
   z-index: 0;
   background-size: cover; }
 
+.div__p--backPosition {
+  position: relative; }
+
 .main__div--backTextQs {
   position: absolute;
-  padding-top: 1rem;
-  -webkit-transform: scaleX(2.5) scaleY(10);
-  transform: scaleX(2.3) scaleY(10);
-  z-index: -999;
-  opacity: 0.3;
-  color: antiquewhite;
-  padding-left: 19rem; }
-
-.main__div--backTextCont {
-  position: absolute;
-  padding-top: 1rem;
-  -webkit-transform: scaleX(2.5) scaleY(10);
-  transform: scaleX(2.3) scaleY(10);
+  font-size: 4rem;
+  margin-top: 10rem;
+  letter-spacing: 1rem;
+  -webkit-transform: scaleX(2.7) scaleY(10);
+  transform: scaleX(3) scaleY(7);
   z-index: -999;
   opacity: 0.3;
   color: antiquewhite;
   padding-left: 19rem;
-  margin-top: 1rem;
+  text-shadow: -6px -1px 6px #deb576; }
+
+.main__div--backTextCont {
+  position: absolute;
+  font-size: 4rem;
+  margin-top: 10rem;
+  letter-spacing: 1rem;
+  -webkit-transform: scaleX(2.7) scaleY(10);
+  transform: scaleX(3) scaleY(7);
+  z-index: -999;
+  opacity: 0.3;
+  color: antiquewhite;
+  padding-left: 19rem;
+  text-shadow: -6px -1px 6px #deb576;
+  margin-top: 10rem;
   -webkit-transform: scaleX(2.5) scaleY(10);
   transform: scaleX(2.5) scaleY(7);
   padding-left: 12rem; }
@@ -59,12 +68,14 @@ html {
 
 /* ---------------------------------------- */
 /* NAVBAR */
-/*   Animación navbar__logo */
 .navbar__link--logo:hover {
   transition: all 2s;
   transform: scale(80%, 80%); }
 
-.nav__toggler--myStyles:focus {
+.navbar--myStyles {
+  background-color: rgba(250, 235, 215, 0.817); }
+
+.nav__toggler--myStyle:focus {
   text-decoration: none;
   /* outline: 0; */
   color: rgba(94, 205, 50, 0.685);
@@ -79,7 +90,6 @@ ul {
   list-style-type: none;
   font-family: "Oxygen", sans-serif;
   text-align: center;
-  /* Ubica cada li en un item del contenedor ul con flexbox */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -90,8 +100,6 @@ ul {
     letter-spacing: 0.2rem;
     color: #7a7771c7; }
 
-/* EACH  -- Estilos en SPAN  debajo de NAVBAR 
-de todas las páginas */
 #span__uno--posestilos {
   display: flex;
   flex-direction: row;
@@ -133,13 +141,14 @@ h1 {
 
 /* ---------------------------------------- */
 /* Estílos párrafos en gral. */
-p {
+.p--style {
   color: #9583a3;
   font-family: "MuseoModerno", cursive;
   font-size: 1.2rem;
   word-spacing: 0.1rem;
   line-height: 2rem;
-  text-align: center; }
+  text-align: center;
+  text-shadow: -6px -1px 6px #deb576; }
 
 /* ---------------------------------------- */
 /* Estílos anchors en gral.*/
@@ -147,6 +156,41 @@ a {
   text-decoration: none;
   color: #7a7771;
   text-shadow: -6px -1px 6px #deb576; }
+
+.footer--style {
+  height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  background-color: antiquewhite;
+  box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623);
+  border-radius: 5px; }
+
+.footer_a--Fb, .footer_a--Ig {
+  margin-bottom: 0.5rem; }
+
+footer div ul li {
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #797474; }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent; }
+
+.footer__ul--itemsStyle {
+  font-family: "Oxygen", sans-serif;
+  color: #7a7771c7;
+  letter-spacing: 0.2rem; }
+  .footer__ul--itemsStyle:hover {
+    color: #a94fcd; }
+  .footer__ul--itemsStyle:focus {
+    outline: 0;
+    box-shadow: none; }
+
+footer div ul li:hover {
+  color: #c262df; }
 
 .footer__div--rrss {
   display: flex;
@@ -168,6 +212,9 @@ a {
   opacity: 0.5;
   background: linear-gradient(145deg, #682068, rgba(238, 209, 245, 0.995));
   box-shadow: 5px 5px 5px #7a5491, -5px -5px 5px #eeffff; }
+
+.div__footer--copyright {
+  padding-top: 0.5rem; }
 
 /* ---------------------------------------- */
 /* MEDIA QUERYS GENERALES*/
@@ -231,29 +278,9 @@ a {
     transform: scaleX(1.5) scaleY(7);
     padding-left: 8rem; } }
 
-@media only screen and (max-width: 992px) {
-  .main__div--backTextCont {
-    -webkit-transform: scaleX(1) scaleY(7);
-    transform: scaleX(1.3) scaleY(7);
-    padding-left: 2.5rem;
-    margin-left: 0rem; } }
-
 @media only screen and (max-width: 768px) {
-  .main__div--backTextQs {
-    padding-top: 0.2rem;
-    -webkit-transform: scaleX(1) scaleY(7);
-    transform: scaleX(1.3) scaleY(7);
-    padding-left: 4.2rem; }
-  .main__div--backTextCont {
-    padding-top: 0.2rem;
-    -webkit-transform: scaleX(1) scaleY(7);
-    transform: scaleX(1.3) scaleY(7);
-    padding-left: 4.2rem; }
   .body p {
     color: #e2b045; }
-  .body__home--backGround {
-    background-image: url("../imagenes/shinyOverlayOscuroCuatro.svg");
-    background-size: inherit; }
   nav ul li {
     letter-spacing: 0.2rem;
     color: #4b4a458e; }
@@ -288,6 +315,8 @@ a {
     height: 100%;
     margin-top: 2rem;
     z-index: 10; }
+  .navbar--myStyles {
+    background-color: transparent; }
   .header__h1Cont--reduceSize, .header__h1Hz--reduceSize {
     color: #7a7771;
     font-family: "Megrim";
@@ -297,7 +326,7 @@ a {
   .header__h1Des--reduceSize {
     font-size: 4.5rem;
     text-shadow: -3px -1px 3px #deb576; }
-  p {
+  .p--style {
     color: #e9d9c8;
     font-family: "MuseoModerno", cursive;
     font-size: 1.2rem;
@@ -308,7 +337,14 @@ a {
     letter-spacing: 0.2rem;
     color: #eba52d; }
     nav ul li:hover {
-      color: #e7cef5; } }
+      color: #e7cef5; }
+  .footer--style {
+    height: 100%;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    background-color: transparent;
+    box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623); } }
 
 /* Pág INDEX */
 /* ---------------------------------------- */
@@ -331,43 +367,6 @@ a {
 
 .main__div--logoStyle {
   padding: 0rem; }
-
-.footer_a--Fb, .footer_a--Ig {
-  margin-bottom: 1rem; }
-
-footer div ul li {
-  margin-top: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  color: #363636; }
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent; }
-
-.footer__ul--itemsStyle {
-  font-family: "Oxygen", sans-serif;
-  color: #7a7771c7;
-  letter-spacing: 0.2rem; }
-  .footer__ul--itemsStyle:hover {
-    color: #4e4a42; }
-  .footer__ul--itemsStyle:focus {
-    outline: 0;
-    box-shadow: none; }
-
-footer div ul li:hover {
-  color: #c335ee; }
-
-#index__footer--style {
-  height: 100%;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  background-image: linear-gradient(to top, rgba(247, 221, 175, 0.212), rgba(243, 178, 243, 0.144));
-  box-shadow: 0 1.5rem 1rem rgba(131, 126, 133, 0.623); }
-
-.div__footer--copyright {
-  padding-top: 0.5rem; }
 
 /* ---------------------------------------- */
 /*    MEDIA QUERYS INDEX */
@@ -405,25 +404,32 @@ footer div ul li:hover {
 @media only screen and (max-width: 576px) {
   .header__H1--style {
     font-size: 4rem;
-    text-shadow: -3px -1px 3px #deb576; } }
+    text-shadow: -3px -1px 3px #deb576; }
+  .header__H2--style {
+    color: rgba(202, 156, 223, 0.781);
+    font-family: "MuseoModerno";
+    font-size: 1.7rem;
+    z-index: 2;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding-left: 3rem;
+    text-shadow: -9px -1px 9px #e7a94d; } }
 
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */
-.quienesSomos p {
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
+.quienesSomos__p {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
   word-spacing: 0.2rem;
-  color: #2e1a33;
-  font-family: "Megrim";
-  font-weight: bolder;
-  font-size: 1.5rem;
-  color: #353434;
-  text-shadow: 0 0 5px #fae9b9, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #dfdfdf, 0 0 30px #f2e4ae, 0 0 40px #f0c976, 0 0 55px #facd7a, 0 0 75px #b143ff; }
+  font-family: "MuseoModerno";
+  font-weight: 2rem;
+  color: #3c2b639e;
+  text-shadow: -6px -1px 6px #deb576; }
 
 .main__div--contFiveFont {
   font-size: 16rem;
   font-family: "Megrim";
-  color: #a339c4;
+  color: blanchedalmond;
   text-shadow: -6px -1px 6px #e1acee;
   z-index: 15; }
 
@@ -435,38 +441,38 @@ footer div ul li:hover {
 /* Estos contenedores permiten mover los párrafos hasta ocultarlos */
 .div__cont--scrollStopOneFirst {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
   height: 120vh;
-  margin-top: 3rem; }
+  margin-top: 0.5rem; }
 
 .div__cont--scrollStopOneSec {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
   height: 83vh; }
 
 .div__cont--scrollStopTwo {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
-  height: 75vh; }
+  height: 80vh; }
 
 .div__cont--scrollStopThree {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
   height: 86vh; }
 
 .div__cont--scrollStopFour {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
   height: 85vh; }
 
 .div__cont--scrollStopFive {
   position: absolute;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: -1;
   height: 81vh;
   z-index: 16;
@@ -622,54 +628,6 @@ footer div ul li:hover {
   z-index: 1;
   height: 15vh;
   margin-top: 1rem; }
-
-/* Imágenes de los fondos de iconos */
-.main__div--iconStyleOne {
-  margin-top: 6rem;
-  opacity: 0.2;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-image: url("../imagenes/quienesSomosSViol.png"); }
-
-.main__div--iconStyleTwo {
-  margin-top: 6rem;
-  opacity: 0.2;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-image: url("../imagenes/quienesSomosIconoDos.png"); }
-
-.main__div--iconStyleThreeFirst {
-  margin-top: 6rem;
-  opacity: 0.2;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-image: url("../imagenes/quienesSomosIconoTres.png");
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); }
-
-.main__div--iconStyleThreeSec {
-  margin-top: 6rem;
-  opacity: 0.2;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-image: url("../imagenes/quienesSomosIconoTres.png"); }
-
-.main__div--iconStyleFour {
-  margin-top: 6rem;
-  opacity: 0.2;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-image: url("../imagenes/quienesSomosIconoCinco.png"); }
 
 /* ---------------------------------------- */
 /*    MEDIA QUERYS Qsomos */
@@ -1055,10 +1013,29 @@ footer div ul li:hover {
   .fieldset__btn--style:active {
     box-shadow: 16px 16px 18px #66e247 inset, -16px -16px 18px #db8efa inset; }
 
+.main__div--contactStyle {
+  background-color: rgba(250, 235, 215, 0.776);
+  height: 50%;
+  font-family: "Oxygen";
+  border-radius: 5px;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #3c2b639e;
+  text-shadow: -6px -1px 6px #deb576; }
+
 /* Mis estilos para las fuentes del formulario -CONTACTO */
 .section__fieldset--fuentes {
   font-family: "Oxygen", sans-serif;
   letter-spacing: 0.12rem; }
+
+@media only screen and (max-width: 576px) {
+  .main__div--contactStyle {
+    background-color: rgba(223, 172, 233, 0.776);
+    height: 50%;
+    border-radius: 5px;
+    padding-top: 1rem;
+    margin-top: 5rem; } }
 
 /* Error 404 */
 .body___404--color {

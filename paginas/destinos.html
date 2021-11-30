@@ -20,7 +20,6 @@
             crossorigin="anonymous" />
 
         <!-- Mis estilos -->
-        <!--<link rel="stylesheet" href="../css/estilos.css" /> -->
         <link rel="stylesheet" href="../css/styles.css" />
 
         <!-- Google fonts -->
@@ -29,14 +28,6 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Inline&family=Megrim&family=MuseoModerno:wght@100;300;700&family=Oxygen&family=Quantico:wght@700&family=Rajdhani:wght@400;600&family=Raleway:wght@100;300;500;700&family=Roboto+Mono:wght@300&family=Syne+Mono&display=swap"
             rel="stylesheet" />
-        <!-- font-family: 'Bungee Hairline', cursive;
-            font-family: 'Megrim', cursive;
-            font-family: 'Oxygen', sans-serif;
-            font-family: 'Quantico', sans-serif;
-            font-family: 'Rajdhani', sans-serif;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Roboto Mono', monospace;
-            font-family: 'Syne Mono', monospace;-->
 
         <!-- Link a librerias de animaciones -->
         <link rel="stylesheet" href="css/animate.css" />
@@ -46,13 +37,9 @@
     </head>
 
     <!-- DESTINOS -->
-
     <body class="container-fluid body__destinos--backGround body--backgImgPosicion">
 
-        <!--MENÚ NAVBAR -->
-
-
-
+        <!--Slides ofertas-->
         <div class="container-fluid">
             <div class="row">
 
@@ -80,10 +67,7 @@
                                 <div class="carousel-item" data-bs-interval="4000">
                                     <img src="../imagenes/mejorOpcion.png" class="d-block w-1" alt="...">
                                     <div class="carousel-caption d-md-block div__carousel--myCaption">
-
                                         <h4>Somos tu mejor elección</h4>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -99,13 +83,11 @@
 
 
 
-
-
+        <!-- Navbar -->
         <div class="container">
             <div class="row">
 
-                <nav class="navbar navbar-expand-sm  navbar-light nav--myStyles main__buttons--shadowOrange">
-
+                <nav class="navbar navbar-expand-sm  navbar--myStyles main__buttons--shadowOrange">
 
                     <a class="navbar-brand navbar__link--logo" href="../index.html">
                         <img src="../imagenes/hexaLogoNav.png" alt=navbar__link--logo style="width:80px;">
@@ -148,7 +130,7 @@
                 <span id="span__uno--posestilos" class=" animate__animated animate__fadeIn fadeExplora">explora</span>
                 <span id="span__dos--posestilos" class=" animate__animated animate__fadeIn fadeDescubre">descubre</span>
 
-                <div class="col-xl-6 d-flex justify-content-center">
+                <div class="col-xl-7 d-flex justify-content-center">
                     <header>
                         <h1 class=" wow animate__animated animate__fadeIn header__h1Des--reduceSize">
                             Destinos
@@ -169,7 +151,7 @@
                 </div>
 
                 <div class="col-sm-8  col-xl-8 pt-2 pb-4">
-                    <p>
+                    <p class="p--style">
                         Tenemos variadas opciones para tus viajes dimensionales,
                         elegí la que más te guste o pedinos la tuya a medida!
                     </p>
@@ -194,7 +176,7 @@
                                     class="btn-light button__modal--styles main__buttons--shadowOrange"
                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                                     <img src="../imagenes/destinoBosque.png" alt="Bosque" />
-                                    <p>Bosque</p>
+                                    <p class="p--style">Bosque</p>
                                 </button>
 
                                 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
@@ -233,7 +215,7 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Botón Close Modal -->
+
                                             <div class="modal-footer main__buttons--shadowViol">
                                                 <button type="button"
                                                     class="btn modal__btn-styles main____modal__botones--shadowOrange"
@@ -248,12 +230,11 @@
 
                             <!-- Modal 2 Destino Pueblo encantado-->
                             <div class="col-sm-6 col-xl-3 main__div--spaces d-flex justify-content-center">
-                                <!-- Botón hexagonal -->
                                 <button type="button"
                                     class="btn btn-light button__modal--styles  main__buttons--shadowViol"
                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                                     <img src="../imagenes/destinoEncantado.png" alt="Pueblo encantado" />
-                                    <p>Pueblo encantado</p>
+                                    <p class="p--style">Pueblo encantado</p>
                                 </button>
 
 
@@ -310,10 +291,10 @@
                             <!-- Modal 3 Destino  Aventura intergaláctica-->
                             <div class="col-sm-6  col-xl-3 main__div--spaces d-flex justify-content-center">
                                 <button type="button"
-                                    class="btn btn-light button__modal--styles main__buttons--shadowOrange"
+                                    class="btn btn-light button__modal--styles main__buttons--shadowOrange 
                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                                     <img src="../imagenes/destinoAventura.png" alt="Destino Aventura" />
-                                    <p>Intergaláctica</p>
+                                    <p class="p--style">Intergaláctica</p>
                                 </button>
 
 
@@ -323,8 +304,8 @@
                                     <div class="modal-dialog main__modalDialog--shadow">
                                         <div class="modal-content">
 
-                                            <div class="modal-header main__buttons--shadowOrange">
-                                                <h5 class="modal-title" id="staticBackdropLabel3">
+                                            <div class="modal-header main__buttons--shadowOrange ">
+                                                <h5 class="modal-title " id="staticBackdropLabel3">
                                                     Aventura intergaláctica
                                                 </h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -369,7 +350,7 @@
                                 <button type="button" class="btn  button__modal--styles  main__buttons--shadowViol"
                                     data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
                                     <img src="../imagenes/destinoViajeTiempo.png" alt="Universo Paralelo" />
-                                    <p>Viaje en el tiempo</p>
+                                    <p class="p--style">Viaje en el tiempo</p>
                                 </button>
 
                                 <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
@@ -425,7 +406,7 @@
 
 
                 <!--FOOTER-->
-                <footer id="index__footer--style">
+                <footer class="footer--style">
 
                     <div class="container">
                         <div class="row">
@@ -479,23 +460,23 @@
                     <div class="footer__div--rrss">
                         <div>
                             <a href="https://facebook.com">
-                                <img class="footer_a--Fb" src="https://img.icons8.com/ios/50/000000/facebook.png" alt="Facebook" />
+                                <img class="footer_a--Fb" src="https://img.icons8.com/ios/50/000000/facebook.png"
+                                    alt="Facebook" />
                             </a>
                         </div>
                         ​<div>
                             <a href="https://instagram.com">
-                                <img class="footer_a--Ig" src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram" />
+                                <img class="footer_a--Ig" src="https://img.icons8.com/ios/50/000000/instagram-new.png"
+                                    alt="Instagram" />
                             </a>
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-center div__footer--copyright">
+                    <div class="d-flex justify-content-center div__footer--copyright p--style">
                         <p>© 2021 Hexazonal - Todos los derechos reservados</p>
                     </div>
 
                 </footer>
-
-
 
 
                 <!-- Scripts Bootstrap -->
