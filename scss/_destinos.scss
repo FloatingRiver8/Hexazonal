@@ -1,29 +1,29 @@
             /* ---------------------------------------- */
             /* DESTINOS */
 
-            /* Estilos "botones"/destinos clase de bootstrap + mis estilos */
-            .button{
-                &__modal{
+            .button {
+                &__modal {
                     &--styles {
-                background-color: transparent;
-                border-color: rgba(255, 254, 255, 0.267);
-                color: rgba(176, 206, 188, 0);
-            
-                &:hover {
-                    background-color: rgba(162, 247, 122, 0.582);
-                    transition: all 1s;
-                    transform: scale(125%, 125%);
-                    border-color: rgba(253, 249, 253, 0.281);
-                    border-width: 1px;
-                    border-radius: 0.25rem;
-                    padding: 1rem;
-                    margin-bottom: 3rem;
-                    box-shadow: 0 0.5rem 1rem rgb(241, 208, 57);
+                        background-color: transparent;
+                        border-color: rgba(255, 254, 255, 0.267);
+                        color: rgba(176, 206, 188, 0);
+
+                        &:hover {
+                            background-color: rgba(162, 247, 122, 0.582);
+                            transition: all 1s;
+                            transform: scale(125%, 125%);
+                            border-color: rgba(253, 249, 253, 0.281);
+                            border-width: 1px;
+                            border-radius: 0.25rem;
+                            padding: 1rem;
+                            margin-bottom: 3rem;
+                            box-shadow: 0 0.5rem 1rem rgb(241, 208, 57);
+                        }
+
+                    }
                 }
-            
-        }
-    }
-}
+            }
+
             .main {
                 &__div {
                     &--spaces {
@@ -74,7 +74,6 @@
 
             }
 
-            /* Estilos cuerpo del modal clase de BootS */
             .modal {
                 &-content {
                     background-color: rgba(255, 214, 127, 0.562);
@@ -86,18 +85,15 @@
                 }
 
 
-                // Titúlos de modales 
                 &-title {
                     font: {
                         family: "Megrim", cursive, Oxygen, sans-serif;
                         weight: bolder;
                         size: 2.5rem;
                     }
+
                     color: #464d3f;
                 }
-
-
-
 
                 &__btn-styles {
                     color: rgba(113, 80, 122, 0.637);
@@ -123,7 +119,8 @@
                     }
                 }
 
-
+            }
+            
                 @media only screen and (max-width: 1200px) {
                     .main {
                         &__div {
@@ -133,4 +130,4 @@
                         }
                     }
                 }
-            }
+            

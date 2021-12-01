@@ -8,19 +8,16 @@
             font-family: "MuseoModerno";
             font-weight: 2rem;
             color: #3c2b639e;
-            
-           
             text-shadow: -6px -1px 6px rgb(222, 181, 118);
       }
 
 
       .main {
             &__div {
-
                   &--contFiveFont {
                         font-size: 16rem;
                         font-family: "Megrim";
-                        color:blanchedalmond;
+                        color: blanchedalmond;
                         text-shadow: -6px -1px 6px rgb(225, 172, 238);
                         z-index: 15;
                   }
@@ -37,7 +34,7 @@
 
 
 
-/* Estos contenedores permiten mover los párrafos hasta ocultarlos */
+      /* Estos contenedores permiten mover los párrafos hasta ocultarlos */
       @each $stopN in (OneFirst, OneSec, Two, Three, Four, Five) {
             .div__cont--scrollStop#{$stopN} {
 
@@ -121,11 +118,11 @@
                               image: url("../imagenes/quienesSomosCuatro.jpg");
                               position-x: left;
                               position-y: 50%;
-                              
+
                         }
-                        
+
                   }
-                  
+
 
                   @if ($contStyle==FourTwo) {
                         background: {
@@ -264,7 +261,7 @@
 
             @each $contStyle in (One, TwoFirst, TwoSec, Three, ThreeSec, FourOne, FourTwo, Five) {
                   .main__div--cont#{$contStyle} {
-                        
+
                         margin-top: 7rem;
 
                         @if ($contStyle==One) {
@@ -468,7 +465,7 @@
                         &--reduceSize {
                               font-size: 3rem;
                               text-shadow: -2px -1px 2px rgb(222, 181, 118);
-                              
+
                         }
                   }
             }
@@ -486,20 +483,18 @@
                   .div__cont--scrollStop#{$stopN} {
                         position: absolute;
 
-                        @if ($stopN==OneFirst) {                            
+                        @if ($stopN==OneFirst) {
                               height: 110vh;
                               z-index: 2;
-                              padding-top:1rem;
-                              
-                              
-                              
+                              padding-top: 1rem;
+
 
                         }
 
                         @if ($stopN==Three) {
                               height: 110vh;
                               margin-top: 7rem;
-                              
+
                         }
 
                         @if ($stopN==Four) {

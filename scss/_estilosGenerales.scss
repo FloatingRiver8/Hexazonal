@@ -110,8 +110,6 @@ html {
 }
 
 
-/* ---------------------------------------- */
-
 ul {
     list-style-type: none;
     font-family: "Oxygen", sans-serif;
@@ -168,8 +166,6 @@ h1 {
     text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
-/* ---------------------------------------- */
-/* Estílos párrafos en gral. */
 .p--style {
     color: #9583a3;
     font-family: "MuseoModerno", cursive;
@@ -177,20 +173,15 @@ h1 {
     word-spacing: 0.1rem;
     line-height: 2rem;
     text-align: center;
-               
     text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
 
-/* ---------------------------------------- */
-/* Estílos anchors en gral.*/
+
 a {
     text-decoration: none;
     color: #7a7771;
     text-shadow: -6px -1px 6px rgb(222, 181, 118);
 }
-
-
-
 
 
 .footer {
@@ -349,9 +340,6 @@ footer div ul li:hover {
 }
 
 
-
-
-
 @media only screen and (max-width: 1200px) {
 
     @each $section in (Qs, Cont) {
@@ -372,6 +360,7 @@ footer div ul li:hover {
         }
     }
 }
+
 
 @media only screen and (max-width: 1024px) {
     @each $section in (Qs, Cont) {
@@ -397,13 +386,6 @@ footer div ul li:hover {
 
 @media only screen and (max-width: 768px) {
 
-    .body {
-        p {
-            color: rgb(226, 176, 69);
-        }
-    }
-
-
     nav {
         ul {
             li {
@@ -416,7 +398,6 @@ footer div ul li:hover {
             }
         }
     }
-
 
 
     #span__uno--posestilos,
@@ -432,7 +413,6 @@ footer div ul li:hover {
             color: #b3a593;
         }
     }
-
 
 
     .nav {
@@ -540,8 +520,7 @@ footer div ul li:hover {
         text-align: center;
     }
 
-
-
+    
     nav {
         ul {
             li {

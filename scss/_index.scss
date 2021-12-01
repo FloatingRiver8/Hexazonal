@@ -12,8 +12,9 @@
                 text-shadow: -6px -1px 6px rgb(222, 181, 118);
             }
         }
-        &__H2{
-            &--style{
+
+        &__H2 {
+            &--style {
                 color: rgba(163, 68, 207, 0.781);
                 font-family: "MuseoModerno";
                 font-size: 2rem;
@@ -21,11 +22,11 @@
                 margin-bottom: 0rem;
                 margin-top: 0rem;
                 text-shadow: -9px -1px 9px rgb(231, 169, 77);
-        } 
+            }
 
 
+        }
     }
-}
 
 
     .main__ {
@@ -65,13 +66,11 @@
 
     @media only screen and (max-width: 768px) {
 
-        /* Disminuye tamaño de titulo hexaZonal 
-                y párrafo en break 768px -INDEX */
         .header {
             &__H1 {
                 &--style {
                     font-size: 6rem;
-                    
+
                 }
             }
         }
@@ -80,6 +79,50 @@
             &div {
                 &--logoStyle {
                     padding: 3rem;
+                }
+            }
+        }
+
+
+
+
+        footer {
+            & div {
+                & ul {
+                    & li {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        color: #e1c1f7;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .header {
+            &__H1 {
+                &--style {
+                    font-size: 4rem;
+                    text-shadow: -3px -1px 3px rgb(222, 181, 118);
+                }
+            }
+
+
+            &__H2 {
+                &--style {
+                    color: rgba(202, 156, 223, 0.781);
+                    font-family: "MuseoModerno";
+                    font-size: 1.7rem;
+                    z-index: 2;
+                    margin-bottom: 0rem;
+                    margin-top: 0rem;
+                    padding-left: 3rem;
+                    text-shadow: -9px -1px 9px rgb(231, 169, 77);
                 }
             }
         }
@@ -105,56 +148,5 @@
         }
 
 
-        footer {
-            & div {
-                & ul {
-                    & li {
-                        margin-top: 5px;
-                        font-size: 14px;
-                        cursor: pointer;
-                        color: #e1c1f7;
-
-                    }
-                }
-            }
-        }
-
-
-        #index {
-            &__footer {
-                &--style {
-
-                    padding: 2rem;
-                    background-image: none;
-                    box-shadow: none;
-                }
-            }
-        }
 
     }
-
-    @media only screen and (max-width: 576px) {
-
-        .header {
-            &__H1 {
-                &--style {
-                    font-size: 4rem;
-                    text-shadow: -3px -1px 3px rgb(222, 181, 118);
-                }
-            }
-
-
-            &__H2{
-                &--style{
-                    color: rgba(202, 156, 223, 0.781);
-                    font-family: "MuseoModerno";
-                    font-size: 1.7rem;
-                    z-index: 2;
-                    margin-bottom: 0rem;
-                    margin-top: 0rem;
-                    padding-left: 3rem;
-                    text-shadow: -9px -1px 9px rgb(231, 169, 77);
-            } 
-        }
-    }
-}

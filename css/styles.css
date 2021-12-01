@@ -85,7 +85,6 @@ html {
   color: #a73ee4;
   text-shadow: -6px -1px 6px #e1acee; }
 
-/* ---------------------------------------- */
 ul {
   list-style-type: none;
   font-family: "Oxygen", sans-serif;
@@ -139,8 +138,6 @@ h1 {
   font-size: 6rem;
   text-shadow: -6px -1px 6px #deb576; }
 
-/* ---------------------------------------- */
-/* Estílos párrafos en gral. */
 .p--style {
   color: #9583a3;
   font-family: "MuseoModerno", cursive;
@@ -150,8 +147,6 @@ h1 {
   text-align: center;
   text-shadow: -6px -1px 6px #deb576; }
 
-/* ---------------------------------------- */
-/* Estílos anchors en gral.*/
 a {
   text-decoration: none;
   color: #7a7771;
@@ -279,8 +274,6 @@ footer div ul li:hover {
     padding-left: 8rem; } }
 
 @media only screen and (max-width: 768px) {
-  .body p {
-    color: #e2b045; }
   nav ul li {
     letter-spacing: 0.2rem;
     color: #4b4a458e; }
@@ -378,28 +371,15 @@ footer div ul li:hover {
     padding: 0rem; } }
 
 @media only screen and (max-width: 768px) {
-  /* Disminuye tamaño de titulo hexaZonal 
-                y párrafo en break 768px -INDEX */
   .header__H1--style {
     font-size: 6rem; }
   .main__div--logoStyle {
     padding: 3rem; }
-  .footer__ul--itemsStyle {
-    color: orange; }
-    .footer__ul--itemsStyle:hover {
-      color: #c335ee; }
-    .footer__ul--itemsStyle:focus {
-      outline: 0;
-      box-shadow: none; }
   footer div ul li {
     margin-top: 5px;
     font-size: 14px;
     cursor: pointer;
-    color: #e1c1f7; }
-  #index__footer--style {
-    padding: 2rem;
-    background-image: none;
-    box-shadow: none; } }
+    color: #e1c1f7; } }
 
 @media only screen and (max-width: 576px) {
   .header__H1--style {
@@ -413,7 +393,14 @@ footer div ul li:hover {
     margin-bottom: 0rem;
     margin-top: 0rem;
     padding-left: 3rem;
-    text-shadow: -9px -1px 9px #e7a94d; } }
+    text-shadow: -9px -1px 9px #e7a94d; }
+  .footer__ul--itemsStyle {
+    color: orange; }
+    .footer__ul--itemsStyle:hover {
+      color: #c335ee; }
+    .footer__ul--itemsStyle:focus {
+      outline: 0;
+      box-shadow: none; } }
 
 /* Pág QUIÉNES SOMOS */
 /* ------------------------------------------ */
@@ -903,7 +890,6 @@ footer div ul li:hover {
 
 /* ---------------------------------------- */
 /* DESTINOS */
-/* Estilos "botones"/destinos clase de bootstrap + mis estilos */
 .button__modal--styles {
   background-color: transparent;
   border-color: rgba(255, 254, 255, 0.267);
@@ -946,7 +932,6 @@ footer div ul li:hover {
   margin-bottom: 2rem;
   box-shadow: 0 0.05rem 5rem #a1f77a; }
 
-/* Estilos cuerpo del modal clase de BootS */
 .modal-content {
   background-color: rgba(255, 214, 127, 0.562);
   z-index: 0;
@@ -975,7 +960,7 @@ footer div ul li:hover {
     box-shadow: 16px 16px 18px #f3b2f3 inset, -16px -16px 18px #f7ddaf inset; }
 
 @media only screen and (max-width: 1200px) {
-  .modal .main__div--spaces {
+  .main__div--spaces {
     margin-right: 1rem; } }
 
 /* Pág. CONTACTO */
@@ -987,6 +972,7 @@ footer div ul li:hover {
   display: inline-block;
   margin-bottom: 1rem;
   padding: 2rem;
+  text-shadow: -6px -1px 6px #deb576;
   border-radius: 3%;
   border-top: none;
   border-left: none;
@@ -1014,20 +1000,24 @@ footer div ul li:hover {
     box-shadow: 16px 16px 18px #66e247 inset, -16px -16px 18px #db8efa inset; }
 
 .main__div--contactStyle {
-  background-color: rgba(250, 235, 215, 0.776);
   height: 50%;
-  font-family: "Oxygen";
   border-radius: 5px;
   padding-top: 1rem;
   margin-top: 2rem;
   font-size: 1rem;
-  color: #3c2b639e;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e1d4c2, #fffbe6);
+  color: #9583a3;
+  font-family: "MuseoModerno", cursive;
+  word-spacing: 0.1rem;
+  line-height: 1.5rem;
+  text-align: center;
   text-shadow: -6px -1px 6px #deb576; }
 
-/* Mis estilos para las fuentes del formulario -CONTACTO */
 .section__fieldset--fuentes {
   font-family: "Oxygen", sans-serif;
-  letter-spacing: 0.12rem; }
+  letter-spacing: 0.12rem;
+  text-shadow: -6px -1px 6px #deb576; }
 
 @media only screen and (max-width: 576px) {
   .main__div--contactStyle {

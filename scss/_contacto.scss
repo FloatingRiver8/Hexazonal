@@ -1,9 +1,6 @@
                 /* Pág. CONTACTO */
                 /* ---------------------------------------- */
 
-
-
-                // Estilos generales -CONTACTO */
                 .fieldset {
                     &--style {
                         color: rgba(113, 80, 122, 0.637);
@@ -12,6 +9,8 @@
                         display: inline-block;
                         margin-bottom: 1rem;
                         padding: 2rem;
+                        text-shadow: -6px -1px 6px rgb(222, 181, 118);
+                        
 
                         border: {
                             radius: 3%;
@@ -58,27 +57,32 @@
                 .main {
                     &__div {
                         &--contactStyle {
-                            background-color: rgba(250, 235, 215, 0.776);
+                            
                             height: 50%;
-                            font-family: "Oxygen";
                             border-radius: 5px;
                             padding-top: 1rem;
                             margin-top: 2rem;
                             font-size: 1rem;
-                            color: #3c2b639e;
+                            border-radius: 5px;
+                            background: linear-gradient(145deg, #e1d4c2, #fffbe6);
+                            color: #9583a3;
+                            font-family: "MuseoModerno", cursive;
+                            word-spacing: 0.1rem;
+                            line-height: 1.5rem;
+                            text-align: center;                                      
                             text-shadow: -6px -1px 6px rgb(222, 181, 118);
+
                         }
                     }
                 }
 
 
-
-                /* Mis estilos para las fuentes del formulario -CONTACTO */
                 .section {
                     &__fieldset {
                         &--fuentes {
                             font-family: "Oxygen", sans-serif;
                             letter-spacing: 0.12rem;
+                            text-shadow: -6px -1px 6px rgb(222, 181, 118);
                         }
                     }
                 }
